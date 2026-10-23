@@ -1,0 +1,595 @@
+{
+ "_comment": "Road segments (the network) and full route variants. Waypoints are [lat, lon]. Geometry is fetched from router.project-osrm.org by scripts/fetch-roads.mjs; these waypoints are the hardcoded fallback.",
+ "segments": [
+  {
+   "id": "i80",
+   "name": "I-80 Sacramento \u2192 Fairfield",
+   "kind": "freeway",
+   "wp": [
+    [
+     38.5803,
+     -121.5085
+    ],
+    [
+     38.2086,
+     -122.1922,
+     270
+    ]
+   ]
+  },
+  {
+   "id": "i505_128",
+   "name": "I-505 & SR 128 Vacaville \u2192 Winters \u2192 Lake Berryessa \u2192 Rutherford",
+   "kind": "highway",
+   "wp": [
+    [
+     38.383,
+     -121.9525,
+     0
+    ],
+    [
+     38.448,
+     -121.9423
+    ],
+    [
+     38.525,
+     -121.971
+    ],
+    [
+     38.5133,
+     -122.1048
+    ],
+    [
+     38.4952,
+     -122.3207
+    ],
+    [
+     38.4834,
+     -122.379
+    ],
+    [
+     38.4582,
+     -122.4206
+    ]
+   ]
+  },
+  {
+   "id": "sr12_jameson",
+   "name": "SR 12 Jameson Canyon & SR 29 to Napa",
+   "kind": "highway",
+   "wp": [
+    [
+     38.2086,
+     -122.1922,
+     270
+    ],
+    [
+     38.2168,
+     -122.2247
+    ],
+    [
+     38.2975,
+     -122.29
+    ]
+   ]
+  },
+  {
+   "id": "carneros",
+   "name": "SR 121/12 Carneros, Napa \u2192 Sonoma",
+   "kind": "highway",
+   "wp": [
+    [
+     38.2975,
+     -122.29
+    ],
+    [
+     38.256,
+     -122.34
+    ],
+    [
+     38.293,
+     -122.458
+    ]
+   ]
+  },
+  {
+   "id": "sr29",
+   "name": "SR 29 Napa \u2192 Calistoga",
+   "kind": "highway",
+   "wp": [
+    [
+     38.2975,
+     -122.29
+    ],
+    [
+     38.4365,
+     -122.401
+    ],
+    [
+     38.4582,
+     -122.4206
+    ],
+    [
+     38.5052,
+     -122.4704
+    ],
+    [
+     38.5788,
+     -122.5797
+    ]
+   ]
+  },
+  {
+   "id": "silverado",
+   "name": "Silverado Trail Napa \u2192 Calistoga",
+   "kind": "rural",
+   "wp": [
+    [
+     38.2995,
+     -122.2759
+    ],
+    [
+     38.3587,
+     -122.2884
+    ],
+    [
+     38.4276,
+     -122.3411
+    ],
+    [
+     38.4647,
+     -122.3755
+    ],
+    [
+     38.4885,
+     -122.4083
+    ],
+    [
+     38.5044,
+     -122.44
+    ],
+    [
+     38.5163,
+     -122.4615
+    ],
+    [
+     38.5471,
+     -122.4912
+    ],
+    [
+     38.5768,
+     -122.5196
+    ],
+    [
+     38.578,
+     -122.5413
+    ]
+   ]
+  },
+  {
+   "id": "oakville_grade",
+   "name": "Oakville Grade & Trinity Rd",
+   "kind": "mountain",
+   "wp": [
+    [
+     38.4365,
+     -122.401
+    ],
+    [
+     38.4208,
+     -122.4168
+    ],
+    [
+     38.3983,
+     -122.4763
+    ],
+    [
+     38.3854,
+     -122.4971
+    ],
+    [
+     38.364,
+     -122.524
+    ]
+   ]
+  },
+  {
+   "id": "spring_mtn",
+   "name": "Spring Mountain Rd & St Helena Rd \u2192 Calistoga Rd",
+   "kind": "mountain",
+   "wp": [
+    [
+     38.5049,
+     -122.4759
+    ],
+    [
+     38.5143,
+     -122.5158
+    ],
+    [
+     38.5225,
+     -122.5451
+    ],
+    [
+     38.5194,
+     -122.6077
+    ],
+    [
+     38.5073,
+     -122.6442
+    ],
+    [
+     38.4837,
+     -122.6591
+    ]
+   ]
+  },
+  {
+   "id": "petrified_forest",
+   "name": "Petrified Forest Rd & Mark West Springs Rd \u2192 River Rd",
+   "kind": "rural",
+   "wp": [
+    [
+     38.5788,
+     -122.5797
+    ],
+    [
+     38.5796,
+     -122.6008
+    ],
+    [
+     38.5606,
+     -122.6372
+    ],
+    [
+     38.5413,
+     -122.7178
+    ],
+    [
+     38.508,
+     -122.7195
+    ],
+    [
+     38.5027,
+     -122.7367
+    ],
+    [
+     38.4964,
+     -122.7604
+    ],
+    [
+     38.4966,
+     -122.7737
+    ]
+   ]
+  },
+  {
+   "id": "calistoga_rd",
+   "name": "Calistoga Rd \u2192 Santa Rosa",
+   "kind": "rural",
+   "wp": [
+    [
+     38.5606,
+     -122.6372
+    ],
+    [
+     38.5177,
+     -122.6539
+    ],
+    [
+     38.4837,
+     -122.6591
+    ],
+    [
+     38.4645,
+     -122.6534
+    ]
+   ]
+  },
+  {
+   "id": "sonoma_valley",
+   "name": "SR 12 Sonoma \u2192 Glen Ellen \u2192 Kenwood \u2192 Santa Rosa",
+   "kind": "highway",
+   "wp": [
+    [
+     38.293,
+     -122.458
+    ],
+    [
+     38.3205,
+     -122.4866
+    ],
+    [
+     38.3587,
+     -122.5048
+    ],
+    [
+     38.4186,
+     -122.5505
+    ],
+    [
+     38.4536,
+     -122.6229
+    ],
+    [
+     38.4642,
+     -122.6489
+    ],
+    [
+     38.4526,
+     -122.6819
+    ],
+    [
+     38.4405,
+     -122.714
+    ]
+   ]
+  },
+  {
+   "id": "sr128_alexander",
+   "name": "SR 128 Calistoga \u2192 Knights Valley \u2192 Alexander Valley \u2192 Healdsburg",
+   "kind": "rural",
+   "wp": [
+    [
+     38.5788,
+     -122.5797
+    ],
+    [
+     38.594,
+     -122.6231
+    ],
+    [
+     38.6178,
+     -122.6598
+    ],
+    [
+     38.6638,
+     -122.8231
+    ],
+    [
+     38.6598,
+     -122.8418
+    ],
+    [
+     38.6105,
+     -122.8695
+    ]
+   ]
+  },
+  {
+   "id": "us101",
+   "name": "US 101 Santa Rosa \u2192 Healdsburg",
+   "kind": "freeway",
+   "wp": [
+    [
+     38.4425,
+     -122.7215
+    ],
+    [
+     38.5959,
+     -122.8548
+    ],
+    [
+     38.6105,
+     -122.8695
+    ]
+   ]
+  },
+  {
+   "id": "river_rd",
+   "name": "River Rd: US 101 \u2192 Fulton \u2192 Mirabel \u2192 Guerneville",
+   "kind": "rural",
+   "wp": [
+    [
+     38.4966,
+     -122.7737
+    ],
+    [
+     38.4905,
+     -122.7984
+    ],
+    [
+     38.4845,
+     -122.8418
+    ],
+    [
+     38.4896,
+     -122.8693
+    ],
+    [
+     38.4935,
+     -122.8955
+    ],
+    [
+     38.5024,
+     -122.9955
+    ]
+   ]
+  },
+  {
+   "id": "westside",
+   "name": "Westside Rd Healdsburg \u2192 River Rd",
+   "kind": "rural",
+   "wp": [
+    [
+     38.6105,
+     -122.8695
+    ],
+    [
+     38.6012,
+     -122.8853
+    ],
+    [
+     38.5742,
+     -122.8753
+    ],
+    [
+     38.5399,
+     -122.8713
+    ],
+    [
+     38.5295,
+     -122.8683
+    ],
+    [
+     38.4896,
+     -122.8693
+    ]
+   ]
+  },
+  {
+   "id": "sr12_sebastopol",
+   "name": "SR 12 Santa Rosa \u2192 Sebastopol",
+   "kind": "highway",
+   "wp": [
+    [
+     38.4405,
+     -122.714
+    ],
+    [
+     38.402,
+     -122.824
+    ]
+   ]
+  },
+  {
+   "id": "sr116",
+   "name": "SR 116 Sebastopol \u2192 Forestville \u2192 Guerneville",
+   "kind": "rural",
+   "wp": [
+    [
+     38.402,
+     -122.824
+    ],
+    [
+     38.4129,
+     -122.8431
+    ],
+    [
+     38.4459,
+     -122.8667
+    ],
+    [
+     38.4681,
+     -122.8837
+    ],
+    [
+     38.4734,
+     -122.9076
+    ],
+    [
+     38.4864,
+     -122.9503
+    ],
+    [
+     38.5024,
+     -122.9955
+    ]
+   ]
+  },
+  {
+   "id": "guerneville_rd",
+   "name": "Guerneville Rd Santa Rosa \u2192 SR 116",
+   "kind": "rural",
+   "wp": [
+    [
+     38.4599,
+     -122.7289
+    ],
+    [
+     38.4525,
+     -122.7714
+    ],
+    [
+     38.4525,
+     -122.8073
+    ],
+    [
+     38.4508,
+     -122.8543
+    ],
+    [
+     38.4503,
+     -122.8655
+    ]
+   ]
+  },
+  {
+   "id": "bohemian",
+   "name": "Bohemian Hwy: Freestone \u2192 Occidental \u2192 Monte Rio \u2192 Guerneville",
+   "kind": "mountain",
+   "wp": [
+    [
+     38.402,
+     -122.824
+    ],
+    [
+     38.372,
+     -122.912
+    ],
+    [
+     38.407,
+     -122.948
+    ],
+    [
+     38.465,
+     -123.009
+    ],
+    [
+     38.502,
+     -122.996
+    ]
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "id": "main",
+   "name": "Main: I-80 \u2192 Jameson Canyon \u2192 SR 29 Napa Valley \u2192 Calistoga \u2192 Mark West Springs \u2192 River Rd \u2192 Guerneville",
+   "segs": [
+    "i80",
+    "sr12_jameson",
+    "sr29",
+    "petrified_forest",
+    "river_rd"
+   ]
+  },
+  {
+   "id": "berryessa",
+   "name": "Lake Berryessa: I-80 \u2192 I-505 \u2192 Winters \u2192 SR 128 \u2192 Rutherford \u2192 Calistoga \u2192 Alexander Valley \u2192 Healdsburg \u2192 Westside Rd",
+   "segs": [
+    "i80[0:1]",
+    "i505_128",
+    "sr29[3:]",
+    "sr128_alexander",
+    "westside",
+    "river_rd[3:]"
+   ]
+  },
+  {
+   "id": "sonoma",
+   "name": "Sonoma: I-80 \u2192 Jameson Canyon \u2192 Carneros \u2192 Sonoma \u2192 Glen Ellen \u2192 Kenwood \u2192 Santa Rosa \u2192 Sebastopol \u2192 SR 116",
+   "segs": [
+    "i80",
+    "sr12_jameson[0:2]",
+    "carneros",
+    "sonoma_valley",
+    "sr12_sebastopol",
+    "sr116"
+   ]
+  },
+  {
+   "id": "silverado_bohemian",
+   "name": "Silverado Trail \u2192 Petrified Forest \u2192 Calistoga Rd \u2192 Santa Rosa \u2192 Sebastopol \u2192 Bohemian Hwy",
+   "segs": [
+    "i80",
+    "sr12_jameson",
+    "silverado",
+    "petrified_forest[0:3]",
+    "calistoga_rd",
+    "sr12_sebastopol",
+    "bohemian"
+   ]
+  }
+ ]
+}
