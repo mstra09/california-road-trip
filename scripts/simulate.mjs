@@ -11,6 +11,9 @@ const { routes } = JSON.parse(fs.readFileSync('site/data/routes.json', 'utf8'));
 const { clips } = JSON.parse(fs.readFileSync('site/data/clips.json', 'utf8'));
 const net = new Network(segments);
 
+const noisy = process.argv.includes('--noisy');
+let seed = 42; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const gauss = () => Math.sqrt(-2 * Math.log(rnd() + 1e-9)) * Math.cos(2 * Math.PI * rnd());
 export function drive(r, talkLevel = talk) {
   const played = new Set();
   let clipEnd = null, t = 0, i = 0;
@@ -22,7 +25,15 @@ export function drive(r, talkLevel = talk) {
     while (i < r.time.length - 2 && r.time[i + 1] < t) i++;
     const a = r.pts[i], b = r.pts[i + 1], ta = r.time[i], tb = r.time[i + 1];
     const f = tb > ta ? Math.min(1, (t - ta) / (tb - ta)) : 0;
-    eng.position({ lat: a[0] + (b[0] - a[0]) * f, lon: a[1] + (b[1] - a[1]) * f, acc: 8, speed: null, heading: null, t });
+    let lat = a[0] + (b[0] - a[0]) * f, lon = a[1] + (b[1] - a[1]) * f, acc = 8;
+    if (noisy) {
+      // ~12 m jitter, weak fixes, a 90 s dropout every ~20 min, and an occasional 5 km jump
+      if (t % 1200 > 1110) { if (clipEnd != null && t >= clipEnd) { clipEnd = null; eng.ended(t); } eng.tick(t); continue; }
+      lat += gauss() * 12 / 111000; lon += gauss() * 12 / 87000; acc = 5 + rnd() * 50;
+      if (rnd() < 0.03) acc = 200 + rnd() * 500;
+      if (rnd() < 0.002) lat += 0.05;
+    }
+    eng.position({ lat, lon, acc, speed: null, heading: null, t });
     if (clipEnd != null && t >= clipEnd) { clipEnd = null; eng.ended(t); }
   }
   // gaps: silence between clip end and next clip start (incl. start and end of trip)

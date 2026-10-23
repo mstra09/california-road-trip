@@ -97,7 +97,24 @@ function release() {
   try { el.load(); } catch (e) {}
   if (currentUrl) { URL.revokeObjectURL(currentUrl); currentUrl = null; }
   if (settings.mode !== 'A') setSession(null);
+  try { if ('mediaSession' in navigator) { navigator.mediaSession.metadata = null; navigator.mediaSession.playbackState = 'none'; } } catch (e) {}
 }
+function setMediaSession(clip) {
+  if (!('mediaSession' in navigator)) return;
+  try {
+    navigator.mediaSession.metadata = new MediaMetadata({ title: clip.title, artist: 'Wine Country Road Guide', album: clip.areaName || '',
+      artwork: [{ src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' }] });
+    navigator.mediaSession.playbackState = 'playing';
+  } catch (e) {}
+}
+// Steering-wheel / lock-screen controls while a clip plays: pause, resume, skip.
+try {
+  if ('mediaSession' in navigator) {
+    navigator.mediaSession.setActionHandler('pause', () => { if (currentClip && !el.paused) { el.pause(); $('btnPause').firstChild.textContent = '▶'; } });
+    navigator.mediaSession.setActionHandler('play', () => { if (currentClip && el.paused) { el.play().catch(showTap); $('btnPause').firstChild.textContent = '⏸'; } });
+    navigator.mediaSession.setActionHandler('nexttrack', () => { if (currentClip) { speechSynthesis.cancel(); clipFinished(); } });
+  }
+} catch (e) {}
 async function sourceFor(clip) {
   if (!clip.audio) return null;
   try {
@@ -128,7 +145,7 @@ async function playClip(clip, reason) {
   setSession(SESSION[settings.mode]);
   const src = await sourceFor(clip);
   if (!src) return speak(clip);
-  el.src = src; el.playbackRate = +settings.rate;
+  el.src = src; el.playbackRate = +settings.rate; setMediaSession(clip);
   el.onerror = () => { if (currentClip === clip) { release(); speak(clip); } };
   try { await el.play(); hideTap(); }
   catch (e) { if (e.name === 'NotAllowedError') showTap(); else { release(); speak(clip); } }
@@ -344,7 +361,11 @@ function simStop() {
     $('nowTitle').textContent = 'Waiting for the next story…'; renderStatus(lastFix);
   }
 }
-$('btnSim').onclick = () => { simStart($('simRoute').value, +settings.simSpeed, $('simAudio').checked); showTab('nowView'); };
+$('btnSim').onclick = async () => {
+  // this tap also unlocks audio, so the simulator works without pressing Start (GPS stays off)
+  if (!started) { started = true; await unlockAudio(); keepAwake(); }
+  simStart($('simRoute').value, +settings.simSpeed, $('simAudio').checked); showTab('nowView');
+};
 $('btnSimStop').onclick = () => { simStop(); $('simStatus').textContent = 'Stopped.'; };
 
 // Test hook used by Playwright: run a whole route silently at full speed and return the log.
@@ -376,14 +397,14 @@ window.__rt = {
 
 // ---------------------------------------------------------------- tabs, start
 function showTab(id) {
+  if (id === 'nowView' && !started) id = 'startView';
   document.querySelectorAll('.view').forEach(v => v.classList.toggle('hidden', v.id !== id));
   document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.view === id));
   if (id === 'clipsView') renderClips();
   if (id === 'setView') renderSettings();
 }
-document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => showTab(b.dataset.view));
-
 let started = false;
+document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => showTab(b.dataset.view));
 $('btnStart').onclick = async () => {
   started = true;
   await unlockAudio();

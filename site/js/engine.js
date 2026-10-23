@@ -87,7 +87,7 @@ export function anchorsFor(network, lat, lon, reach) {
 
 // GPS conditioning: accuracy gate, jump rejection, speed/heading smoothing.
 export class Tracker {
-  constructor() { this.last = null; this.speed = 0; this.heading = null; this.pending = []; this.lastGood = 0; }
+  constructor() { this.last = null; this.speed = 0; this.heading = null; this.pending = []; this.lastGood = 0; this.trail = []; }
   // fix: {lat, lon, acc, speed (m/s|null), heading (deg|null), t (s)}
   push(f) {
     if (f.acc != null && f.acc > 150) return { ok: false, why: 'accuracy' };
@@ -104,7 +104,15 @@ export class Tracker {
       const a = dt > 20 ? 1 : 0.35;                      // after a dropout, reset smoothing
       this.speed = this.speed * (1 - a) + gpsV * a;
       let h = f.heading != null && !isNaN(f.heading) && gpsV > 2 ? f.heading : null;
-      if (h == null && d > 15 && v > 2) h = bearingXY(...(() => { const p0 = xy(this.last.lat, this.last.lon), p1 = xy(f.lat, f.lon); return [p1[0] - p0[0], p1[1] - p0[1]]; })());
+      if (h == null && v > 2) {
+        // bearing over a longer baseline (>= 60 m back, within 20 s) so GPS jitter doesn't swing it
+        const p1 = xy(f.lat, f.lon);
+        for (let k = this.trail.length - 1; k >= 0; k--) {
+          const q = this.trail[k]; if (f.t - q.t > 20) break;
+          const p0 = xy(q.lat, q.lon), dx = p1[0] - p0[0], dy = p1[1] - p0[1];
+          if (Math.hypot(dx, dy) >= 60) { h = bearingXY(dx, dy); break; }
+        }
+      }
       if (h != null) {
         if (this.heading == null || dt > 20) this.heading = h;
         else { // circular smoothing
@@ -119,6 +127,7 @@ export class Tracker {
       this.heading = f.heading != null && !isNaN(f.heading) ? f.heading : null;
     }
     this.last = f; this.lastGood = f.t;
+    this.trail.push(f); if (this.trail.length > 30) this.trail.shift();
     return { ok: true };
   }
 }
@@ -141,7 +150,16 @@ export class Engine {
     if (!r.ok) return r;
     this.pos = fix;
     const h = this.tracker.speed > 2 ? this.tracker.heading : null;
-    this.match = this.net.match(fix.lat, fix.lon, h, this.match?.seg);
+    const prev = this.match;
+    const m = this.net.match(fix.lat, fix.lon, h, prev?.seg);
+    // Direction of travel along the road comes from our progress along it, which is far steadier
+    // than a heading estimate; heading only decides it when we first join a road.
+    if (m && prev && m.seg === prev.seg) {
+      m.anchorS = prev.anchorS ?? prev.s;
+      const ds = m.s - m.anchorS;
+      if (Math.abs(ds) > 40) { m.dir = Math.sign(ds); m.anchorS = m.s; } else m.dir = prev.dir;
+    } else if (m) m.anchorS = m.s;
+    this.match = m;
     this.tick(fix.t);
     return r;
   }
