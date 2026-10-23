@@ -351,7 +351,7 @@ $('btnSimStop').onclick = () => { simStop(); $('simStatus').textContent = 'Stopp
 window.__rt = {
   ready: false,
   runRoute(routeId, talk = 'normal') {
-    const r = routes.find(x => x.id === routeId);
+    const r = routes.find(x => x.id === routeId) || (net.byId[routeId] && { pts: net.byId[routeId].pts, time: net.byId[routeId].time });
     const savedPlayed = engine.played; engine.played = new Set();
     engine.setTalk(talk);
     sim.on = true; sim.audio = false; sim.t = 0; sim.clipEnd = null; sim.route = r; sim.i = 0; sim.t0 = 0; sim.T = r.time.at(-1);

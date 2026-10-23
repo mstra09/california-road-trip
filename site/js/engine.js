@@ -219,6 +219,16 @@ export class Engine {
       const c = this.byId[h.id]; const m = c?.more && this.byId[c.more];
       if (m && !this.played.has(m.id) && !busyAhead(m.dur || 90)) return this.start(m, t, 'more');
     }
+    // Emergency tier, so silence never runs much past ~10 minutes: a story from further afield,
+    // then any unplayed follow-up of anything heard today.
+    if (t - this.lastEnd < 540) return;
+    const far = this.clips.filter(c => c.kind === 'story' && !this.played.has(c.id) && haversine(here, [c.lat, c.lon]) < c.radius * 2.5)
+      .sort((a, b) => haversine(here, [a.lat, a.lon]) / a.radius - haversine(here, [b.lat, b.lon]) / b.radius);
+    if (far.length) return this.start(far[0], t, 'story');
+    for (let i = this.history.length - 1; i >= 0; i--) {
+      const c = this.byId[this.history[i].id]; const m = c?.more && this.byId[c.more];
+      if (m && !this.played.has(m.id)) return this.start(m, t, 'more');
+    }
   }
 
   start(c, t, reason) {

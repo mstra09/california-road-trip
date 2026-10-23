@@ -1,0 +1,14 @@
+{
+  "name": "california-road-trip",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "scripts/build.sh",
+    "simulate": "node scripts/simulate.mjs",
+    "test": "node scripts/verify.mjs",
+    "deploy": "scripts/deploy.sh"
+  },
+  "devDependencies": {
+    "playwright": "1.48.2"
+  }
+}
