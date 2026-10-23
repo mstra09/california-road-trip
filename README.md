@@ -31,7 +31,10 @@ offline once cached.
    (If you ever do want a clean slate: Settings → Reset played history.)
 
 ## Tomorrow
-1. iPhone: Settings → Display & Brightness → **Auto-Lock: Never**. Phone on the **charger**, connected to the car.
+1. Phone on the **charger**, connected to the car, **Low Power Mode off**. If Auto-Lock can't be set to Never
+   (e.g. capped at 5 minutes by your organisation), the app keeps the screen on itself with a Wake Lock plus a
+   muted looping video; the **screen** chip must read *on*. Check it once with the stay-awake test on the audio
+   test page.
 2. Ring/silent switch **off silent** (some music modes respect it).
 3. Open the app from the home screen **before leaving Sacramento**, check the chip says **offline ✓**, tap **▶ Start**,
    allow location. Leave the app in front: iOS pauses web apps (and their GPS) in the background.
@@ -106,6 +109,11 @@ orphan commit on `gh-pages`, so audio never bloats the main branch history. No b
     iOS and Spotify.
   - **E speech**: the robotic built-in voice; usually ducks other audio. Ignores the recorded files.
   - **F ambient**: mixes with music at full volume and may be muted by the silent switch.
+  - **G / H (experimental)**: the recorded Kokoro voice in a mixable session, plus an inaudible phone-voice
+    utterance running alongside it, to get the duck-then-resume behaviour that mode E showed. Untested on iPhone.
+  - User's test (23 Oct): only **E** ducked and restored Spotify. E uses the phone's own voice; installing a free
+    Apple "Premium" voice (Settings → Accessibility → Spoken Content → Voices) and choosing it in the app's Settings
+    makes E sound far less robotic.
   After each clip the app empties the audio element and resets the session, which is the most a web page can do
   to let Spotify resume.
 - The app must stay **on screen**. iOS suspends web apps in the background, which stops GPS and audio. Auto-Lock

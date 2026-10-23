@@ -44,6 +44,20 @@
   <div class="dim">Reload the page between modes for a clean test (the audio session type sticks once set). Audio session support detected: <b id="asSupport"></b></div>
 </div>
 
+<div class="card">
+  <h2>Phone voice for mode E</h2>
+  <div class="dim">Mode E sounds robotic with the default voice. Download a better one, free: iPhone Settings → Accessibility → Spoken Content → Voices → English → e.g. “Ava (Premium)”, “Zoe (Premium)”, “Evan (Enhanced)”, or British “Serena (Premium)” / “Jamie (Premium)”. Then reload this page and pick it here.</div>
+  <select id="voiceSel" style="font:inherit;width:100%;padding:12px;border-radius:10px;margin-top:8px;background:#2a3140;color:#f2f4f7;border:0"></select>
+  <button id="voicePrev">▶ Preview</button>
+</div>
+<div class="card">
+  <h2>Stay-awake test (for a 5-minute Auto-Lock)</h2>
+  <div class="dim">Tap Start, then don’t touch the phone for 6–7 minutes. If the screen is still on, the app can keep it awake on the road.</div>
+  <button class="primary" id="wakeBtn">Start stay-awake test</button>
+  <div class="status" id="wakeSt"></div>
+  <video id="wakeVid" muted loop playsinline src="../media/nosleep.mp4" style="position:fixed;width:2px;height:2px;opacity:0.02;bottom:0;left:0"></video>
+</div>
+
 <div id="modes"></div>
 
 <div class="card">
@@ -59,7 +73,8 @@
 
 <audio id="el" preload="auto" playsinline></audio>
 
-<script>
+<script type="module">
+import * as S from '../js/speech.js';
 const MODES = [
   { id:'A', name:'Mode A — plain audio element', desc:'One HTMLAudioElement, unlocked by your tap, reused by a timer. No audio-session hint.', session:null },
   { id:'B', name:'Mode B — audioSession "transient"', desc:'Same as A, with navigator.audioSession.type = "transient" (meant for short sounds; should duck other audio).', session:'transient' },
@@ -67,6 +82,8 @@ const MODES = [
   { id:'D', name:'Mode D — audioSession "playback"', desc:'Same as A, with "playback" (media playback; usually interrupts others).', session:'playback' },
   { id:'E', name:'Mode E — speechSynthesis', desc:'The browser\'s built-in text-to-speech voice, primed by your tap.', session:null, speech:true },
   { id:'F', name:'Mode F (bonus) — audioSession "ambient"', desc:'Same as A, with "ambient" (mixes with music, no ducking). Voice may be hard to hear over music.', session:'ambient' },
+  { id:'G', name:'Mode G (new) — recorded voice + silent speech, "ambient"', desc:'The natural recorded voice in a mixable session, with an inaudible phone-voice running alongside to trigger the same ducking as mode E. Silent switch must be off.', session:'ambient', duck:true },
+  { id:'H', name:'Mode H (new) — recorded voice + silent speech, "transient"', desc:'Like G but with the "transient" session.', session:'transient', duck:true },
 ];
 const RESULTS = ['Ducked then restored','Paused, then resumed','Paused, stayed paused','Kept full volume','No voice heard'];
 const el = document.getElementById('el');
@@ -95,10 +112,8 @@ function releaseSession(){
 function setStatus(m, text, cls){ const s=document.getElementById('st'+m.id); s.textContent=text; s.className='status '+(cls||''); }
 
 async function unlock(m){
-  if (m.speech) {
-    const u = new SpeechSynthesisUtterance(' '); u.volume = 0; speechSynthesis.speak(u);
-    log('speechSynthesis primed'); return true;
-  }
+  S.prime(); log('speech primed');
+  if (m.speech) return true;
   setSession(m.session);
   el.src = 'silence.m4a';
   try { await el.play(); log('unlock play() OK'); return true; }
@@ -107,17 +122,17 @@ async function unlock(m){
 
 async function playClip(m){
   if (m.speech) {
-    const u = new SpeechSynthesisUtterance('This is the road trip audio test, using the built in speech voice. Listen to your music. Did it get quieter, did it stop, and when I finish, does it come back on its own? That is the end of the test.');
-    u.onstart = ()=>{ log('speech start'); setStatus(m,'▶️ Speaking now… watch the music','ok'); };
-    u.onend = ()=>{ log('speech end'); setStatus(m,'Finished. Did the music come back? Record the result below.','ok'); };
-    u.onerror = (e)=>{ log('speech error: '+e.error); setStatus(m,'❌ speechSynthesis error: '+e.error,'bad'); };
-    speechSynthesis.cancel(); speechSynthesis.speak(u);
-    setTimeout(()=>{ if(!speechSynthesis.speaking) setStatus(m,'❌ Speech did not start (blocked?)','bad'); }, 3000);
+    S.speak('This is the road trip audio test, using the phone voice. Listen to your music. Did it get quieter, did it stop, and when I finish, does it come back on its own? That is the end of the test.', {
+      voiceURI: voiceSel.value,
+      onstart: ()=>{ log('speech start'); setStatus(m,'▶️ Speaking now… watch the music','ok'); },
+      onend: ()=>{ log('speech end'); setStatus(m,'Finished. Did the music come back? Record the result below.','ok'); } });
+    setTimeout(()=>{ if(!S.speaking()) setStatus(m,'❌ Speech did not start (blocked?)','bad'); }, 3000);
     return;
   }
   setSession(m.session);
+  if (m.duck) { S.startDuck('This is a silent companion utterance that keeps the phone speech engine active so that other audio is ducked while the recording plays.'); log('silent speech ducker started'); await new Promise(r=>setTimeout(r,400)); }
   el.src = 'clip.m4a';
-  el.onended = ()=>{ setStatus(m,'Finished. Did the music come back? Record the result below.','ok'); if (document.getElementById('rel'+m.id).checked) releaseSession(); };
+  el.onended = ()=>{ if (m.duck) { S.stopDuck(); log('ducker stopped'); } setStatus(m,'Finished. Did the music come back? Record the result below.','ok'); if (document.getElementById('rel'+m.id).checked) releaseSession(); };
   try { await el.play(); setStatus(m,'▶️ Playing now… watch the music','ok'); log('clip play() OK (mode '+m.id+')'); }
   catch(e){ setStatus(m,'❌ play() was REJECTED: '+e.name+' — '+e.message,'bad'); log('clip play() REJECTED: '+e.name); }
 }
@@ -162,6 +177,23 @@ MODES.forEach(m=>{
   wrap.appendChild(d);
 });
 renderSummary();
+const voiceSel = document.getElementById('voiceSel');
+function fillVoices(){ const list = S.englishVoices(); const keep = voiceSel.value;
+  voiceSel.innerHTML = list.map(v=>'<option value="'+v.voiceURI+'">'+v.name+' ('+v.lang+')'+'</option>').join('') || '<option>No voices yet, tap Preview</option>';
+  if (keep) voiceSel.value = keep; }
+fillVoices(); speechSynthesis.addEventListener('voiceschanged', fillVoices);
+document.getElementById('voicePrev').onclick = ()=>{ S.speak('Welcome to the Napa Valley. Guerneville is still about two hours away.', { voiceURI: voiceSel.value }); setTimeout(fillVoices, 500); };
+let wl = null, t0 = 0;
+document.getElementById('wakeBtn').onclick = async ()=>{
+  t0 = Date.now(); const st = document.getElementById('wakeSt');
+  try { wl = await navigator.wakeLock.request('screen'); log('wake lock acquired'); } catch(e){ log('wake lock failed: '+e.message); }
+  try { await document.getElementById('wakeVid').play(); log('keep-awake video playing'); } catch(e){ log('video failed: '+e.message); }
+  setInterval(async ()=>{
+    if (wl && wl.released && document.visibilityState==='visible') { try { wl = await navigator.wakeLock.request('screen'); log('wake lock re-acquired'); } catch(e){} }
+    st.textContent = 'Screen kept on for '+Math.round((Date.now()-t0)/60000*10)/10+' min · wake lock '+(wl && !wl.released ? 'held' : 'NOT held')+' · video '+(document.getElementById('wakeVid').paused?'stopped':'playing');
+    st.className = 'status ok';
+  }, 2000);
+};
 log('ready. UA: '+navigator.userAgent);
 </script>
 </body>
