@@ -1,0 +1,108 @@
+#EXTM3U
+#PLAYLIST:Lake Berryessa: I-80 → I-505 → Winters → SR 128 → Rutherford → Calistoga → Alexander Valley → Healdsburg → Westside Rd
+#EXTINF:70,01 Welcome aboard: leaving the capital
+../../audio/trip_intro-4e4c0337.m4a
+#EXTINF:54,02 Sam Brannan, California's first millionaire
+../../audio/trip_intro_more-5a0fbae9.m4a
+#EXTINF:65,03 West Sacramento: the Town of Washington
+../../audio/west_sac-3f814d27.m4a
+#EXTINF:82,04 The Yolo Bypass: a floodplain on purpose
+../../audio/yolo_bypass-dee20b13.m4a
+#EXTINF:62,05 The causeway, the Tule Jake Road, and a quarter of a million bats
+../../audio/yolo_bypass_more-e7dda409.m4a
+#EXTINF:76,06 Davis: the university farm
+../../audio/davis-4ce296f7.m4a
+#EXTINF:73,07 Dixon: the town that moved to the tracks
+../../audio/dixon-81ba9173.m4a
+#EXTINF:103,08 Why the valley is so flat: seven miles of buried sea floor
+../../audio/valley_geology-2641d010.m4a
+#EXTINF:125,09 The Patwin: the people of this valley
+../../audio/patwin_story-5a87715b.m4a
+#EXTINF:95,10 The railroad that beat the Golden Spike
+../../audio/railroad_story-9f662c35.m4a
+#EXTINF:65,11 The Nut Tree: a fruit stand that fed a Queen
+../../audio/nut_tree-a2e306f2.m4a
+#EXTINF:79,12 From the Lincoln Highway to Interstate 80
+../../audio/highway_story-ebcbdaa9.m4a
+#EXTINF:63,13 Interstate 505: the highway that lost its letter
+../../audio/i505-09666bb5.m4a
+#EXTINF:54,14 Winters: orchards on Putah Creek
+../../audio/winters-2121c229.m4a
+#EXTINF:81,15 Putah Creek: the creek that came back
+../../audio/putah_creek-d8983e78.m4a
+#EXTINF:71,16 Fire country on Highway 128
+../../audio/berryessa_fires-938b5b13.m4a
+#EXTINF:81,17 Monticello Dam and the Glory Hole
+../../audio/monticello_dam-d6c9ec77.m4a
+#EXTINF:102,18 Monticello: the town under the lake
+../../audio/monticello_town-0fd1ed71.m4a
+#EXTINF:102,19 Who gets the water? The Solano Project
+../../audio/solano_water_story-401e86ef.m4a
+#EXTINF:69,20 Driving through tilted sea floor
+../../audio/great_valley_rocks-a71cd2b4.m4a
+#EXTINF:61,21 Berryessa Snow Mountain: a monument without its lake
+../../audio/berryessa_monument-6bc30e27.m4a
+#EXTINF:80,22 Serpentine: the floor of an ancient ocean
+../../audio/ophiolite-30f53af7.m4a
+#EXTINF:93,23 The Franciscan Complex: California's geological junk drawer
+../../audio/franciscan_sage-b67c43bf.m4a
+#EXTINF:73,24 Lake Hennessey and the valleys behind the hills
+../../audio/hennessey-cf24e22a.m4a
+#EXTINF:109,25 Rutherford: a sea captain, a Godfather and the sacramental wine
+../../audio/rutherford-14185d45.m4a
+#EXTINF:110,26 Oakville: To Kalon, Mondavi and Opus One
+../../audio/oakville-e1a9f3b4.m4a
+#EXTINF:109,27 How the Napa Valley was built: volcanoes, faults and gravel
+../../audio/napa_geology-5e108c4c.m4a
+#EXTINF:102,28 The Wappo: the brave ones
+../../audio/wappo_story-5f243aec.m4a
+#EXTINF:93,29 Bust: phylloxera, Prohibition and the Depression
+../../audio/phylloxera_prohibition-f9769b74.m4a
+#EXTINF:113,30 The Judgment of Paris
+../../audio/judgment_paris-3a3faece.m4a
+#EXTINF:101,31 St. Helena: Beringer, Krug and the castle of wine
+../../audio/st_helena-29b2ab38.m4a
+#EXTINF:56,32 The happy accident of White Zinfandel
+../../audio/st_helena_more-7373640f.m4a
+#EXTINF:70,33 The Bale Grist Mill and the redwoods of Bothe
+../../audio/bale_mill-57d006f6.m4a
+#EXTINF:74,34 Castles, cable cars and caves
+../../audio/calistoga_wineries-d49b3802.m4a
+#EXTINF:89,35 Calistoga: a slip of the tongue
+../../audio/calistoga-ce0876e6.m4a
+#EXTINF:84,36 Robert Louis Stevenson's squatter honeymoon
+../../audio/calistoga_more-3be52130.m4a
+#EXTINF:64,37 Mount Saint Helena and the Russian princess
+../../audio/mt_st_helena-988090c7.m4a
+#EXTINF:155,38 Wine country on fire: 2017, 2020, and the insurance crisis
+../../audio/fires_story-a29740fc.m4a
+#EXTINF:106,39 Hot ground: the Sonoma Volcanics, Clear Lake and The Geysers
+../../audio/volcanoes_story-a17159dc.m4a
+#EXTINF:60,40 Knights Valley: a Mexican soldier's hunting preserve
+../../audio/knights_valley-ee0785da.m4a
+#EXTINF:57,41 Chalk Hill: white volcanic ash in the vineyards
+../../audio/chalk_hill-69314989.m4a
+#EXTINF:82,42 Alexander Valley: Kit Carson's brother and the Wappo name
+../../audio/alexander_valley-1a7c85ac.m4a
+#EXTINF:81,43 Healdsburg: a squatter's town and the birthplace of lemon pepper
+../../audio/healdsburg-8ed67af1.m4a
+#EXTINF:63,44 Isabelle Simi, a winery that outlasted Prohibition, and Lytton
+../../audio/healdsburg_more-1c6eb702.m4a
+#EXTINF:70,45 Westside Road: blueschist and Pinot Noir
+../../audio/westside_blueschist-c8c410c6.m4a
+#EXTINF:53,46 California's first commercial sawmill
+../../audio/el_molino-9c2db6a7.m4a
+#EXTINF:74,47 Meeting the Russian River
+../../audio/russian_river_intro-2d2f273b.m4a
+#EXTINF:101,48 The Pomo: the people of the Russian River
+../../audio/pomo_story-680b46c3.m4a
+#EXTINF:87,49 Floods, dams and the river that borrows from the Eel
+../../audio/river_floods-b0da57c2.m4a
+#EXTINF:54,50 Korbel: Bohemian brothers and California champagne
+../../audio/korbel-25a49ec4.m4a
+#EXTINF:44,51 Rio Nido: there is no Canyon Five
+../../audio/rio_nido-3ce945b3.m4a
+#EXTINF:86,52 Guerneville: from Stumptown to resort town
+../../audio/guerneville-c1cd3631.m4a
+#EXTINF:55,53 Armstrong Redwoods: the trees the loggers missed
+../../audio/guerneville_more-84582cdb.m4a

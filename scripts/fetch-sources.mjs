@@ -13,11 +13,21 @@ function samples(seg, step) {
   for (let i = 0; i < seg.pts.length; i++) if (seg.dist[i] >= next) { out.push({ p: seg.pts[i], s: seg.dist[i] }); next = seg.dist[i] + step; }
   return out;
 }
+// curl is used instead of fetch(): Node's fetch had connect timeouts and odd 429s on this network.
+import { execFile } from 'node:child_process';
+const UA_STR = 'california-road-trip-audio-guide/1.0 (https://github.com/mstra09/california-road-trip)';
+function curl(url) {
+  return new Promise(res => execFile('curl', ['-s', '--max-time', '40', '-A', UA_STR, '-w', '\n%{http_code}', url], { maxBuffer: 64e6 }, (e, out) => {
+    if (e) return res({ code: 0 });
+    const i = out.lastIndexOf('\n'); res({ code: +out.slice(i + 1), body: out.slice(0, i) });
+  }));
+}
 async function getJSON(url, tries = 4) {
   for (let i = 0; i < tries; i++) {
-    try { const r = await fetch(url, { headers: UA }); if (r.ok) return await r.json(); console.error('HTTP', r.status, url.slice(0, 100)); }
-    catch (e) { console.error('ERR', e.message); }
-    await sleep(1500 * (i + 1));
+    const r = await curl(url);
+    if (r.code === 200) { try { return JSON.parse(r.body); } catch (e) { console.error('bad json', url.slice(0, 100)); } }
+    else console.error('HTTP', r.code, url.slice(0, 100));
+    await sleep(3000 * (i + 1));
   }
   return null;
 }
@@ -29,9 +39,16 @@ console.log('samples', allSamples.length);
 
 // --- Wikipedia GeoSearch
 const pages = {};
-await pool(allSamples, 6, async (x) => {
-  const url = `https://en.wikipedia.org/w/api.php?action=query&list=geosearch&gscoord=${x.p[0]}|${x.p[1]}&gsradius=10000&gslimit=100&format=json&formatversion=2`;
-  const j = await getJSON(url);
+fs.mkdirSync('cache/wiki/geo', { recursive: true });
+await pool(allSamples, 1, async (x) => {
+  const cf = `cache/wiki/geo/${x.p[0]}_${x.p[1]}.json`;
+  let j = fs.existsSync(cf) ? JSON.parse(fs.readFileSync(cf, 'utf8')) : null;
+  if (!j) {
+    const url = `https://en.wikipedia.org/w/api.php?action=query&list=geosearch&gscoord=${x.p[0]}|${x.p[1]}&gsradius=10000&gslimit=100&format=json&formatversion=2&maxlag=5`;
+    j = await getJSON(url, 8);
+    if (j?.query) fs.writeFileSync(cf, JSON.stringify(j));
+    await sleep(250);
+  }
   for (const g of j?.query?.geosearch || []) {
     const pg = pages[g.pageid] ||= { pageid: g.pageid, title: g.title, lat: g.lat, lon: g.lon, segs: {} };
     pg.segs[x.seg] = Math.min(pg.segs[x.seg] ?? 1e9, Math.round(g.dist));
@@ -41,7 +58,8 @@ console.log('unique wiki pages', Object.keys(pages).length);
 // intro extracts + description + length, 20 at a time
 const ids = Object.keys(pages);
 const batches = []; for (let i = 0; i < ids.length; i += 20) batches.push(ids.slice(i, i + 20));
-await pool(batches, 3, async (b) => {
+await pool(batches, 1, async (b) => {
+  await sleep(250);
   const url = `https://en.wikipedia.org/w/api.php?action=query&prop=extracts|description|info&exintro=1&explaintext=1&exlimit=20&pageids=${b.join('|')}&format=json&formatversion=2`;
   const j = await getJSON(url);
   for (const p of j?.query?.pages || []) { const pg = pages[p.pageid]; if (!pg) continue; pg.desc = p.description || ''; pg.len = p.length || 0; pg.intro = (p.extract || '').slice(0, 1500); }

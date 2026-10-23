@@ -1,0 +1,61 @@
+{
+  "area": { "id": "napahills", "name": "Silverado Trail & the Napa hills" },
+  "clips": [
+    {
+      "id": "silverado_trail", "kind": "intro", "priority": 4, "category": "history",
+      "title": "The Silverado Trail: cinnabar, Black Bart and a marathon",
+      "lat": 38.3250, "lon": -122.2740, "roads": ["silverado"],
+      "text": "You're on the Silverado Trail, 29 miles up the eastern edge of the Napa Valley, a few miles east of Highway 29 and usually a lot quieter.\n\nIt began in 1852 as a trail built when floods made the main valley road impassable. Later it became the wagon road that linked the cinnabar mines on Mount Saint Helena, cinnabar being the ore of mercury, with San Pablo Bay, and it was the first permanent road between Napa and Calistoga. Silver was discovered in the valley in 1858. In the 1880s the stagecoach robber Charles Bolles, better known as Black Bart, preyed on travellers here. Things got safer when a motor bus service started in 1910. Today at least forty wineries sit along it, and every March it hosts the Napa Valley Marathon.\n\nThe hills just east of Napa are the Coombsville wine area, named after Nathan Coombs, the founder of Napa, who owned 2,525 acres here. Its soils are volcanic, with rhyolite tuff and lava from the Vaca Range and layers of ash from Mount George, and the fog from San Pablo Bay arrives early and lingers late.",
+      "sources": ["https://en.wikipedia.org/wiki/Silverado_Trail", "https://en.wikipedia.org/wiki/Coombsville_AVA"]
+    },
+    {
+      "id": "stags_leap", "priority": 5, "category": "wine",
+      "title": "Stags Leap: the Cabernet that beat Bordeaux",
+      "lat": 38.3990, "lon": -122.3227, "roads": ["silverado"],
+      "text": "You're passing through the Stags Leap District, a little pocket of land only about one mile by three, on the east side of the valley. It's shaped like a funnel, with hills on three sides.\n\nThis is where the Judgment of Paris red was grown. Warren Winiarski had fallen for wine while spending a year in Italy studying Machiavelli, and started making wine at home back in Chicago. He moved his family to Napa in 1968 and worked for the new Robert Mondavi winery. Then he tasted a homemade wine from Nathan Fay, a pioneer of Napa Cabernet, and said it had exactly what he'd hoped Napa could do. In 1970 he bought the 44 acres next door, for under 200,000 dollars, pulled out the prunes, cherries and walnuts, and planted Cabernet Sauvignon and Merlot. His 1973 Cabernet took first place in Paris in 1976, ahead of Château Mouton-Rothschild, Haut-Brion, Léoville Las Cases and Montrose. The magazine Decanter called it a victory that put California on the winemaking map.\n\nThe federal ruling that created the district says it's distinguished above all by its soil: clay loam from the Napa River, mixed with volcanic debris eroded from the Vaca Mountains. The geological maps also show a small granite-like intrusion here, the Stags Leap Stock, laced with quartz veins. And above it all, Atlas Peak rises to 2,663 feet, with its own high-altitude vineyards above the fog.",
+      "sources": ["https://en.wikipedia.org/wiki/Stag%27s_Leap_Wine_Cellars", "https://en.wikipedia.org/wiki/Stags_Leap_District_AVA", "https://en.wikipedia.org/wiki/Atlas_Peak_AVA", "https://macrostrat.org/api/v2/geologic_units/map?lat=38.40148&lng=-122.32782&scale=large"]
+    },
+    {
+      "id": "frogs_heitz", "priority": 3, "category": "wine",
+      "title": "Frog's Leap and Joe Heitz: jokes, organics and the turning point",
+      "lat": 38.4885, "lon": -122.4083, "roads": ["silverado"],
+      "text": "Two wineries along this stretch tell two sides of the modern Napa story.\n\nFrog's Leap, in Rutherford, was founded in 1981 by a doctor, Larry Turley, and a winemaker, John Williams, at a spot known as Frog Farm. Williams had got his start at Stag's Leap, so the name was a gentle parody: Frog Farm plus Stag's Leap. The corks say Ribbit. But the jokes hide serious farming: Frog's Leap was the first Napa winery to make wine from certified organically grown grapes, its vineyards are dry-farmed without irrigation, and since 2005 solar panels have supplied most of its power.\n\nHeitz Cellar, east of St. Helena, goes back further, to 1961, when the Napa Valley had only about two dozen wineries left, the fewest since Prohibition. Joe Heitz, a farm boy from Illinois, came west with the Army Air Corps, then studied at UC Davis, where in 1951 he was among the first seven graduates in viticulture and enology. He trained under André Tchelistcheff at Beaulieu, then bought an 8.5-acre vineyard for 5,000 dollars and went out on his own, before Mondavi. His Martha's Vineyard Cabernet became one of Napa's legendary wines, and it was one of the California reds tasted at the Judgment of Paris.",
+      "sources": ["https://en.wikipedia.org/wiki/Frog%27s_Leap_Winery", "https://en.wikipedia.org/wiki/Heitz_Wine_Cellars", "https://en.wikipedia.org/wiki/Judgment_of_Paris_(wine)"]
+    },
+    {
+      "id": "howell_mtn", "priority": 2, "category": "wine",
+      "title": "Howell Mountain: gold medals from the hilltops",
+      "lat": 38.5200, "lon": -122.4600, "roads": ["silverado", "sr29"],
+      "text": "Look east from around St. Helena and the forested ridge is Howell Mountain, part of the Vaca Range, around the village of Angwin. Its wine appellation only counts vineyards at 1,400 feet or higher, above the valley fog.\n\nThe mountain's wines were famous early. Two French winemakers, Brun and Chaix, set up there in 1877, and Charles Krug planted about a hundred acres there by 1884. The man who made Howell Mountain world-renowned was W. S. Keyes, who planted his vineyard in 1880. At the Paris Exposition of 1899 his wines won gold and bronze medals, and at the 1904 St. Louis World's Fair his claret won the grand prize. So the Judgment of Paris in 1976 wasn't the first time Napa had impressed the French. It was just the most famous.",
+      "sources": ["https://en.wikipedia.org/wiki/Howell_Mountain_AVA"]
+    },
+    {
+      "id": "white_sulphur", "priority": 2, "category": "history",
+      "title": "White Sulphur Springs: California's oldest resort",
+      "lat": 38.4970, "lon": -122.4930, "roads": ["sr29", "spring_mtn"],
+      "text": "Near St. Helena was White Sulphur Springs, considered the oldest warm mineral springs resort in Northern California. Local Indigenous people used the springs long before. Dr. Edward Bale, of the grist mill, is said to have found them in 1848, and a resort opened in 1852.\n\nIn the late 1800s, wealthy San Franciscans came by steamer across the bay to Soscol Landing near Napa, then by train, then by stagecoach. At its height, the grand hotel could take a thousand guests. After the 1906 earthquake it housed refugees. Clark Gable and Mark Twain both stayed. Fire was always the enemy: three grand hotels were lost over the years, and in 2020 the Glass Fire destroyed most of what was left.",
+      "sources": ["https://en.wikipedia.org/wiki/White_Sulphur_Springs_(California)", "https://en.wikipedia.org/wiki/St._Helena,_California", "https://en.wikipedia.org/wiki/Glass_Fire"]
+    },
+    {
+      "id": "spring_mtn_district", "priority": 3, "category": "wine",
+      "title": "Spring Mountain: a mountain that isn't one",
+      "lat": 38.5143, "lon": -122.5158, "roads": ["spring_mtn"],
+      "text": "You're climbing Spring Mountain Road into the Mayacamas. Funnily enough, Spring Mountain isn't really a mountain. The name was used for a whole green, well-watered area of the hills, full of springs and little streams, rather than for any one peak.\n\nIt was one of the first places in the Napa Valley to be recognised for grapes. Vines may have been planted as early as the Civil War, but the first documented vineyard was Charles Lemme's La Perla, 25 acres planted in 1874. In the 1880s Jacob and Frederick Beringer, who'd already built their winery in St. Helena, planted a vineyard up here too.\n\nToday the Spring Mountain District is its own appellation, with vineyards on steep east-facing slopes between 400 and 2,600 feet. Hillside vines give small crops, so for all its reputation, it makes less than two percent of Napa Valley wine. The road climbs on over the county line into Sonoma, where it becomes St. Helena Road and drops toward the headwaters of Mark West Creek.",
+      "sources": ["https://en.wikipedia.org/wiki/Spring_Mountain_District_AVA", "https://en.wikipedia.org/wiki/Mark_West_Creek"]
+    },
+    {
+      "id": "mayacamas", "priority": 3, "category": "geography",
+      "title": "The Mayacamas: a range that couldn't agree on its name",
+      "lat": 38.4208, "lon": -122.4168, "roads": ["oakville_grade", "spring_mtn"],
+      "text": "You're crossing the Mayacamas Mountains, the 52-mile range that separates the Napa and Sonoma valleys and runs north to Clear Lake. Its highest point is Cobb Mountain, at 4,724 feet, and other peaks include Mount Saint Helena and Hood Mountain. Rain falling on these slopes feeds Putah Creek, Sonoma Creek, Santa Rosa Creek and Mark West Creek, so the water from this one ridge ends up in the Sacramento Valley, San Pablo Bay and the Russian River.\n\nThe name comes from a Native village. The place-name scholar Erwin Gudde traced it to a Wappo village called Maiya'kma, about a mile south of Calistoga. Nobody could agree how to spell it. The federal naming board first decided on Miyakma, then in 1941 reversed itself, firmly rejecting Miyakma, Malacomas and Mayacamas, among others, in favour of Mayacmas. The confusion persists to this day, and a creek is still called Maacama Creek.\n\nThe road you're on crosses a volcanic landscape. The Macrostrat maps of the Oakville Grade and Trinity Road show white pumice-rich tuff containing ash matched to an eruption about 4.84 million years ago, grey andesite lava dated to about 7.9 million years, and flow-banded rhyolite of about 5.3 million. About ten million years ago, these mountains are thought to have been densely forested with Mendocino cypress.",
+      "sources": ["https://en.wikipedia.org/wiki/Mayacamas_Mountains", "https://macrostrat.org/api/v2/geologic_units/map?lat=38.40883&lng=-122.46952&scale=large", "https://macrostrat.org/api/v2/geologic_units/map?lat=38.38623&lng=-122.48985&scale=large", "https://macrostrat.org/api/v2/geologic_units/map?lat=38.39357&lng=-122.48019&scale=large"]
+    },
+    {
+      "id": "appellation_politics", "priority": 2, "category": "politics",
+      "title": "Who gets to say Calistoga? The politics of wine labels",
+      "lat": 38.5600, "lon": -122.5500, "roads": ["sr29", "silverado"],
+      "text": "Wine country runs on place names, and place names are big money. Every American Viticultural Area, or AVA, is created by the federal government after a petition, and once it exists, wineries have to use mostly grapes from that area to put its name on the label.\n\nThe Calistoga appellation shows how contentious that gets. It was proposed in 2003 by Bo Barrett of Chateau Montelena. Two wineries that already had Calistoga in their brand names, Calistoga Cellars and Calistoga Estate, fought it, because under the rules they'd have to use at least 85 percent Calistoga grapes or change their names. Compromises were proposed and rejected, the federal bureau paused all new AVAs while it rewrote its regulations, and the Calistoga AVA was finally approved in 2009. The wineries got three years to comply.\n\nNext door, Diamond Mountain District had a similar fight over a single word. The owners of Diamond Mountain Vineyard, holders of that trademark, argued that the appellation should be called Diamond Mountain District to avoid confusion, citing a 1913 school board document. They won. Over in Sonoma, Northern Sonoma, an appellation covering most of the county, was created in 1985 largely on the petition of the giant E and J Gallo winery, for its Gallo of Sonoma brand.",
+      "sources": ["https://en.wikipedia.org/wiki/Calistoga_AVA", "https://en.wikipedia.org/wiki/Diamond_Mountain_District_AVA", "https://en.wikipedia.org/wiki/Northern_Sonoma_AVA"]
+    }
+  ]
+}

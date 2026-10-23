@@ -1,0 +1,40 @@
+{
+  "area": { "id": "santarosa", "name": "Santa Rosa" },
+  "clips": [
+    {
+      "id": "santa_rosa", "kind": "intro", "priority": 4, "category": "history",
+      "title": "Santa Rosa: the slaughtering place and the Carrillo adobe",
+      "lat": 38.4405, "lon": -122.7140, "roads": ["sonoma_valley", "sr12_sebastopol", "us101", "calistoga_rd"],
+      "text": "You're in Santa Rosa, the largest city in California's wine country and the county seat of Sonoma County.\n\nBefore Europeans arrived, the Santa Rosa plain was home to a powerful Pomo group called the Bitakomtara, who controlled the area tightly: outsiders needed permission to pass, and faced harsh penalties if they didn't ask. They gathered for ceremonies on Santa Rosa Creek, near today's Spring Lake. Colonisation brought violence, land seizure, enslavement and smallpox, and the population was devastated, though descendants of the survivors still live in the region.\n\nThe first permanent European home here was built in the 1830s by the family of María López de Carrillo, a widow from San Diego whose daughter had married General Vallejo. With his help she was granted Rancho Cabeza de Santa Rosa in 1841, and her adobe stood just east of today's downtown. Before that, Mexican settlers from Sonoma slaughtered cattle where Santa Rosa Creek meets Matanzas Creek, and the name stuck: matanza means slaughter. In the 1850s her son Julio helped lay out the downtown grid around a central square, the pattern the city still follows.",
+      "sources": ["https://en.wikipedia.org/wiki/Santa_Rosa,_California", "https://en.wikipedia.org/wiki/Rancho_Cabeza_de_Santa_Rosa"]
+    },
+    {
+      "id": "burbank", "priority": 4, "category": "history",
+      "title": "Luther Burbank: the plant wizard of Santa Rosa",
+      "lat": 38.4365, "lon": -122.7105, "roads": ["sonoma_valley", "sr12_sebastopol", "us101"],
+      "text": "Near downtown Santa Rosa is the house and garden of Luther Burbank, one of the most famous plant breeders who ever lived.\n\nHe was born in Massachusetts in 1849, the thirteenth of fifteen children. As a young man on a small farm there, he developed a new potato, sold the rights for 150 dollars, and used the money to come to Santa Rosa in 1875. Here, inspired by Charles Darwin's writing on plant and animal breeding, he set up greenhouses and experimental fields and crossed plants on a huge scale. Over 55 years he developed more than 800 strains and varieties: the Shasta daisy, the Santa Rosa plum, the Flaming Gold nectarine, a white blackberry and a spineless cactus for cattle feed.\n\nHis most consequential creation came almost by accident. A natural variant of his potato, with russet skin, became the Russet Burbank, now the most widely grown potato in the United States and the world's leading potato for food processing. If you've eaten McDonald's fries, there's a good chance you've eaten a Luther Burbank. He lived here for over fifty years, and he's buried in the garden under a cedar of Lebanon.",
+      "sources": ["https://en.wikipedia.org/wiki/Luther_Burbank", "https://en.wikipedia.org/wiki/Luther_Burbank_Home_and_Gardens"]
+    },
+    {
+      "id": "schulz", "priority": 4, "category": "quirky",
+      "title": "Charles Schulz, Snoopy and the ice rink",
+      "lat": 38.4600, "lon": -122.7360, "roads": ["us101", "guerneville_rd", "petrified_forest"],
+      "text": "Santa Rosa was the home of Charles Schulz, creator of Peanuts, Charlie Brown and Snoopy. Schulz grew up in Saint Paul, Minnesota, the son of a barber, and loved ice hockey. He moved to Northern California with his family in 1958, and kept drawing Peanuts until his death in 2000.\n\nIn 1969, he and his first wife Joyce built an ice rink here, the Redwood Empire Ice Arena, known to everyone as Snoopy's Home Ice. It has a café called the Warm Puppy, and every summer it hosts Snoopy's Senior World Hockey Tournament, with sixty-odd teams of older players from around the world. Schulz was inducted into the U.S. Hockey Hall of Fame in 1983.\n\nJust down the street is the Charles M. Schulz Museum, opened in 2002. Its great hall has a 22-foot ceramic mural made of 3,588 Peanuts strips that together form an image of Lucy holding the football for Charlie Brown.\n\nAnd here's a lovely Santa Rosa coincidence. Schulz's first published drawing, in 1937, was a sketch of his family dog Spike, who ate pins, tacks and razor blades. He sent it to Ripley's Believe It or Not, and it ran in the syndicated panel. Robert Ripley, who created Believe It or Not, was born right here in Santa Rosa.",
+      "sources": ["https://en.wikipedia.org/wiki/Charles_M._Schulz", "https://en.wikipedia.org/wiki/Snoopy%27s_Home_Ice", "https://en.wikipedia.org/wiki/Charles_M._Schulz_Museum_and_Research_Center", "https://en.wikipedia.org/wiki/Robert_Ripley"]
+    },
+    {
+      "id": "ripley", "priority": 2, "category": "quirky",
+      "title": "Believe It or Not: Robert Ripley of Santa Rosa",
+      "lat": 38.4400, "lon": -122.7250, "roads": ["sr12_sebastopol", "us101"],
+      "text": "Robert Ripley, born in Santa Rosa in 1890, turned weird facts into an empire. He left high school after his father died, worked as a newspaper sports cartoonist from the age of sixteen, and moved to New York in 1913. In December 1918 he drew his first Believe It or Not! cartoon of strange feats and facts. Readers loved it, and sent in their own oddities: unusually shaped vegetables, strangely marked pets.\n\nHe took accuracy seriously enough to hire a full-time researcher, a polyglot named Norbert Pearlroth. In 1929 the newspaper magnate William Randolph Hearst syndicated the panel in 360 newspapers and 17 languages, and radio and television shows followed. Ripley also, believe it or not, became the New York State handball champion in 1926. A suitable Santa Rosan for a day full of oddities.",
+      "sources": ["https://en.wikipedia.org/wiki/Robert_Ripley"]
+    },
+    {
+      "id": "rodgers_creek", "priority": 4, "category": "geology",
+      "title": "The Rodgers Creek Fault: the Hayward Fault's northern half",
+      "lat": 38.4560, "lon": -122.6800, "roads": ["sonoma_valley", "calistoga_rd", "sr12_sebastopol", "us101"],
+      "text": "Somewhere beneath this part of Santa Rosa runs one of the most dangerous faults in the Bay Area.\n\nThe Hayward Fault, which runs under Berkeley, Oakland and Hayward, has a northern counterpart on this side of the bay: the Rodgers Creek Fault, which passes through Santa Rosa. In 2016, researchers showed the two are linked under San Pablo Bay, forming one Hayward-Rodgers Creek Fault about 120 miles long, from north of Healdsburg to San Jose. Like the San Andreas, it's a right-lateral fault: stand on one side, and the other side slides to your right. It takes up its share of the motion between the Pacific and North American plates.\n\nSanta Rosa knows what that means. On the evening of the 1st of October 1969, two earthquakes, magnitude 5.6 and 5.7, struck about an hour and twenty minutes apart, a few miles north of the city on the neighbouring Healdsburg Fault. Chimneys fell, sidewalks buckled, pipes burst, and one person died; the damage was worse than expected for their size, and modelling suggests the city sits where a sediment-filled basin amplifies the shaking. Because the quakes struck in the evening, few people were out on the streets. The city then set about retrofitting its old brick buildings.",
+      "sources": ["https://en.wikipedia.org/wiki/Hayward_Fault_Zone", "https://en.wikipedia.org/wiki/1969_Santa_Rosa_earthquakes"]
+    }
+  ]
+}

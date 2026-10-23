@@ -1,0 +1,52 @@
+{
+  "area": { "id": "northsonoma", "name": "Knights Valley, Alexander Valley & Healdsburg" },
+  "clips": [
+    {
+      "id": "knights_valley", "priority": 3, "category": "history",
+      "title": "Knights Valley: a Mexican soldier's hunting preserve",
+      "lat": 38.6270, "lon": -122.6830, "roads": ["sr128_alexander"],
+      "text": "Over the hill from Calistoga, Highway 128 drops into Knights Valley, a small, quiet valley about five miles long, with the warmest climate in Sonoma County.\n\nIn 1843 the Mexican governor rewarded a soldier from the Sonoma presidio, José de los Santos Berreyesa, with a grant of nearly 18,000 acres called Rancho Mallacomes, which took in this valley and even the hot springs at what's now Calistoga. Berreyesa kept the valley as his private hunting preserve, and the adobe hunting lodge he built still survives.\n\nThe valley's English name comes from Thomas Knight, a native of Maine who had taken part in the Bear Flag Revolt in Sonoma in 1846. He bought a large part of the rancho from Berreyesa, and had his title confirmed in 1853. Today it's a wine appellation of its own, one of Sonoma's five original ones, with about 2,000 acres of vines and only a few dozen growers.",
+      "sources": ["https://en.wikipedia.org/wiki/Knights_Valley_AVA"]
+    },
+    {
+      "id": "chalk_hill", "priority": 2, "category": "geology",
+      "title": "Chalk Hill: white volcanic ash in the vineyards",
+      "lat": 38.6400, "lon": -122.7450, "roads": ["sr128_alexander", "us101"],
+      "text": "The hills to the south-west are the Chalk Hill wine area, named after a prominent hill. The chalk isn't really chalk at all. It's white tuff, volcanic ash from the eruptions of the Mount Saint Helena area, the same volcanism that buried the Petrified Forest. That pale, ashy soil is said to suit white grapes like Chardonnay and Sauvignon Blanc. A warm thermal belt runs through the area, and harvest here often comes in September, weeks before the neighbouring regions.\n\nA little further on, along Alexander Valley Road, the Macrostrat maps show a basalt flow of the Sonoma Volcanics and the Glen Ellen Formation, the ash-rich gravel with obsidian pebbles that we met in the Sonoma Valley. These are some of the westernmost outliers of the big volcanic field, before the land turns to the sea-floor rocks of the Franciscan Complex closer to the coast.",
+      "sources": ["https://en.wikipedia.org/wiki/Chalk_Hill_AVA", "https://macrostrat.org/api/v2/geologic_units/map?lat=38.66039&lng=-122.84176&scale=large", "https://macrostrat.org/api/v2/geologic_units/map?lat=38.66176&lng=-122.85017&scale=large"]
+    },
+    {
+      "id": "alexander_valley", "kind": "intro", "priority": 4, "category": "history",
+      "title": "Alexander Valley: Kit Carson's brother and the Wappo name",
+      "lat": 38.6600, "lon": -122.8150, "roads": ["sr128_alexander"],
+      "text": "You're entering the Alexander Valley, the broad, vine-filled valley of the Russian River north of Healdsburg. It's the largest and most fully cultivated wine region in Sonoma County, and stretches from the river east to the Mayacamas foothills, with more than a hundred wineries.\n\nThe story begins with a Mexican land grant, Rancho Sotoyome, almost 49,000 acres along the river, named after a Wappo group, the Satiyomes. It went to Henry Fitch, a San Diego sea captain who was General Vallejo's brother-in-law. Fitch never lived here. He hired a manager, Cyrus Alexander, under a four-year deal, after which Alexander would get two square leagues of land and some of the livestock. Alexander settled on his tract, and the valley took his name, although the American land commission later rejected his claim to it. His successor as ranch manager was Mose Carson, the brother of the frontiersman Kit Carson.\n\nThe valley's east side is bounded by the Healdsburg Fault, which caused the 1969 Santa Rosa earthquakes, and which is thought capable of an earthquake as big as magnitude 7.5. Among the wineries is Jordan, founded in 1972, whose French-style château was completed in 1976. Its long-time winemaker was hired and mentored by André Tchelistcheff, the Beaulieu legend we met in Rutherford.",
+      "sources": ["https://en.wikipedia.org/wiki/Alexander_Valley_AVA", "https://en.wikipedia.org/wiki/Rancho_Sotoyome", "https://en.wikipedia.org/wiki/Healdsburg_Fault", "https://en.wikipedia.org/wiki/Jordan_Vineyard_%26_Winery"]
+    },
+    {
+      "id": "healdsburg", "priority": 4, "category": "history",
+      "title": "Healdsburg: a squatter's town and the birthplace of lemon pepper",
+      "lat": 38.6105, "lon": -122.8695, "roads": ["sr128_alexander", "us101", "westside"],
+      "text": "Healdsburg sits on the Russian River where three famous wine regions meet: the Alexander Valley, the Dry Creek Valley and the Russian River Valley. The Pomo built villages in the open land along the river here.\n\nThe town is named after Harmon Heald, an Ohio businessman who squatted on Rancho Sotoyome from 1850. When the Fitch family auctioned off land to pay their taxes, he bought a piece in 1857, and the town was incorporated in 1867. The railroad arrived in 1872. For decades this was orchard country. When Prohibition shut down the wineries of the Dry Creek Valley, which had been one of California's most prominent Zinfandel regions, much of it was turned over to plums and prunes. And one splendidly specific claim: the first commercial lemon pepper seasoning was developed in Healdsburg, in 1967.\n\nIf you cross the old steel truss bridge into town, that's the Healdsburg Memorial Bridge, built in 1921 to carry the Redwood Highway, at the time the only steel bridge across the Russian River. It's one of only thirteen bridges of its design, a Pennsylvania truss, in the whole United States. Settlers forded the river at this spot from the 1850s, and the swimming beach beside it is still popular.",
+      "sources": ["https://en.wikipedia.org/wiki/Healdsburg,_California", "https://en.wikipedia.org/wiki/Rancho_Sotoyome", "https://en.wikipedia.org/wiki/Dry_Creek_Valley_AVA", "https://en.wikipedia.org/wiki/Healdsburg_Memorial_Bridge"],
+      "more": {
+        "title": "Isabelle Simi, a winery that outlasted Prohibition, and Lytton",
+        "text": "Healdsburg's Simi Winery was founded in San Francisco in 1876 by two Italian brothers who'd come for the Gold Rush, and moved here in 1881, buying a winery for 2,250 dollars in gold coin. From 1904 it was run by Giuseppe Simi's daughter, Isabelle, who kept making wine all through Prohibition and stored it in the stone cellars. When repeal came in 1933, Simi was one of the few companies with wine ready to sell. In 1973 the winery hired Maryann Graf, the first woman to graduate from an American university with a degree in winemaking.\n\nJust north of town, Lytton has an extraordinary history in a single building site: a luxury resort in 1872, then a boys' military school, a sanitarium, and for decades a Salvation Army orphanage. In 2017, the Lytton Band of Pomo Indians bought the site for around 30 million dollars, after years of trying to recover land lost when the federal government dissolved California's rancherias.",
+        "sources": ["https://en.wikipedia.org/wiki/Simi_Winery", "https://en.wikipedia.org/wiki/Lytton,_California"]
+      }
+    },
+    {
+      "id": "windsor", "priority": 2, "category": "history",
+      "title": "Windsor: blackbird field and a Pony Express postmaster",
+      "lat": 38.5470, "lon": -122.8100, "roads": ["us101"],
+      "text": "The town of Windsor, beside the freeway, was once a Southern Pomo village called Tsoliikawai, which means blackbird field. Its English name came from Hiram Lewis, a Pony Express rider who became the first postmaster in 1855 and thought the countryside looked like the grounds of Windsor Castle back in his native England.\n\nWindsor had a rough start to the twentieth century: a fire destroyed the town centre in May 1905, and the 1906 earthquake damaged many of the buildings still being repaired. In the Second World War, the Army Air Forces built a training base on the south side of town, now the Charles M. Schulz Sonoma County Airport, and in 1943 a camp for German prisoners of war was set up west of downtown, on the site of an old migrant labour camp.",
+      "sources": ["https://en.wikipedia.org/wiki/Windsor,_California"]
+    },
+    {
+      "id": "westside_blueschist", "priority": 3, "category": "geology",
+      "title": "Westside Road: blueschist and Pinot Noir",
+      "lat": 38.5800, "lon": -122.8790, "roads": ["westside"],
+      "text": "Westside Road winds along the west bank of the Russian River, through some of the most celebrated Pinot Noir country in California. This is the heart of the Russian River Valley wine region, cool and foggy, where commercial wineries took off in the 1870s.\n\nBut look at the rocks too. The Macrostrat geological maps show this stretch crossing the Eastern Belt of the Franciscan Complex, including blueschist-facies metagraywacke: sea-floor sandstone that was carried down a subduction zone, squeezed at high pressure but relatively low temperature, and turned blue with the mineral glaucophane, before somehow finding its way back to the surface. Blueschist is rare worldwide, because it can only form in a subduction zone and then has to be brought back up to the surface. Further along, the maps show mélange, the jumbled, sheared rock full of blocks, and patches of old river and marine terrace gravels, lying on flat benches cut into the bedrock.\n\nSo on this lovely, winding road, you're driving over pieces of an ancient ocean floor that went down into the Earth and came back.",
+      "sources": ["https://macrostrat.org/api/v2/geologic_units/map?lat=38.59274&lng=-122.88077&scale=large", "https://macrostrat.org/api/v2/geologic_units/map?lat=38.58364&lng=-122.88062&scale=large", "https://macrostrat.org/api/v2/geologic_units/map?lat=38.60098&lng=-122.88524&scale=large", "https://en.wikipedia.org/wiki/Blueschist", "https://en.wikipedia.org/wiki/Russian_River_Valley_AVA"]
+    }
+  ]
+}

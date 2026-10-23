@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Road Guide">
+<meta name="theme-color" content="#0b0d10">
+<title>Wine Country Road Guide</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+  <header id="status">
+    <span class="chip" id="chipGps">GPS —</span>
+    <span class="chip" id="chipSpeed">— mph</span>
+    <span class="chip" id="chipRoad">road —</span>
+    <span class="chip" id="chipWake">screen —</span>
+    <span class="chip" id="chipOffline">offline —</span>
+  </header>
+
+  <!-- START -->
+  <section id="startView" class="view">
+    <h1>Wine Country Road Guide</h1>
+    <p class="dim">Sacramento → Napa &amp; Sonoma → Guerneville. GPS-triggered stories, fully offline once cached.</p>
+    <div class="card">
+      <div id="cacheLine">Offline ready: checking…</div>
+      <div class="bar"><div id="cacheBar"></div></div>
+      <div class="dim small" id="cacheDetail"></div>
+    </div>
+    <button id="btnStart" class="huge primary">▶ Start</button>
+    <p class="dim small">Start unlocks audio, asks for location, keeps the screen awake, and finishes downloading everything for offline use. Set Auto-Lock to Never and keep the phone on the charger.</p>
+  </section>
+
+  <!-- NOW -->
+  <section id="nowView" class="view hidden">
+    <div class="card now">
+      <div class="dim small" id="nowArea"></div>
+      <h2 id="nowTitle">Waiting for the next story…</h2>
+      <div id="nowProgress" class="bar thin"><div id="nowBar"></div></div>
+      <div id="nowText" class="transcript"></div>
+      <div id="nowSources" class="small"></div>
+    </div>
+    <div class="controls">
+      <button id="btnPause" class="ctl">⏸<span>Pause</span></button>
+      <button id="btnSkip" class="ctl">⏭<span>Skip</span></button>
+      <button id="btnReplay" class="ctl">↺<span>Replay</span></button>
+      <button id="btnMore" class="ctl">➕<span>Tell me more</span></button>
+      <button id="btnNearest" class="ctl">📍<span>Nearest</span></button>
+    </div>
+    <div class="card">
+      <h3>Coming up</h3>
+      <ul id="upcoming" class="list"></ul>
+    </div>
+    <div class="card dim small" id="diag"></div>
+  </section>
+
+  <!-- CLIPS -->
+  <section id="clipsView" class="view hidden">
+    <input id="clipSearch" type="search" placeholder="Search clips…">
+    <div id="clipList"></div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section id="setView" class="view hidden">
+    <div class="card">
+      <h3>Talkativeness</h3>
+      <div class="seg" data-setting="talk"><button data-v="sparse">Sparse</button><button data-v="normal">Normal</button><button data-v="chatty">Chatty</button></div>
+      <h3>Playback speed</h3>
+      <div class="seg" data-setting="rate"><button data-v="0.9">0.9×</button><button data-v="1">1×</button><button data-v="1.1">1.1×</button><button data-v="1.25">1.25×</button></div>
+      <h3>Music mode (how clips interact with Spotify)</h3>
+      <div class="seg wrap" data-setting="mode">
+        <button data-v="A">A plain</button><button data-v="B">B transient</button><button data-v="C">C transient-solo</button>
+        <button data-v="D">D playback</button><button data-v="E">E speech</button><button data-v="F">F ambient</button>
+      </div>
+      <p class="dim small" id="modeHint"></p>
+      <p><a class="btnlink" href="audio-test/">Open the audio test page</a></p>
+    </div>
+    <div class="card">
+      <h3>Simulator</h3>
+      <p class="dim small">Drives a route through the real trigger engine. GPS is ignored while it runs.</p>
+      <select id="simRoute"></select>
+      <div class="seg" data-setting="simSpeed"><button data-v="1">1×</button><button data-v="5">5×</button><button data-v="15">15×</button><button data-v="30">30×</button><button data-v="60">60×</button></div>
+      <label class="small"><input type="checkbox" id="simAudio" checked> Play real audio (otherwise clips are timed silently)</label>
+      <div class="row"><button id="btnSim" class="primary">Start simulator</button><button id="btnSimStop">Stop</button></div>
+      <div class="dim small" id="simStatus"></div>
+    </div>
+    <div class="card">
+      <h3>History</h3>
+      <p class="dim small" id="histInfo"></p>
+      <button id="btnReset" class="danger">Reset played history</button>
+      <button id="btnRecache">Re-check offline files</button>
+    </div>
+  </section>
+
+  <!-- EXPORTS -->
+  <section id="expView" class="view hidden">
+    <div class="card">
+      <h3>No-GPS backup</h3>
+      <p class="dim small">If GPS misbehaves: play a route as an ordered playlist, follow the printable cue sheet, or add the route as a podcast (Apple Podcasts → Library → ⋯ → Follow a Show by URL).</p>
+      <div id="expList"></div>
+    </div>
+    <div class="card small dim">
+      Narration grounded in Wikipedia, Macrostrat, USGS and other public sources; each clip links its sources. Voice: Kokoro TTS (local, open-weight).
+    </div>
+  </section>
+
+  <nav id="tabs">
+    <button data-view="nowView" class="on">🎧<span>Now</span></button>
+    <button data-view="clipsView">📚<span>Clips</span></button>
+    <button data-view="expView">🗺️<span>Backup</span></button>
+    <button data-view="setView">⚙️<span>Settings</span></button>
+  </nav>
+</div>
+
+<div id="tapOverlay" class="hidden"><div>TAP TO PLAY</div><div class="small">The phone blocked audio. One tap fixes it.</div></div>
+
+<audio id="player" preload="auto" playsinline></audio>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

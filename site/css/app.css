@@ -1,0 +1,53 @@
+:root { --bg:#0b0d10; --card:#161a20; --card2:#1d232c; --fg:#f2f4f7; --dim:#9aa4b2; --acc:#4fb3ff; --ok:#3ddc84; --bad:#ff5a5f; --warn:#ffb347; }
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin:0; background:var(--bg); color:var(--fg); font:18px/1.45 -apple-system, system-ui, sans-serif; }
+body { padding: env(safe-area-inset-top) 0 0; overscroll-behavior: none; }
+#app { max-width: 720px; margin: 0 auto; padding: 8px 16px 110px; }
+h1 { font-size: 30px; margin: 18px 0 6px; }
+h2 { font-size: 26px; margin: 4px 0 8px; line-height: 1.2; }
+h3 { font-size: 18px; margin: 14px 0 8px; color: var(--dim); text-transform: uppercase; letter-spacing: .04em; }
+a { color: var(--acc); }
+.dim { color: var(--dim); }
+.small { font-size: 15px; }
+.hidden { display: none !important; }
+.card { background: var(--card); border-radius: 16px; padding: 14px 16px; margin: 12px 0; }
+button, .btnlink { font: inherit; font-weight: 600; color: var(--fg); background: #2a3140; border: 0; border-radius: 14px; padding: 14px 18px; min-height: 56px; margin: 4px 6px 4px 0; display: inline-block; text-decoration: none; }
+button:active { filter: brightness(1.3); }
+button.primary { background: var(--acc); color: #001425; }
+button.danger { background: #4a1f24; color: #ffb3b5; }
+button.huge { width: 100%; font-size: 30px; min-height: 96px; margin: 16px 0; }
+#status { position: sticky; top: 0; z-index: 5; background: var(--bg); display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 0; }
+.chip { font-size: 13px; background: var(--card2); border-radius: 999px; padding: 4px 10px; color: var(--dim); white-space: nowrap; }
+.chip.ok { color: var(--ok); } .chip.bad { color: var(--bad); } .chip.warn { color: var(--warn); }
+.bar { height: 12px; background: #263040; border-radius: 6px; overflow: hidden; margin: 8px 0; }
+.bar > div { height: 100%; width: 0; background: var(--ok); transition: width .3s; }
+.bar.thin { height: 6px; } .bar.thin > div { background: var(--acc); }
+.transcript { font-size: 19px; line-height: 1.55; max-height: 42vh; overflow-y: auto; white-space: pre-wrap; }
+.controls { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.ctl { font-size: 28px; padding: 10px 4px; min-height: 84px; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.ctl span { font-size: 12px; font-weight: 500; color: var(--dim); margin-top: 4px; }
+.list { list-style: none; padding: 0; margin: 0; }
+.list li { padding: 10px 0; border-bottom: 1px solid #263040; display: flex; justify-content: space-between; gap: 12px; }
+.list li .d { color: var(--dim); white-space: nowrap; }
+.seg { display: flex; flex-wrap: wrap; gap: 6px; }
+.seg button { flex: 1 1 auto; margin: 0; min-height: 52px; padding: 10px 12px; font-size: 16px; }
+.seg button.on { background: var(--acc); color: #001425; }
+.row { display: flex; gap: 8px; margin-top: 10px; }
+select, input[type=search] { font: inherit; width: 100%; padding: 14px; border-radius: 12px; border: 0; background: var(--card2); color: var(--fg); margin: 8px 0; }
+#tabs { position: fixed; bottom: 0; left: 0; right: 0; display: grid; grid-template-columns: repeat(4, 1fr); background: #11151a; padding: 6px 8px calc(6px + env(safe-area-inset-bottom)); border-top: 1px solid #222a35; z-index: 10; }
+#tabs button { margin: 0 3px; font-size: 24px; min-height: 64px; display: flex; flex-direction: column; align-items: center; background: transparent; }
+#tabs button span { font-size: 12px; color: var(--dim); }
+#tabs button.on { background: var(--card2); }
+#tabs button.on span { color: var(--fg); }
+.area h3 { color: var(--fg); text-transform: none; font-size: 20px; }
+.clip { padding: 12px 0; border-bottom: 1px solid #263040; }
+.clip .t { font-weight: 600; }
+.clip .meta { font-size: 13px; color: var(--dim); }
+.clip.played .t::after { content: " ✓"; color: var(--ok); }
+.clip button { min-height: 44px; padding: 8px 14px; font-size: 15px; }
+.clip details { font-size: 16px; color: #d0d6de; }
+#tapOverlay { position: fixed; inset: 0; z-index: 100; background: #c0161d; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 54px; font-weight: 800; text-align: center; animation: flash 1s infinite; }
+#tapOverlay .small { font-size: 18px; font-weight: 500; margin-top: 12px; }
+@keyframes flash { 50% { background: #5a0a0d; } }
+.exp { padding: 10px 0; border-bottom: 1px solid #263040; }
+.exp a { display: inline-block; margin: 6px 12px 0 0; }

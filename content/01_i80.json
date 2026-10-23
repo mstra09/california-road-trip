@@ -1,0 +1,309 @@
+{
+ "area": {
+  "id": "i80",
+  "name": "Sacramento → Fairfield (I-80)"
+ },
+ "clips": [
+  {
+   "id": "trip_intro",
+   "kind": "intro",
+   "priority": 5,
+   "category": "welcome",
+   "title": "Welcome aboard: leaving the capital",
+   "lat": 38.5803,
+   "lon": -121.5085,
+   "roads": [
+    "i80"
+   ],
+   "text": "Good morning, and welcome aboard. I'll be your guide from the capital to the redwoods: across the floodplain, over the hills into Napa or Sonoma, and down to the Russian River at Guerneville. I'll chime in when there's something worth knowing, and keep quiet when there isn't. Tap the screen any time to see what I'm saying, or to skip me.\n\nWe're starting beside the Sacramento River, the reason this city exists at all. Sacramento grew up on the waterfront, because the river was the highway to the coast. Old Sacramento, the riverside historic district, still has its nineteenth-century brick buildings, the most notable dating from just after a disastrous fire in 1852. Before the levees went up, the area flooded so often that the city raised its streets a whole storey, which is why there are still tunnels and buried storefronts under Old Sac.\n\nThat golden lift bridge you may have glimpsed is the Tower Bridge, opened in 1935, with towers 160 feet tall. When it was dedicated, a thousand homing pigeons were released to carry the news across California. It was painted gold in 2002 after a public vote, which some locals still grumble about. Right, let's head west.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Old_Sacramento_State_Historic_Park",
+    "https://en.wikipedia.org/wiki/Tower_Bridge_(Sacramento,_California)",
+    "https://en.wikipedia.org/wiki/Sacramento,_California"
+   ],
+   "more": {
+    "title": "Sam Brannan, California's first millionaire",
+    "text": "One name will follow us all day: Sam Brannan. He was a printer and a Mormon elder who sailed a shipload of Latter-day Saint emigrants round Cape Horn to California in 1846, bringing a printing press and a complete flour mill with him. He founded the California Star, San Francisco's first newspaper, and he's considered the first person to publicise the Gold Rush. His stores supplied the rush, and the profits made him California's first millionaire. He bought land everywhere, including a hot-springs valley at the far end of the Napa Valley that we may pass through later: he named it Calistoga.\n\nIt didn't end well. He helped form San Francisco's first vigilance committee, which got him disfellowshipped from his church. His wife divorced him, and he had to sell much of his real estate to pay her half. Brannan died poor and fairly obscure. In Old Sacramento, the Sam Brannan House, built in 1853, still stands.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Samuel_Brannan",
+     "https://en.wikipedia.org/wiki/Old_Sacramento_State_Historic_Park"
+    ]
+   }
+  },
+  {
+   "id": "west_sac",
+   "priority": 2,
+   "category": "history",
+   "title": "West Sacramento: the Town of Washington",
+   "lat": 38.5735,
+   "lon": -121.53,
+   "text": "You've crossed into Yolo County and the city of West Sacramento. Its story begins with a widow. In 1849, James McDowell was shot dead in a bar argument he'd apparently started, leaving his wife Margaret with three daughters and 600 acres. She hired a surveyor, divided the land into forty-one blocks, and sold lots in a new settlement she called the Town of Washington. It became a rest stop for travellers struggling through the marshes towards Sacramento, and a busy fishing and farming centre, shipping salmon, sturgeon and crayfish as far as San Francisco.\n\nWashington was later renamed Broderick, and together with Bryte and West Sacramento was known as East Yolo, until the three finally incorporated as one city in 1987. Today the big industry is the Port of West Sacramento, which opened to ocean-going ships in 1963 at the end of a 43-mile deep-water channel dredged up from Suisun Bay. It's an inland port that ships out bulk farm products, rice especially.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Sacramento,_California",
+    "https://en.wikipedia.org/wiki/Port_of_Sacramento"
+   ]
+  },
+  {
+   "id": "yolo_bypass",
+   "priority": 5,
+   "category": "geography",
+   "title": "The Yolo Bypass: a floodplain on purpose",
+   "lat": 38.564,
+   "lon": -121.615,
+   "roads": [
+    "i80"
+   ],
+   "text": "Look out at the flat land on both sides. You're on the Yolo Causeway, a three-mile viaduct across the Yolo Bypass, and this is one of the cleverest pieces of flood control in America. Rather than building ever-higher walls around Sacramento, engineers gave the river somewhere else to go.\n\nUpstream, at a concrete spillway called the Fremont Weir, when the Sacramento River rises past a set height the excess simply pours over the top and into this basin. A second set of gates just north of West Sacramento can be opened by hand. In a big flood the bypass can carry several times the flow of the river itself, a shallow inland sea about forty miles long and three miles wide, draining south into the Delta. The causeway you're on stays above it.\n\nThe idea came from bitter experience. Severe floods in 1862 and 1878 drowned the valley, and Congress approved the Sacramento River Flood Control Project in 1911. The bypass was laid out by the Army Corps of Engineers in the early 1930s.\n\nIn dry months most of it is farmland, about three-quarters privately owned. Much of the rest is the Yolo Bypass Wildlife Area, where rice fields are flooded after harvest, and thousands of ducks and shorebirds settle in plain view of Interstate 80. So if you see water and birds out there, that's not a mistake. That's the plan working.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yolo_Bypass",
+    "https://en.wikipedia.org/wiki/Yolo_Causeway",
+    "https://en.wikipedia.org/wiki/Yolo_Bypass_Wildlife_Area"
+   ],
+   "more": {
+    "title": "The causeway, the Tule Jake Road, and a quarter of a million bats",
+    "text": "Before any causeway, crossing this basin in the wet season meant a ferry, or a long detour south through Stockton. The first vehicle to make it across each summer set the line of the seasonal Tule Jake Road. The first causeway opened in 1916, a two-lane timber and concrete trestle, celebrated with a three-day party. In 1928 it was folded into the Lincoln Highway, the first road across America, and later carried Highway 40.\n\nToday's twin structures date from 1962. Traffic reporters call them the long bridge and the short bridge. They're officially named for two Highway Patrol officers killed near here in 1978.\n\nAnd underneath you right now, at least in summer, live bats. Roughly a quarter of a million Mexican free-tailed bats migrate to the Yolo Causeway every June. They roost in the expansion joints between the concrete segments and feed on insects from the wetlands. It's one of the largest bat colonies in California, and the local foundation runs bat-watching tours at dusk.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Yolo_Causeway",
+     "https://en.wikipedia.org/wiki/Yolo_Bypass_Wildlife_Area"
+    ]
+   }
+  },
+  {
+   "id": "davis",
+   "priority": 3,
+   "category": "history",
+   "title": "Davis: the university farm",
+   "lat": 38.542,
+   "lon": -121.75,
+   "text": "Coming up is Davis, a town that began as a railroad stop and became one of the most important agricultural universities on earth. The depot opened in 1868 and was named Davisville after Jerome C. Davis, a prominent local farmer. In 1907 the post office got tired of the extra syllables and shortened it to Davis.\n\nIn 1905 the state legislature passed the University Farm Bill, and Governor George Pardee chose Davis from about fifty candidate sites. Berkeley's agriculture dean, Eugene Hilgard, had admitted that Berkeley's foggy coastal climate was terrible for farming. The University Farm opened to students in 1908 and grew into UC Davis. Its veterinary school is the largest in the United States.\n\nDavis is also famously flat, which helped make it a haven for cyclists. It's called the bicycling capital of America, and it's home to the United States Bicycling Hall of Fame. A couple more Davis oddities: students built a cluster of fibreglass geodesic domes, inspired by Buckminster Fuller, back in 1972, and they're still lived in. And Muir Commons, finished in 1991, is known as the first newly built cohousing community in the United States.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Davis,_California",
+    "https://en.wikipedia.org/wiki/University_of_California,_Davis",
+    "https://en.wikipedia.org/wiki/United_States_Bicycling_Hall_of_Fame",
+    "https://en.wikipedia.org/wiki/Baggins_End",
+    "https://en.wikipedia.org/wiki/Muir_Commons"
+   ],
+   "more": {
+    "title": "UC Davis and the wine revolution",
+    "text": "UC Davis turns up again and again in the wine story you'll hear today. In 1903 the U.S. Department of Agriculture set up an experimental vineyard at Oakville in the Napa Valley, and that Oakville Station is run by UC Davis to this day. In 1935 the heirs of the Wolfskill family, the pioneers of Winters, gave the university a hundred acres of their old ranch for an experimental orchard.\n\nIn 1951 the university produced its first graduates in viticulture and enology, the science of growing grapes and making wine. There were just seven of them, and one, Joe Heitz, went on to make one of Napa's most celebrated Cabernets, Martha's Vineyard, which was among the California reds at the 1976 Judgment of Paris. And in October 2008, the Robert Mondavi Institute for Wine and Food Science opened on campus, named after the man who did more than anyone to put Napa on the map.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Oakville,_California",
+     "https://en.wikipedia.org/wiki/Winters,_California",
+     "https://en.wikipedia.org/wiki/Heitz_Wine_Cellars",
+     "https://en.wikipedia.org/wiki/Robert_Mondavi",
+     "https://en.wikipedia.org/wiki/Judgment_of_Paris_(wine)"
+    ]
+   }
+  },
+  {
+   "id": "patwin_story",
+   "kind": "story",
+   "priority": 4,
+   "category": "indigenous",
+   "title": "The Patwin: the people of this valley",
+   "lat": 38.42,
+   "lon": -121.9,
+   "radius": 30000,
+   "roads": [
+    "i80",
+    "i505_128"
+   ],
+   "text": "Before the farms, the freeway and the university, this western edge of the Sacramento Valley was home to the Patwin, the southern branch of the Wintun peoples, who have lived in this part of California since roughly the year 500.\n\nThe Patwin lived in settled villages, fishing, hunting and gathering, and acorns were central to life: across the plains and foothills, groves of oaks were a harvest. The southern Patwin lived between what is now Suisun, Vacaville and Putah Creek, and as Spanish and later settlers pushed in, they were broken into small groups whose names survive on today's map. The Ululatos lived at Vacaville, around a village on Ulatis Creek downtown. The Labaytos lived along Putah Creek, the Malacas in Lagoon Valley, the Tolenas in the upper Suisun Valley, and the Suisunes on the Suisun Marsh, which carries their name.\n\nOne of the most famous Patwin was a leader called Sem-Yeto, better known as Chief Solano, a diplomat and a friend and ally of the Mexican general Vallejo.\n\nThen came the Gold Rush. Settlers took the oak groves and water. Smallpox and measles swept through. Many Patwin were forced into unpaid labour on ranches and in mines, a practice historians describe as another kind of slavery. By the late 1850s the population had collapsed to a fraction of what it had been, and by the 1920s no Patwin remained along Putah Creek.\n\nBut the story doesn't end there. Patwin people today belong to three federally recognised tribes, including the Yocha Dehe Wintun Nation, and the language, listed as at risk in 1997, is being taught to a new generation. When Patwin remains were found during construction of a concert hall at UC Davis, the university built a Native American contemplative garden in its arboretum. And near Fairfield, a hillside park that opened in 2024 carries a Patwin name: Patwino Worrtla Kodoi Dihi, which means Southern Rock Home of the Patwin People. It's managed by a land trust in partnership with the Yocha Dehe.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Patwin",
+    "https://en.wikipedia.org/wiki/Davis,_California",
+    "https://en.wikipedia.org/wiki/Patwino_Worrtla_Kodoi_Dihi_Open_Space_Park",
+    "https://en.wikipedia.org/wiki/Suisun_Marsh"
+   ]
+  },
+  {
+   "id": "dixon",
+   "priority": 2,
+   "category": "history",
+   "title": "Dixon: the town that moved to the tracks",
+   "lat": 38.4455,
+   "lon": -121.8233,
+   "text": "Dixon, coming up, is a town that literally picked itself up and moved. During the Gold Rush, a settlement called Silveyville grew up here as a halfway stop for miners heading between the coast and the Sacramento gold fields. When the railroad arrived in 1868, it missed Silveyville by a few miles. So in 1871 the townspeople relocated, buildings and all, to be next to the tracks. The Methodist church on North Jefferson Street is one of the buildings from that move.\n\nThe new town was supposed to be Dicksville, after Thomas Dickson, who donated ten acres for the depot. But in 1872 the first rail shipment of goods from San Francisco arrived addressed to Dixon, and everyone just went with it.\n\nDixon has a few claims to fame. The Dixon May Fair, which started as a May Day celebration in 1885, is billed as California's oldest fair. A local pumpkin patch has repeatedly held the Guinness record for the largest corn maze, one of them sixty acres. And near where Highway 113 meets the interstate stands a hundred-foot-tall sign for the old Milk Farm Restaurant, put up in 1963 and still there, long after the restaurant.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dixon,_California"
+   ]
+  },
+  {
+   "id": "valley_geology",
+   "kind": "story",
+   "priority": 4,
+   "category": "geology",
+   "title": "Why the valley is so flat: seven miles of buried sea floor",
+   "lat": 38.45,
+   "lon": -121.85,
+   "radius": 26000,
+   "roads": [
+    "i80",
+    "i505_128"
+   ],
+   "text": "This is a geology story, and it starts with a question: why is the Sacramento Valley so astonishingly flat?\n\nThe answer is that you're driving across the top of an enormous filled-in basin. During the age of the dinosaurs, between about 150 and 65 million years ago, this whole valley was a seaway. To the east, where the Sierra Nevada stands now, ran a chain of volcanoes. To the west, an ocean plate was diving beneath North America, and the rocks scraped off it piled up into a ridge that acted like a dam. Between them lay a deep basin, and the volcanoes eroded into it, shedding mud and sand down underwater canyons into deep-sea fans. Geologists call the result the Great Valley Sequence, and in places it's around 40,000 feet thick, over seven miles. Here's the remarkable part: the volcanic cover of the ancient Sierra has largely been stripped off and used to fill this valley.\n\nMost of those ancient sea-floor rocks are now buried beneath younger sediment, but they come to the surface along the valley's western edge, in the hills ahead of you. And the rocks that formed that ancient dam to the west are the Franciscan rocks of the Coast Ranges, which we'll meet later today.\n\nRight under the freeway, the geological maps from the Macrostrat database show what came last: alluvial fan deposits, sand and gravel spread by creeks coming out of the hills, and near the river, natural levee deposits, the low ridges that rivers build when they overflow their banks. Near Vacaville the maps also show the Tehama Formation, a few million years old, with a layer of volcanic ash called the Putah Tuff. So this flat farmland is the latest layer on a seven-mile stack of history.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Great_Valley_Sequence",
+    "https://en.wikipedia.org/wiki/Sacramento_Valley",
+    "https://macrostrat.org/api/v2/geologic_units/map?lat=38.52973&lng=-121.75416&scale=large",
+    "https://macrostrat.org/api/v2/geologic_units/map?lat=38.47989&lng=-121.81521&scale=large",
+    "https://macrostrat.org/api/v2/geologic_units/map?lat=38.42101&lng=-121.94333&scale=large"
+   ]
+  },
+  {
+   "id": "vacaville",
+   "priority": 3,
+   "category": "history",
+   "title": "Vacaville and the quarrel over Rancho Los Putos",
+   "lat": 38.3566,
+   "lon": -121.9877,
+   "text": "Vacaville is named after Juan Manuel Vaca, one of two men from New Mexico who came to California in 1841 with the Workman-Rowland Party. Vaca and his partner, Juan Felipe Peña, were granted Rancho Los Putos in 1843: over 44,000 acres, taking in all of present-day Vacaville and Lagoon Valley and stretching almost to Davis. The name comes from Putah Creek, then called the Rio de los Putos. It was General Vallejo who'd recommended the area to them. Peña's adobe home, built in 1842, is the oldest standing building in the area, now in Peña Adobe Park just south-west of town.\n\nThen came the sale that started a feud. In 1850 Vaca sold land to a man named William McDaniel, on condition that a square mile would become a town called Vacaville. McDaniel's partner, a Benicia lawyer, acted as interpreter, since Vaca couldn't read or write English. Vaca later said he believed he'd signed away just one square mile, not nine, and he took out a notice in the Benicia newspaper warning everyone not to buy land from McDaniel. Peña was furious too, and the deal soured relations between the two old partners.\n\nVacaville grew rich on fruit, with many Japanese and Chinese workers in the orchards and packing companies. And a more recent claim to fame: in August 2022, a truck crash on Interstate 80 here splattered over 150,000 tomatoes across the eastbound lanes, and made international news.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vacaville,_California",
+    "https://en.wikipedia.org/wiki/Rancho_Los_Putos"
+   ]
+  },
+  {
+   "id": "nut_tree",
+   "priority": 2,
+   "category": "quirky",
+   "title": "The Nut Tree: a fruit stand that fed a Queen",
+   "lat": 38.366,
+   "lon": -121.964,
+   "roads": [
+    "i80"
+   ],
+   "text": "Near the junction with Interstate 505 is the Nut Tree, now a shopping centre, once a California legend. It opened on the 3rd of July 1921 as a little roadside fruit stand on the Lincoln Highway, run by Helen and Ed Power. It was named after a black walnut tree that grew from a nut picked up on a trail in Arizona by a pioneer girl, Sallie Fox, before she arrived in Vacaville in 1859.\n\nBy its second year the stand was serving around 950 cars a day, and it kept growing as the old highway became Interstate 80: a restaurant with a floor-to-ceiling glass aviary, a bakery, a toy shop, its own little railway out to its own airport. Ed Power hired Charles Eames to design the furniture. The restaurant is credited as an early pioneer of California cuisine, built around fresh fruit and vegetables. Reagan, Nixon and Bing Crosby all stopped by, and in 1983 the Nut Tree catered a state lunch for Queen Elizabeth the Second. The original closed in 1996.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Nut_Tree"
+   ]
+  },
+  {
+   "id": "vaca_mtns",
+   "priority": 2,
+   "category": "geography",
+   "title": "The Vaca Mountains: the first wall of the Coast Ranges",
+   "lat": 38.335,
+   "lon": -122.015,
+   "roads": [
+    "i80"
+   ],
+   "text": "The ridge rising to the west is the Vaca Mountains, the easternmost range of California's Coast Ranges, and the wall between the Sacramento Valley and everything we'll see this afternoon. Its east face rises abruptly, a thousand feet or more above the foothills. The highest point, Mount Vaca, is 2,818 feet, the top of Solano County, and the backbone is a long, level crest called the Blue Ridge.\n\nBecause they're the farthest range from the ocean, the Vacas sit in a rain shadow. They get far less rain than the Mayacamas Mountains further west, which is one reason the Napa and Sonoma side looks so much greener. The ridgetops are chaparral: chamise, manzanita and buckbrush. Almost all the rain falls in winter, so by late summer and autumn, fire danger here is particularly high. In August 2020, the Hennessey Fire burned through this area and destroyed farms and homes in Vacaville. We'll hear more about that complex as we cross the hills.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vaca_Mountains",
+    "https://en.wikipedia.org/wiki/Vacaville,_California",
+    "https://en.wikipedia.org/wiki/Fairfield,_California"
+   ]
+  },
+  {
+   "id": "travis",
+   "priority": 3,
+   "category": "history",
+   "title": "Travis Air Force Base: the Gateway to the Pacific",
+   "lat": 38.2627,
+   "lon": -121.9275,
+   "roads": [
+    "i80"
+   ],
+   "text": "Keep an eye on the sky to the east and south. If you see something enormous and grey lumbering overhead, it's probably from Travis Air Force Base, a few miles east of Fairfield. Travis calls itself the Gateway to the Pacific, and it handles more cargo and passengers than any other military air terminal in the United States. Its wing flies giant C-5 Galaxies, C-17s and KC-46 tankers, and it's the biggest employer in Solano County.\n\nIt began in 1942 as the Fairfield-Suisun Army Air Base, ferrying aircraft and supplies to the Pacific during the Second World War. After the war it became a Strategic Air Command base, home to B-29s, B-36s and eventually B-52s. The name comes from a disaster. In August 1950, a B-29 carrying a Mark 4 nuclear bomb, without its nuclear core, crashed just after take-off. The fire set off the bomb's conventional high explosives, killing Brigadier General Robert Travis and eighteen others. The base was renamed in his honour the following year.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Travis_Air_Force_Base"
+   ]
+  },
+  {
+   "id": "jelly_belly",
+   "priority": 2,
+   "category": "quirky",
+   "title": "Jelly Belly: the President's jelly beans",
+   "lat": 38.247,
+   "lon": -122.061,
+   "roads": [
+    "i80"
+   ],
+   "text": "Fairfield is the home of the Jelly Belly jelly bean, and the story runs from Germany to the White House. Gustav Goelitz started a sweet business in Illinois in 1869, and the family became big in candy corn. His son Herman moved west and eventually settled the company in Oakland in 1924.\n\nIn the 1960s they started making a small, intensely flavoured mini jelly bean. Ronald Reagan, who'd given up smoking and taken to sweets instead, first tried them in 1969 and was hooked. As governor in 1973, he wrote to the company that they could hardly start a meeting without passing round the jar.\n\nIn 1976, a candy distributor named David Klein worked with the family to create a bean with natural flavouring. He came up with the name Jelly Belly, a tribute to the blues musician Lead Belly, and the idea of selling flavours separately rather than as a mix. The first eight were Very Cherry, Tangerine, Lemon, Green Apple, Grape, Licorice, Root Beer and Cream Soda. The company is still headquartered here in Fairfield, though since 2023 it's owned by the Ferrara Candy Company.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jelly_Belly"
+   ]
+  },
+  {
+   "id": "fairfield",
+   "priority": 3,
+   "category": "history",
+   "title": "Fairfield, Cordelia, and a captain's sense of home",
+   "lat": 38.244,
+   "lon": -122.095,
+   "roads": [
+    "i80"
+   ],
+   "text": "Fairfield and the next little place, Cordelia, were both named by one man, a clipper ship captain called Robert H. Waterman. He'd bought into Rancho Suisun, a Mexican land grant originally given in 1842 to Chief Solano, which Solano couldn't hold onto and sold to General Vallejo, who sold it on.\n\nWaterman laid out a town in 1856 and named it after his old home of Fairfield, Connecticut. Two years later he entered it in the race to be county seat and won the title away from Benicia, helped by his offer of sixteen acres of free land for county buildings. Fairfield has been Solano's county seat ever since. Earlier, in 1853, he'd founded a settlement he called Bridgeport. When the Post Office asked for a more distinctive name, he renamed it after his wife: Cordelia.\n\nOne more local curiosity: in the hills here stood a company town called Cement, founded in 1902 to quarry limestone and make Portland cement. At its peak it had more people than Fairfield, Vacaville and Suisun City combined, with a three-storey hotel, hospital and baseball diamond. When the limestone ran out it was sold off in 1927. Its biggest concrete ruin, known locally as The Castle, is visible from Interstate 80 in Fairfield.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fairfield,_California",
+    "https://en.wikipedia.org/wiki/Cordelia,_California",
+    "https://en.wikipedia.org/wiki/Rancho_Suisun",
+    "https://en.wikipedia.org/wiki/Cement,_California"
+   ],
+   "more": {
+    "title": "The Rockville Stone Chapel and a congregation split by war",
+    "text": "Just north of Cordelia, in the Suisun Valley, stands the Rockville Stone Chapel, built in 1856 by volunteers from local stone, cut from the nearby hills. It's a volcanic ash rock that's soft and easy to cut when quarried but hardens after it's exposed to air. The land was donated by Landy Alford, who'd come west in 1846 in the same wagon train as the ill-fated Donner Party; his son-in-law later helped rescue the survivors.\n\nThe chapel soon became a casualty of national politics. The congregation split over slavery, and at the Christmas Eve service of 1863 the northern supporters walked out. The southern-leaning members who stayed put a plaque on the building reading M.D. Church South, which is still there. The chapel decayed for decades, was donated to the county in 1929, restored by the Works Progress Administration in 1940, and is still in use today.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Rockville_Stone_Chapel"
+    ]
+   }
+  },
+  {
+   "id": "suisun_marsh",
+   "priority": 2,
+   "category": "geography",
+   "title": "The Suisun Marsh",
+   "lat": 38.205,
+   "lon": -122.105,
+   "roads": [
+    "i80",
+    "sr12_jameson"
+   ],
+   "text": "To the south lies the Suisun Marsh, described as the largest brackish-water marsh on the west coast of the United States: over a hundred thousand acres of tidal marsh, bays and sloughs, where fresh water from the Sacramento and San Joaquin rivers meets the salt of San Francisco Bay. It's named after the Suisunes, a Patwin group who lived here.\n\nGeologically, it's made of the mountains: sediment worn off the Sierra Nevada and the Vaca Mountains, carried down by rivers and dropped here over thousands of years, with peat soils from the rotting remains of marsh plants. From the Gold Rush until about 1880, market hunters shot waterfowl here to supply San Francisco's markets with fresh birds and feathers. From the 1880s farmers built levees and tried to farm it, until the soil turned too salty even for cattle. Then the big state and federal water projects upstream changed the flow and made the marsh saltier still, and landowners went to the legislature to protect it. Today it's home to river otters, native fish and pelicans.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Suisun_Marsh"
+   ]
+  },
+  {
+   "id": "railroad_story",
+   "kind": "story",
+   "priority": 3,
+   "category": "railroads",
+   "title": "The railroad that beat the Golden Spike",
+   "lat": 38.4,
+   "lon": -121.9,
+   "radius": 30000,
+   "roads": [
+    "i80"
+   ],
+   "text": "If you've noticed a railway line running alongside the freeway, it has a sneaky claim to fame.\n\nEveryone knows the transcontinental railroad was completed with a golden spike in May 1869. What's less known is that it ended at Sacramento, short of the Pacific. Getting trains on to San Francisco Bay was a separate race.\n\nThe tracks beside you were built by the California Pacific Railroad, incorporated in 1865 to link Vallejo, on the bay, with Sacramento. Its main line from Vallejo to Washington, today's West Sacramento, was finished in November 1868, six months before the golden spike. From January 1869 you could take a ferry from San Francisco to Vallejo and the train from there. Towns like Davis and Dixon grew around its depots. It even had a branch up the Napa Valley to Calistoga.\n\nThat made it a valuable shortcut, and the mighty Central Pacific wanted it. When the California Pacific rejected an offer, Central Pacific threatened to build a parallel line, bought up a majority of its stock, and took control. It then built a cut-off across the Suisun Marsh to Benicia, which took two years because the marsh was so soft it needed tons of crushed rock. From 1879 whole trains were carried across the Carquinez Strait on a giant ferry.\n\nAnd the line's still busy. Amtrak's Capitol Corridor trains follow the original California Pacific route from Sacramento to Suisun-Fairfield, and the California Zephyr and Coast Starlight roll through Dixon without stopping.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/California_Pacific_Railroad",
+    "https://en.wikipedia.org/wiki/Dixon,_California",
+    "https://en.wikipedia.org/wiki/Davis,_California"
+   ]
+  },
+  {
+   "id": "highway_story",
+   "kind": "story",
+   "priority": 2,
+   "category": "history",
+   "title": "From the Lincoln Highway to Interstate 80",
+   "lat": 38.33,
+   "lon": -122.0,
+   "radius": 30000,
+   "roads": [
+    "i80"
+   ],
+   "text": "The road you're on has been many roads. In 1913 the Lincoln Highway was dedicated: the brainchild of an Indiana entrepreneur, Carl Fisher, and one of the first highways in America designed for cars, running from Times Square in New York to Lincoln Park in San Francisco. At first its backers declined to shift it onto the new Yolo Causeway. But in 1928, after the Carquinez Bridge opened, the Lincoln Highway was rerouted over the Yolo Causeway and through Davis, Dixon, Vacaville and Fairfield, roughly where you are now.\n\nWhen the federal numbered highways arrived, this became U.S. Highway 40. Roadside businesses like the Nut Tree fruit stand grew up on it. In the 1950s and 60s it was rebuilt as Interstate 80, which became the main coast-to-coast route from New York to San Francisco, and old Highway 40 was eventually cut back so far that it now ends in Utah.\n\nEven the interstate has moved around. Around Sacramento, I-80 has been realigned several times, and the original route through downtown is now a business loop. And it's still changing: the toll express lanes between Red Top Road in Fairfield and Leisure Town Road in Vacaville only opened in December 2025.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lincoln_Highway",
+    "https://en.wikipedia.org/wiki/Interstate_80_in_California",
+    "https://en.wikipedia.org/wiki/Yolo_Causeway",
+    "https://en.wikipedia.org/wiki/Tower_Bridge_(Sacramento,_California)"
+   ]
+  }
+ ]
+}
