@@ -94,6 +94,7 @@ if (!args.includes('--skip-deployed')) {
   await ctx.setOffline(true);
   await page.reload({ waitUntil: 'load' });
   await page.waitForFunction(() => window.__rt?.ready || window.__rt?.error, null, { timeout: 30000 });
+  await page.waitForFunction(() => document.getElementById('chipOffline').textContent.includes('✓'), null, { timeout: 30000 }).catch(() => fail('offline chip never showed ✓'));
   const off = await page.evaluate(async () => {
     const clips = (await (await fetch('data/clips.json')).json()).clips;
     const pick = [clips[0], clips[Math.floor(clips.length / 2)], clips.at(-1)];

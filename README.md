@@ -44,7 +44,7 @@ offline once cached.
   variants with per-point travel time. Hardcoded waypoints are the fallback if OSRM is down.
 - **Sources** (`scripts/fetch-sources.mjs`, `scripts/fetch-articles.mjs`): every road sampled every ~1 km;
   Wikipedia GeoSearch (10 km radius) found 812 nearby articles; Macrostrat gave bedrock geology at 456 points;
-  ~320 Wikipedia articles were fetched in full and cached in `cache/` (git-ignored).
+  310 Wikipedia articles were fetched in full and cached in `cache/` (git-ignored).
 - **Narration** (`content/*.json`): 118 clips (75 place clips, 8 area intros, 23 long stories, 12 "tell me more"
   follow-ups), written only from the cached sources, each listing its source URLs. See
   [docs/FACTCHECK.md](docs/FACTCHECK.md) for the checking process and the 20-clip re-check.
@@ -68,8 +68,10 @@ offline once cached.
   element is emptied and the audio session handed back. Wake Lock with a muted-video fallback;
   `navigator.storage.persist()`; Media Session metadata, so the clip title shows on CarPlay and the steering-wheel
   buttons pause or skip.
-- **Offline**: the page downloads every file in `precache.json` into Cache Storage with a progress bar; the service
-  worker serves everything cache-first and answers Range requests with 206 (Safari needs this for audio).
+- **Offline**: the page downloads every file in `precache.json` into Cache Storage with a progress bar (4 parallel
+  downloads, each retried up to 4 times); the service worker serves everything cache-first and answers Range
+  requests with 206 (Safari needs this for audio). When a newer build is deployed, the app downloads only the
+  changed files and shows "New version downloaded — tap to reload".
 
 ### Re-render with another voice
 ```bash
