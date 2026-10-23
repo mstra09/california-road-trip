@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.venv/
+cache/
+site/audio/
+voice-samples/*.wav
+dist/
+test-results/
