@@ -55,13 +55,20 @@ async function precacheAll() {
     const worker = async () => {
       while (i < todo.length) {
         const f = todo[i++];
-        try {
-          const r = await fetch(f.url, { cache: 'reload' });
-          if (!r.ok) throw new Error(r.status);
-          await cache.put(f.url, r);
+        let ok = false;
+        for (let attempt = 0; attempt < 4 && !ok; attempt++) {   // hotel Wi-Fi and CDNs drop requests; retry
+          try {
+            if (attempt) await new Promise(r => setTimeout(r, 1500 * attempt));
+            const r = await fetch(f.url, { cache: 'reload' });
+            if (!r.ok) throw new Error(r.status);
+            await cache.put(f.url, r);
+            ok = true;
+          } catch (e) {}
+        }
+        if (ok) {
           meta[f.url] = f.hash; cacheState.have++; cacheState.bytes += f.bytes;
           if (cacheState.have % 10 === 0) await cache.put('__meta', new Response(JSON.stringify(meta)));
-        } catch (e) { failed++; }
+        } else failed++;
         renderCache();
       }
     };

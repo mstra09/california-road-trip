@@ -5,7 +5,7 @@
 //  3. Deployed site: load, precache everything, go offline, reload, confirm it still works.
 // Usage: node scripts/verify.mjs [--skip-audio] [--skip-local] [--skip-deployed] [--url URL]
 import fs from 'node:fs';
-import { execFileSync, spawn } from 'node:child_process';
+import { execFileSync, spawn, spawnSync } from 'node:child_process';
 import { chromium } from 'playwright';
 
 const args = process.argv.slice(2);
@@ -22,9 +22,9 @@ if (!args.includes('--skip-audio')) {
   for (const c of clips) {
     const f = 'site/' + c.audio;
     if (!fs.existsSync(f)) { fail(`${c.id}: missing ${f}`); continue; }
-    let out = '';
-    try { out = execFileSync('ffmpeg', ['-hide_banner', '-nostats', '-i', f, '-af', 'ebur128', '-f', 'null', '-'], { stdio: ['ignore', 'ignore', 'pipe'] }).toString(); }
-    catch (e) { out = e.stderr?.toString() || ''; if (e.status) { fail(`${c.id}: does not decode`); continue; } }
+    const run = spawnSync('ffmpeg', ['-hide_banner', '-nostats', '-i', f, '-af', 'ebur128', '-f', 'null', '-']);
+    const out = run.stderr.toString();
+    if (run.status !== 0) { fail(`${c.id}: does not decode`); continue; }
     const I = +(out.match(/I:\s+(-?[\d.]+) LUFS/g) || []).pop()?.match(/-?[\d.]+/)[0];
     const dur = +execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f]).toString();
     louds.push(I);
