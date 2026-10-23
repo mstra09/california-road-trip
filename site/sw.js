@@ -1,8 +1,11 @@
 // Offline-first service worker. The page itself fills the cache (with progress) from
 // precache.json; this worker serves from that cache, handling Range requests for iOS audio.
-const CACHE = 'rt-files-v1';
+const CACHE = 'rt-files-v2';   // bump to force a clean re-download on every phone
 self.addEventListener('install', e => self.skipWaiting());
-self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
+self.addEventListener('activate', e => e.waitUntil((async () => {
+  for (const k of await caches.keys()) if (k !== CACHE) await caches.delete(k);
+  await self.clients.claim();
+})()));
 
 async function rangeResponse(req, res) {
   const range = req.headers.get('range');
@@ -23,6 +26,7 @@ self.addEventListener('fetch', e => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (url.origin !== location.origin) return;
+  if (url.searchParams.has('v')) return;   // precache downloads (?v=hash) always go to the network
   e.respondWith((async () => {
     const cache = await caches.open(CACHE);
     // precache.json and exports index: network first so updates are noticed, cache as fallback

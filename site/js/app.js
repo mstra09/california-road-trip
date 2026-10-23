@@ -23,7 +23,7 @@ async function getJSON(url) {
 }
 
 // ---------------------------------------------------------------- offline cache
-const CACHE = 'rt-files-v1';
+const CACHE = 'rt-files-v2';   // must match sw.js
 const cacheState = { have: 0, total: 0, bytes: 0, totalBytes: 0, running: false };
 function renderCache() {
   const { have, total, bytes, totalBytes } = cacheState;
@@ -40,8 +40,10 @@ async function precacheAll() {
   try {
     manifest = await getJSON('precache.json');
     const cache = await caches.open(CACHE);
+    await cache.put('precache.json', new Response(JSON.stringify(manifest), { headers: { 'Content-Type': 'application/json' } }));
     const metaRes = await cache.match('__meta');
     const meta = metaRes ? await metaRes.json() : {};
+    const hadMeta = Object.keys(meta).length > 0;
     const files = manifest.files;
     cacheState.total = files.length; cacheState.totalBytes = files.reduce((a, f) => a + f.bytes, 0);
     cacheState.have = 0; cacheState.bytes = 0;
@@ -59,7 +61,8 @@ async function precacheAll() {
         for (let attempt = 0; attempt < 4 && !ok; attempt++) {   // hotel Wi-Fi and CDNs drop requests; retry
           try {
             if (attempt) await new Promise(r => setTimeout(r, 1500 * attempt));
-            const r = await fetch(f.url, { cache: 'reload' });
+            // ?v= makes the service worker pass this straight to the network (never the old cache)
+            const r = await fetch(f.url + (f.url.includes('?') ? '&' : '?') + 'v=' + f.hash, { cache: 'reload' });
             if (!r.ok) throw new Error(r.status);
             await cache.put(f.url, r);
             ok = true;
@@ -78,9 +81,20 @@ async function precacheAll() {
     for (const req of await cache.keys()) if (!keep.has(req.url) && !req.url.endsWith('__meta')) await cache.delete(req);
     await cache.put('__meta', new Response(JSON.stringify(meta)));
     $('cacheDetail').textContent = failed ? `${failed} files failed to download — connect to Wi-Fi and tap “Re-check offline files”.` : (cacheState.have === cacheState.total ? 'Everything is stored on this phone. No signal needed.' : '');
+    // A newer version of the app itself was just downloaded: offer a reload (never while a clip plays).
+    if (hadMeta && todo.some(f => !f.url.startsWith('audio/') && meta[f.url] === f.hash)) showUpdateBanner();
   } catch (e) {
     $('cacheDetail').textContent = 'Could not check the offline files: ' + e.message;
   } finally { cacheState.running = false; renderCache(); }
+}
+
+function showUpdateBanner() {
+  if (document.getElementById('updBanner')) return;
+  const b = document.createElement('button');
+  b.id = 'updBanner'; b.className = 'primary'; b.style.cssText = 'position:fixed;left:16px;right:16px;top:calc(env(safe-area-inset-top) + 6px);z-index:20;font-size:17px;min-height:48px';
+  b.textContent = 'New version downloaded — tap to reload';
+  b.onclick = () => { if (!currentClip) location.reload(); };
+  document.body.appendChild(b);
 }
 
 // ---------------------------------------------------------------- audio
@@ -234,7 +248,8 @@ let wakeState = '—';
 function renderStatus(fix) {
   const g = $('chipGps');
   if (sim.on) { g.textContent = 'SIMULATOR'; g.className = 'chip warn'; }
-  else if (fix) { g.textContent = `GPS ±${Math.round(fix.acc)} m`; g.className = 'chip ' + (fix.acc <= 50 ? 'ok' : fix.acc <= 150 ? 'warn' : 'bad'); }
+  else if (!fix) { g.textContent = watchId == null ? 'GPS off' : 'GPS —'; g.className = 'chip'; }
+  else { g.textContent = `GPS ±${Math.round(fix.acc)} m`; g.className = 'chip ' + (fix.acc <= 50 ? 'ok' : fix.acc <= 150 ? 'warn' : 'bad'); }
   const mph = engine.tracker.speed * 2.23694;
   $('chipSpeed').textContent = `${Math.round(mph)} mph`;
   const m = engine.match;
@@ -435,8 +450,8 @@ async function init() {
   sim.mult = +settings.simSpeed;
   const exp = await getJSON('exports/index.json').catch(() => ({ routes: [] }));
   $('expList').innerHTML = exp.routes.map(x => `<div class="exp"><b>${esc(x.name)}</b><div class="small dim">${x.count} clips · ${Math.round(x.minutes)} min of audio</div>
-    <a href="${x.cues}" target="_blank">Cue sheet</a><a href="${x.m3u}">M3U playlist</a><a href="${x.zip}">Numbered MP3/M4A zip</a><a href="${x.rss}">Podcast feed</a>
-    <div class="small dim">Podcast URL: <code>${esc(new URL(x.rss, location.href).href)}</code></div></div>`).join('') || '<p class="dim">Not built yet.</p>';
+    <a href="${x.cues}" target="_blank">Cue sheet</a><a href="${x.m3u}">M3U playlist</a><a href="${x.zip}">Numbered audio files (zip)</a><a href="${x.rss}">Podcast feed</a>
+    <div class="small dim">Podcast URL: <code style="word-break:break-all">${esc(new URL(x.rss, location.href).href)}</code></div></div>`).join('') || '<p class="dim">Not built yet.</p>';
   renderSettings();
   precacheAll();
   window.__rt.ready = true;

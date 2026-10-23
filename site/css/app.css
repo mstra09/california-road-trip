@@ -22,7 +22,7 @@ button.huge { width: 100%; font-size: 30px; min-height: 96px; margin: 16px 0; }
 .bar { height: 12px; background: #263040; border-radius: 6px; overflow: hidden; margin: 8px 0; }
 .bar > div { height: 100%; width: 0; background: var(--ok); transition: width .3s; }
 .bar.thin { height: 6px; } .bar.thin > div { background: var(--acc); }
-.transcript { font-size: 19px; line-height: 1.55; max-height: 42vh; overflow-y: auto; white-space: pre-wrap; }
+.transcript { font-size: 19px; line-height: 1.55; max-height: 30vh; overflow-y: auto; white-space: pre-wrap; }
 .controls { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
 .ctl { font-size: 28px; padding: 10px 4px; min-height: 84px; margin: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .ctl span { font-size: 12px; font-weight: 500; color: var(--dim); margin-top: 4px; }
