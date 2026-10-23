@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Audio Behaviour Test</title>
+<style>
+  :root { --bg:#0b0d10; --card:#161a20; --fg:#f2f4f7; --dim:#9aa4b2; --acc:#4fb3ff; --ok:#3ddc84; --bad:#ff5a5f; --warn:#ffb347; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.45 -apple-system, system-ui, sans-serif; padding:16px; padding-bottom:80px; }
+  h1 { font-size:24px; margin:4px 0 8px; }
+  h2 { font-size:19px; margin:0 0 4px; }
+  .card { background:var(--card); border-radius:14px; padding:14px; margin:12px 0; }
+  .dim { color:var(--dim); font-size:15px; }
+  button { font:inherit; font-weight:600; border:0; border-radius:12px; padding:14px 16px; margin:6px 6px 0 0; background:#2a3140; color:var(--fg); min-height:52px; }
+  button.primary { background:var(--acc); color:#001425; }
+  button.res { font-size:14px; padding:10px 12px; min-height:44px; }
+  button.res.sel { background:var(--ok); color:#002b12; }
+  .status { margin-top:8px; font-weight:600; min-height:1.4em; }
+  .status.bad { color:var(--bad); font-size:20px; }
+  .status.ok { color:var(--ok); }
+  .status.wait { color:var(--warn); }
+  ol { padding-left:20px; margin:6px 0; }
+  #log { font:12px/1.4 ui-monospace, Menlo, monospace; white-space:pre-wrap; color:var(--dim); max-height:260px; overflow:auto; }
+  #summary { font-size:15px; }
+  table { border-collapse:collapse; width:100%; }
+  td { padding:4px 6px; border-bottom:1px solid #263040; vertical-align:top; }
+</style>
+</head>
+<body>
+<h1>🔊 Audio behaviour test</h1>
+<p class="dim"><a href="../" style="color:#4fb3ff">← back to the Road Guide</a> · Run this from inside the home-screen app so your results are saved where the app can see them.</p>
+<div class="card">
+  <b>How to test (about 2 minutes per mode)</b>
+  <ol>
+    <li>Plug the phone into CarPlay/Bluetooth if you can (or use the speaker).</li>
+    <li>Tap a mode's <b>Play in 20s</b> button. This tap also "unlocks" audio.</li>
+    <li>Within 20 s: switch to Spotify, start music, then <b>come back to this page</b> and wait (Safari must be in front, as in the car).</li>
+    <li>When the voice plays, watch the music: does it <b>duck</b> (get quieter), <b>pause then resume</b>, <b>pause and stay paused</b>, or <b>keep playing at full volume</b>?</li>
+    <li>Tap the matching result button. Results are saved on this phone and summarised at the bottom.</li>
+  </ol>
+  <div class="dim">Reload the page between modes for a clean test (the audio session type sticks once set). Audio session support detected: <b id="asSupport"></b></div>
+</div>
+
+<div class="card">
+  <h2>Phone voice for mode E</h2>
+  <div class="dim">Mode E sounds robotic with the default voice. Download a better one, free: iPhone Settings → Accessibility → Spoken Content → Voices → English → e.g. “Ava (Premium)”, “Zoe (Premium)”, “Evan (Enhanced)”, or British “Serena (Premium)” / “Jamie (Premium)”. Then reload this page and pick it here.</div>
+  <select id="voiceSel" style="font:inherit;width:100%;padding:12px;border-radius:10px;margin-top:8px;background:#2a3140;color:#f2f4f7;border:0"></select>
+  <button id="voicePrev">▶ Preview</button>
+</div>
+<div class="card">
+  <h2>Stay-awake test (for a 5-minute Auto-Lock)</h2>
+  <div class="dim">Tap Start, then don’t touch the phone for 6–7 minutes. If the screen is still on, the app can keep it awake on the road.</div>
+  <button class="primary" id="wakeBtn">Start stay-awake test</button>
+  <div class="status" id="wakeSt"></div>
+  <video id="wakeVid" muted loop playsinline src="../media/nosleep.mp4" style="position:fixed;width:2px;height:2px;opacity:0.02;bottom:0;left:0"></video>
+</div>
+
+<div id="modes"></div>
+
+<div class="card">
+  <h2>Your results</h2>
+  <div id="summary" class="dim">None yet.</div>
+  <button class="res" id="clearRes">Clear results</button>
+</div>
+
+<div class="card">
+  <h2>Event log</h2>
+  <div id="log"></div>
+</div>
+
+<audio id="el" preload="auto" playsinline></audio>
+
+<script type="module">
+import * as S from '../js/speech.js';
+const MODES = [
+  { id:'A', name:'Mode A — plain audio element', desc:'One HTMLAudioElement, unlocked by your tap, reused by a timer. No audio-session hint. (Test clip is the app’s real recorded voice.)', session:null },
+  { id:'B', name:'Mode B — audioSession "transient"', desc:'Same as A, with navigator.audioSession.type = "transient" (meant for short sounds; should duck other audio).', session:'transient' },
+  { id:'C', name:'Mode C — audioSession "transient-solo"', desc:'Same as A, with "transient-solo" (meant to pause others briefly, then let them resume).', session:'transient-solo' },
+  { id:'D', name:'Mode D — audioSession "playback"', desc:'Same as A, with "playback" (media playback; usually interrupts others).', session:'playback' },
+  { id:'E', name:'Mode E — speechSynthesis', desc:'The browser\'s built-in text-to-speech voice, primed by your tap.', session:null, speech:true },
+  { id:'F', name:'Mode F (bonus) — audioSession "ambient"', desc:'Same as A, with "ambient" (mixes with music, no ducking). Voice may be hard to hear over music.', session:'ambient' },
+  { id:'G', name:'Mode G (new) — recorded voice + silent speech, "ambient"', desc:'The app’s recorded voice (Kokoro, the one you’ll hear on the road) in a mixable session, with an inaudible phone-voice running alongside to trigger the same ducking as mode E. Silent switch must be off.', session:'ambient', duck:true },
+  { id:'H', name:'Mode H (new) — recorded voice + silent speech, "transient"', desc:'Like G but with the "transient" session.', session:'transient', duck:true },
+];
+const RESULTS = ['Ducked then restored','Paused, then resumed','Paused, stayed paused','Kept full volume','No voice heard'];
+const el = document.getElementById('el');
+const logEl = document.getElementById('log');
+const hasAS = 'audioSession' in navigator;
+document.getElementById('asSupport').textContent = hasAS ? ('yes (current: ' + navigator.audioSession.type + ')') : 'no (modes B, C, D, F behave like A)';
+function log(m){ const t=new Date().toLocaleTimeString(); logEl.textContent = t+'  '+m+'\n'+logEl.textContent; }
+['play','playing','pause','ended','error','stalled','waiting'].forEach(e=>el.addEventListener(e,()=>log('audio event: '+e+(e==='error'&&el.error?(' code '+el.error.code):''))));
+document.addEventListener('visibilitychange',()=>log('page '+document.visibilityState));
+if (hasAS) { try { navigator.audioSession.addEventListener('statechange',()=>log('audioSession state: '+navigator.audioSession.state)); } catch(e){} }
+
+function setSession(t){
+  if (!hasAS) return;
+  try { navigator.audioSession.type = t || 'auto'; log('audioSession.type = '+navigator.audioSession.type); }
+  catch(e){ log('audioSession set failed: '+e.message); }
+}
+function releaseSession(){
+  // Best effort: stop the element, drop the source, and hand the session back.
+  el.pause();
+  el.removeAttribute('src');
+  try { el.load(); } catch(e){}
+  if (hasAS) { try { navigator.audioSession.type = 'auto'; } catch(e){} }
+  log('released audio element + session');
+}
+
+function setStatus(m, text, cls){ const s=document.getElementById('st'+m.id); s.textContent=text; s.className='status '+(cls||''); }
+
+async function unlock(m){
+  S.prime(); log('speech primed');
+  if (m.speech) return true;
+  setSession(m.session);
+  el.src = 'silence.m4a';
+  try { await el.play(); log('unlock play() OK'); return true; }
+  catch(e){ log('unlock play() REJECTED: '+e.name); return false; }
+}
+
+async function playClip(m){
+  if (m.speech) {
+    S.speak('This is the road trip audio test, using the phone voice. Listen to your music. Did it get quieter, did it stop, and when I finish, does it come back on its own? That is the end of the test.', {
+      voiceURI: voiceSel.value,
+      onstart: ()=>{ log('speech start'); setStatus(m,'▶️ Speaking now… watch the music','ok'); },
+      onend: ()=>{ log('speech end'); setStatus(m,'Finished. Did the music come back? Record the result below.','ok'); } });
+    setTimeout(()=>{ if(!S.speaking()) setStatus(m,'❌ Speech did not start (blocked?)','bad'); }, 3000);
+    return;
+  }
+  setSession(m.session);
+  if (m.duck) { S.startDuck('This is a silent companion utterance that keeps the phone speech engine active so that other audio is ducked while the recording plays.'); log('silent speech ducker started'); await new Promise(r=>setTimeout(r,400)); }
+  el.src = 'clip.m4a';
+  el.onended = ()=>{ if (m.duck) { S.stopDuck(); log('ducker stopped'); } setStatus(m,'Finished. Did the music come back? Record the result below.','ok'); if (document.getElementById('rel'+m.id).checked) releaseSession(); };
+  try { await el.play(); setStatus(m,'▶️ Playing now… watch the music','ok'); log('clip play() OK (mode '+m.id+')'); }
+  catch(e){ setStatus(m,'❌ play() was REJECTED: '+e.name+' — '+e.message,'bad'); log('clip play() REJECTED: '+e.name); }
+}
+
+let timer=null;
+async function schedule(m, delay){
+  clearInterval(timer);
+  const ok = await unlock(m);
+  if (!ok) { setStatus(m,'❌ Unlock failed — play() rejected even on tap','bad'); return; }
+  if (!delay) { playClip(m); return; }
+  let left = delay;
+  setStatus(m,'⏳ Playing in '+left+' s — go start Spotify, then come back','wait');
+  timer = setInterval(()=>{
+    left--;
+    if (left>0) setStatus(m,'⏳ Playing in '+left+' s — go start Spotify, then come back','wait');
+    else { clearInterval(timer); playClip(m); }
+  },1000);
+}
+
+function loadRes(){ try { return JSON.parse(localStorage.getItem('audioTestResults')||'{}'); } catch(e){ return {}; } }
+function saveRes(r){ try { localStorage.setItem('audioTestResults', JSON.stringify(r)); } catch(e){} }
+function renderSummary(){
+  const r = loadRes(); const keys = Object.keys(r);
+  const s = document.getElementById('summary');
+  if (!keys.length) { s.textContent='None yet.'; return; }
+  s.innerHTML = '<table>'+MODES.filter(m=>r[m.id]).map(m=>'<tr><td><b>'+m.id+'</b></td><td>'+r[m.id]+'</td></tr>').join('')+'</table>';
+  document.querySelectorAll('.res[data-m]').forEach(b=>b.classList.toggle('sel', r[b.dataset.m]===b.dataset.r));
+}
+document.getElementById('clearRes').onclick=()=>{ saveRes({}); renderSummary(); };
+
+const wrap = document.getElementById('modes');
+MODES.forEach(m=>{
+  const d = document.createElement('div'); d.className='card';
+  d.innerHTML = '<h2>'+m.name+'</h2><div class="dim">'+m.desc+'</div>'+
+    '<button class="primary" data-a="20">Play in 20s</button><button data-a="0">Play now</button>'+
+    (m.speech?'':'<label class="dim" style="display:block;margin-top:8px"><input type="checkbox" id="rel'+m.id+'" checked> release audio session after the clip</label>')+
+    '<div class="status" id="st'+m.id+'"></div>'+
+    '<div class="dim" style="margin-top:8px">What happened to your music?</div>'+
+    RESULTS.map(r=>'<button class="res" data-m="'+m.id+'" data-r="'+r+'">'+r+'</button>').join('');
+  d.querySelectorAll('button[data-a]').forEach(b=>b.onclick=()=>schedule(m, +b.dataset.a));
+  d.querySelectorAll('.res').forEach(b=>b.onclick=()=>{ const r=loadRes(); r[m.id]=b.dataset.r; saveRes(r); renderSummary(); });
+  wrap.appendChild(d);
+});
+renderSummary();
+const voiceSel = document.getElementById('voiceSel');
+function fillVoices(){ const list = S.englishVoices(); const keep = voiceSel.value;
+  voiceSel.innerHTML = list.map(v=>'<option value="'+v.voiceURI+'">'+v.name+' ('+v.lang+')'+'</option>').join('') || '<option>No voices yet, tap Preview</option>';
+  if (keep) voiceSel.value = keep; }
+fillVoices(); speechSynthesis.addEventListener('voiceschanged', fillVoices);
+document.getElementById('voicePrev').onclick = ()=>{ S.speak('Welcome to the Napa Valley. Guerneville is still about two hours away.', { voiceURI: voiceSel.value }); setTimeout(fillVoices, 500); };
+let wl = null, t0 = 0;
+document.getElementById('wakeBtn').onclick = async ()=>{
+  t0 = Date.now(); const st = document.getElementById('wakeSt');
+  try { wl = await navigator.wakeLock.request('screen'); log('wake lock acquired'); } catch(e){ log('wake lock failed: '+e.message); }
+  try { await document.getElementById('wakeVid').play(); log('keep-awake video playing'); } catch(e){ log('video failed: '+e.message); }
+  setInterval(async ()=>{
+    if (wl && wl.released && document.visibilityState==='visible') { try { wl = await navigator.wakeLock.request('screen'); log('wake lock re-acquired'); } catch(e){} }
+    st.textContent = 'Screen kept on for '+Math.round((Date.now()-t0)/60000*10)/10+' min · wake lock '+(wl && !wl.released ? 'held' : 'NOT held')+' · video '+(document.getElementById('wakeVid').paused?'stopped':'playing');
+    st.className = 'status ok';
+  }, 2000);
+};
+log('ready. UA: '+navigator.userAgent);
+</script>
+</body>
+</html>

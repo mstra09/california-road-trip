@@ -1,0 +1,44 @@
+{
+ "routes": [
+  {
+   "id": "main",
+   "name": "Main: I-80 → Jameson Canyon → SR 29 Napa Valley → Calistoga → Mark West Springs → River Rd → Guerneville",
+   "count": 73,
+   "minutes": 99.57500000000005,
+   "m3u": "exports/main.m3u",
+   "zip": "exports/main.zip",
+   "cues": "exports/main-cues.html",
+   "rss": "exports/main.xml"
+  },
+  {
+   "id": "berryessa",
+   "name": "Lake Berryessa: I-80 → I-505 → Winters → SR 128 → Rutherford → Calistoga → Alexander Valley → Healdsburg → Westside Rd",
+   "count": 67,
+   "minutes": 90.81333333333333,
+   "m3u": "exports/berryessa.m3u",
+   "zip": "exports/berryessa.zip",
+   "cues": "exports/berryessa-cues.html",
+   "rss": "exports/berryessa.xml"
+  },
+  {
+   "id": "sonoma",
+   "name": "Sonoma: I-80 → Jameson Canyon → Carneros → Sonoma → Glen Ellen → Kenwood → Santa Rosa → Sebastopol → SR 116",
+   "count": 69,
+   "minutes": 91.73000000000003,
+   "m3u": "exports/sonoma.m3u",
+   "zip": "exports/sonoma.zip",
+   "cues": "exports/sonoma-cues.html",
+   "rss": "exports/sonoma.xml"
+  },
+  {
+   "id": "silverado_bohemian",
+   "name": "Silverado Trail → Petrified Forest → Calistoga Rd → Santa Rosa → Sebastopol → Bohemian Hwy",
+   "count": 76,
+   "minutes": 102.7383333333334,
+   "m3u": "exports/silverado_bohemian.m3u",
+   "zip": "exports/silverado_bohemian.zip",
+   "cues": "exports/silverado_bohemian-cues.html",
+   "rss": "exports/silverado_bohemian.xml"
+  }
+ ]
+}
