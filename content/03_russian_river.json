@@ -1,108 +1,282 @@
 {
-  "area": { "id": "river", "name": "Calistoga → Mark West → Russian River" },
-  "clips": [
-    {
-      "id": "mt_st_helena", "priority": 4, "category": "geography",
-      "title": "Mount Saint Helena and the Russian princess",
-      "lat": 38.5900, "lon": -122.6050, "roads": ["petrified_forest", "sr128_alexander", "sr29"],
-      "text": "If you can see the big mountain to the north of Calistoga, that's Mount Saint Helena, the peak that closes off the head of the Napa Valley. It has five summits arranged in a rough letter M. The highest is in Sonoma County, and the next is the high point of Napa County. The Napa River starts on its slopes, and it's one of the few mountains in the Bay Area that gets snow in winter.\n\nThe Wappo called it Kanamota, Human Mountain. Spanish colonists called it Mount Mayacamas. The name it has now comes from an unexpected direction: Russia. In 1841, a Russian survey party from Fort Ross, on the Sonoma coast, climbed the peak and left a copper plate on the summit, inscribed with the date and the name of Princess Helena de Gagarin, wife of the fort's commanding officer. So the mountain, and very likely the town of St. Helena, are named after a Russian aristocrat.\n\nGeologically it's made of uplifted volcanic rock, and it has an explosive past. Its eruptions sent pyroclastic flows across this landscape, and one of them, as you're about to hear, turned a forest to stone.",
-      "sources": ["https://en.wikipedia.org/wiki/Mount_Saint_Helena", "https://en.wikipedia.org/wiki/Napa_River"]
-    },
-    {
-      "id": "petrified_forest", "priority": 5, "category": "geology",
-      "title": "The Petrified Forest: redwoods turned to stone",
-      "lat": 38.5560, "lon": -122.6390, "roads": ["petrified_forest", "calistoga_rd"],
-      "text": "Coming up on Petrified Forest Road is, appropriately, the Petrified Forest. About 3.4 million years ago, a volcanic eruption from the direction of Mount Saint Helena buried a forest of giant redwoods in volcanic ash. Over thousands of years, the trees turned to stone. It's the only petrified forest in California from the Pliocene, and it claims the largest petrified trees in the world. The biggest, nicknamed The Queen, is eight feet wide and 65 feet long, and was around 2,000 years old when the volcano killed it.\n\nThe trees are an extinct species of Sequoia, the redwood genus, and they tell us something surprising: redwoods once grew much further inland than they do today. A Berkeley researcher has been studying fossil pollen from the site since 2012.\n\nAs far as science is concerned, the forest was discovered in 1870 by the palaeontologist Othniel Charles Marsh. Robert Louis Stevenson visited during his 1880 honeymoon and wrote about it in The Silverado Squatters, describing it as owned by an old Swedish ex-sailor who'd stumbled on it while clearing land, and there's a petrified tree named after Stevenson. A woman called Ollie Orre Bockee bought it around 1912 for 14,000 dollars, opened it to tourists two years later at fifty cents a head, and her family has run it ever since. It was damaged in the 2017 fires and has since reopened, and in 2023 it was put up for sale for twelve million dollars.",
-      "sources": ["https://en.wikipedia.org/wiki/Petrified_Forest_(California)", "https://en.wikipedia.org/wiki/Mount_Saint_Helena", "https://en.wikipedia.org/wiki/The_Silverado_Squatters"]
-    },
-    {
-      "id": "volcanoes_story", "kind": "story", "priority": 5, "category": "geology",
-      "title": "Hot ground: the Sonoma Volcanics, Clear Lake and The Geysers",
-      "lat": 38.56, "lon": -122.62, "radius": 25000, "roads": ["petrified_forest", "calistoga_rd", "sr128_alexander", "spring_mtn", "sr29", "silverado"],
-      "text": "You're crossing the Mayacamas Mountains, and almost everything around you was once molten.\n\nThe rock is called the Sonoma Volcanics: obsidian, pumice, tuff, rhyolite, andesite breccia and basalt lava, several thousand feet thick. It forms most of the mountains around the Napa and Sonoma valleys, and it probably once formed a continuous mass from San Pablo Bay north into Lake County, and from Solano County west to the Santa Rosa plain. Geologists think it erupted from several vents, on and off, over perhaps more than a million years, mostly in the Pliocene, three to five million years ago. It's also the parent material of many of the soils in the Napa and Sonoma wine regions.\n\nThe volcanic story isn't over. To the north, around Clear Lake, is the Clear Lake Volcanic Field, with lava domes, cinder cones and explosion craters. Its last eruption was only about 11,000 years ago, and the U.S. Geological Survey ranks its threat as high. Its volcanic heat is thought to have driven the hot springs that formed mercury and gold ores around Clear Lake.\n\nThat heat also powers The Geysers, up in the Mayacamas north-west of here: the largest geothermal field in the world, with eighteen power plants drawing steam from more than 350 wells. In 2019 it produced around a fifth of California's renewable energy. For something like 12,000 years, Native people built steam baths and thermal pools there for healing and ceremony. In the 1850s it became a resort that drew Ulysses Grant, Theodore Roosevelt and Mark Twain. And despite the name, the steam vents aren't true geysers at all; they're fumaroles. The surveyor who named the place in 1847 got it wrong, and nobody's bothered to change it.",
-      "sources": ["https://en.wikipedia.org/wiki/Sonoma_Volcanics", "https://en.wikipedia.org/wiki/Clear_Lake_Volcanic_Field", "https://en.wikipedia.org/wiki/The_Geysers", "https://en.wikipedia.org/wiki/Calistoga,_California", "https://en.wikipedia.org/wiki/Mark_West_Springs,_California"]
-    },
-    {
-      "id": "mark_west", "priority": 4, "category": "fire",
-      "title": "Mark West Springs: in the path of the Tubbs Fire",
-      "lat": 38.5413, "lon": -122.7178, "roads": ["petrified_forest", "calistoga_rd"],
-      "text": "You're coming down through the Mark West Springs area, named after a Scottish-American pioneer, William Marcus West. The springs here were a resort from 1880, perhaps earlier, and Mark West Creek, which you're following, runs nearly thirty miles from the Mayacamas to the Russian River.\n\nOn the night of the 8th of October 2017, this valley was directly in the path of the Tubbs Fire, racing west from Calistoga on fierce winds toward Santa Rosa. One story from that night stands out. At Safari West, a 400-acre wildlife preserve nearby, home to giraffes, rhinos, cheetahs and around 800 animals, the 76-year-old owner, Peter Lang, stayed behind and fought the flames by himself for more than ten hours, using only garden hoses. Not a single animal died.\n\nDown the hill, the community of Larkfield-Wikiup lost about 500 homes. Two years later, in 2019, the Kincade Fire started in The Geysers to the north and was pushed by extreme winds right to the edge of the same community, into the Tubbs burn scar. Much of what you see here has been rebuilt since.",
-      "sources": ["https://en.wikipedia.org/wiki/Mark_West_Springs,_California", "https://en.wikipedia.org/wiki/Mark_West_Creek", "https://en.wikipedia.org/wiki/Tubbs_Fire", "https://en.wikipedia.org/wiki/Safari_West", "https://en.wikipedia.org/wiki/Larkfield-Wikiup,_California"]
-    },
-    {
-      "id": "utopias", "priority": 3, "category": "quirky",
-      "title": "Utopias in the hills: Altruria and Fountain Grove",
-      "lat": 38.5130, "lon": -122.7300, "roads": ["petrified_forest", "us101", "calistoga_rd"],
-      "text": "The hills north of Santa Rosa have attracted dreamers. In 1875, a religious leader called Thomas Lake Harris brought his followers, the Brotherhood of the New Life, from New York to found a colony called Fountain Grove. His mansion was called Aestivossa, which he said meant high country of divine joy in a language only he understood, and he insisted his real palace was in interspace. The practical side was run by his California lieutenant, Nagasawa Kanaye, who managed 2,000 acres of vineyards and succeeded Harris as leader until 1934. Fountaingrove is now a wealthy neighbourhood; its round barn, a local landmark, burned in the Tubbs Fire.\n\nThen in October 1894, about thirty Christian socialists led by a Berkeley Unitarian minister, Edward Payne, founded Altruria, a commune in these hills inspired by a utopian novel, A Traveller from Altruria. They grew orchards, sold produce in San Francisco and built a hotel. The hotel sank them. Within a year they needed a bankruptcy plan, and by 1896 every Altrurian settlement was abandoned.",
-      "sources": ["https://en.wikipedia.org/wiki/Fountain_Grove,_California", "https://en.wikipedia.org/wiki/Altruria,_California"]
-    },
-    {
-      "id": "fulton_laguna", "priority": 3, "category": "geography",
-      "title": "Fulton and the Laguna de Santa Rosa",
-      "lat": 38.4870, "lon": -122.8200, "roads": ["river_rd", "guerneville_rd", "sr116"],
-      "text": "West of the freeway, River Road passes the little community of Fulton, founded by the brothers Thomas and James Fulton, with a post office since 1871. The commuter trains of the SMART line run through it today.\n\nAhead, the land flattens into the floodplain of the Laguna de Santa Rosa, a 22-mile-long wetland that drains most of the Santa Rosa plain. In heavy winter rain it spreads out into a shallow lake that can hold over 80,000 acre-feet of stormwater, an enormous natural sponge. It's the most biologically diverse place in Sonoma County, with over 200 species of birds, bald and golden eagles, otters, mink and bobcats, and three endangered plants found nowhere else. It's also, sadly, listed as the most impaired water body on California's North Coast, after more than a century of farming and building on its floodplain, though restoration began in the 1990s.\n\nThere's a hydrological oddity here too. Mark West Creek, which we followed down from the hills, has been diverted in three places near its meeting with the Laguna, so that it looks as if the creek feeds the Laguna, when naturally it's the other way round.",
-      "sources": ["https://en.wikipedia.org/wiki/Fulton,_California", "https://en.wikipedia.org/wiki/Laguna_de_Santa_Rosa", "https://en.wikipedia.org/wiki/Mark_West_Creek"]
-    },
-    {
-      "id": "russian_river_intro", "kind": "intro", "priority": 5, "category": "geography",
-      "title": "Meeting the Russian River",
-      "lat": 38.4896, "lon": -122.8693, "roads": ["river_rd", "westside", "sr116"],
-      "text": "Welcome to the Russian River, the last leg of the journey. It's the second-largest river in the Bay Area after the Sacramento, with a main stem 115 miles long, flowing south from Mendocino County and then west to the Pacific.\n\nIt has had a lot of names. The Southern Pomo called it Ashokawna, east water place, and also Bidapte, big river. A Spanish land grant of 1843 called it the Rio Grande. Its current name comes from the Russian-American Company, which ran the fur-trading colony at Fort Ross on the coast in the early 1800s. A Russian explorer, Ivan Kuskov, travelled up the river, and an 1817 Russian chart calls it the Slavyanka.\n\nThis is also the Russian River Valley wine appellation, created in 1983: cool, foggy country, because of the valley's closeness to the Pacific. That suits Pinot Noir and Chardonnay, the grapes it's famous for. Vines came here with Mediterranean immigrants in the late 1800s, and by 1900 there were nearly 200 wineries in the region. Before the vines, the river's banks were lined with redwoods, which drew loggers in the late nineteenth century. You'll see the second-growth forest close in as we head downstream.",
-      "sources": ["https://en.wikipedia.org/wiki/Russian_River_(California)", "https://en.wikipedia.org/wiki/Russian_River_Valley_AVA"]
-    },
-    {
-      "id": "el_molino", "priority": 2, "category": "history",
-      "title": "California's first commercial sawmill",
-      "lat": 38.4800, "lon": -122.8850, "roads": ["river_rd", "sr116"],
-      "text": "The land around Forestville and Mirabel was once Rancho El Molino, the Ranch of the Mill. It was granted in 1833 to John Bautista Rogers Cooper, a sea captain who'd married General Vallejo's sister. The grant had a strategic purpose: the Mexican authorities wanted settlers pushing west toward the coast to counter the Russian presence at Fort Ross.\n\nIn 1834 Cooper built a water-powered sawmill here, driven by Mark West Creek and cutting redwood. It's recognised as the first water-powered commercial sawmill in California. The river had the last word, though: floods destroyed it in the winter of 1840 to 41.\n\nForestville itself was settled in the late 1860s, originally spelled with two r's, after one of its founders. By 1900 it had a bohemian reputation as a gathering place for writers and artists.",
-      "sources": ["https://en.wikipedia.org/wiki/Rancho_El_Molino", "https://en.wikipedia.org/wiki/Forestville,_California"]
-    },
-    {
-      "id": "river_floods", "priority": 4, "category": "water",
-      "title": "Floods, dams and the river that borrows from the Eel",
-      "lat": 38.5065, "lon": -122.9180, "roads": ["river_rd", "sr116"],
-      "text": "This lovely, lazy river has a violent side. Flood stage at Guerneville is 32 feet, and in the second half of the twentieth century the river topped it about five times a decade. The record is 49.5 feet, in February 1986. January 1995 hit 48 feet. Two big dams upstream, Coyote Valley Dam, built in 1959, forming Lake Mendocino, and Warm Springs Dam, finished in 1982, forming Lake Sonoma, now hold back some of the flood water, and flooding is less frequent. But in February 2019 the river rose to levels comparable to 1986.\n\nAnd here's a water fight in the making. Part of the Russian River's summer flow doesn't belong to this river at all. Since 1908, a tunnel in the mountains of Mendocino County, the Potter Valley Project, has diverted water from the Eel River into the headwaters of the Russian. A dam built on the Eel in 1922 lets it keep flowing in summer. That borrowed water helps supply Sonoma Water, which provides Russian River water to more than 600,000 people in Sonoma and Marin counties. But in 2019 the owner, Pacific Gas and Electric, decided the old hydro plant wasn't worth relicensing. The Eel River dams are to be removed, and the Russian River communities are working out how to keep some of that water coming.",
-      "sources": ["https://en.wikipedia.org/wiki/Russian_River_(California)", "https://en.wikipedia.org/wiki/Potter_Valley_Project", "https://en.wikipedia.org/wiki/Sonoma_Water"]
-    },
-    {
-      "id": "korbel", "priority": 2, "category": "wine",
-      "title": "Korbel: Bohemian brothers and California champagne",
-      "lat": 38.5070, "lon": -122.9650, "roads": ["river_rd", "sr116"],
-      "text": "On the riverbank near Rio Nido is Korbel, which has made sparkling wine here since 1882. It was founded by Francis Korbel and his brothers, emigrants from Bohemia, who'd also founded a satirical San Francisco magazine called The Wasp. They used the traditional Champagne method, where the wine is fermented a second time in the very bottle you buy.\n\nKorbel still prints the word champagne on its labels, which might make a Frenchman wince. It's legal because of U.S. rules from the 1930s that treat certain place names as semi-generic, as long as the label also says where the grapes really grew, and a 2006 trade agreement with the European Union protected older American brands that already used it. The Heck family bought the company in 1954 and grew it into one of the biggest wine producers in the country, at 1.6 million cases a year.",
-      "sources": ["https://en.wikipedia.org/wiki/Korbel_Champagne_Cellars"]
-    },
-    {
-      "id": "rio_nido", "priority": 2, "category": "quirky",
-      "title": "Rio Nido: there is no Canyon Five",
-      "lat": 38.5135, "lon": -122.9800, "roads": ["river_rd", "sr116"],
-      "text": "Rio Nido, the river nest, is a little resort village tucked into a redwood canyon. In 1908 a San Francisco fraternal lodge, the Eagles, bought the land and divided it among members, and the place was first called Eaglenest. During the Second World War its dance hall heaved with sailors on liberty and troops heading for the Pacific, and big bands played there. A small excursion boat once ran down the river to Guerneville's beach.\n\nTwo local oddities. The town's unofficial slogan is The Moon Is Always Out In Rio Nido. And its roads are named Canyon One, Two, Three, Four, Six and Seven. There is no Canyon Five, the story goes, because of an accident on the road that became Canyon Six.",
-      "sources": ["https://en.wikipedia.org/wiki/Rio_Nido,_California"]
-    },
-    {
-      "id": "guerneville", "kind": "poi", "priority": 5, "category": "history",
-      "title": "Guerneville: from Stumptown to resort town",
-      "lat": 38.5020, "lon": -122.9960, "roads": ["river_rd", "sr116", "bohemian"],
-      "text": "Welcome to Guerneville, and congratulations, you've made it. First, the name: it's said Gurn-vill, and locals sell T-shirts reading Don't call it Guerneyville, although people have been saying it that way since the 1800s.\n\nThe local Pomo used this spot as a summer camp and called it Ceola, the shady place. The redwoods here grew so thickly that local lore says the valley once had the greatest density of living matter on the planet. Then came the loggers. So many trees were cut in the late 1800s that the town's first English name was Stumptown, and the demand for lumber to rebuild San Francisco after the 1906 earthquake made the logging boom. The present name honours George Guerne, a Swiss immigrant who owned the sawmill. The annual parade is still called Stumptown Days. And the forests you see on the hills are mostly less than 200 years old, regrowth after the logging.\n\nIn 1877 the railroad connected the town to the San Francisco ferries, and Guerneville became a summer playground for the city. Jet travel in the 1960s and the 1964 floods hit the old resorts hard. Then in the late 1970s, gay entrepreneurs from San Francisco discovered the area, and their weekends revived the town. It's been known for its liberal, welcoming atmosphere ever since. In summer, fog rolls up the river from the Pacific, and the drip from the fog keeps the redwoods and ferns lush.",
-      "sources": ["https://en.wikipedia.org/wiki/Guerneville,_California"],
-      "more": {
-        "title": "Armstrong Redwoods: the trees the loggers missed",
-        "text": "Just north of town is Armstrong Redwoods State Natural Reserve, 805 acres of coast redwoods, including old-growth forest. In the 1870s, Colonel James Armstrong set the grove aside as a natural park. After his death his daughter and another local family campaigned with meetings, rallies and car caravans to save this last remnant of the old forest, and in 1917 Sonoma County bought it for 80,000 dollars.\n\nThe tallest tree, the Parson Jones Tree, is more than 310 feet high and about a hundred yards from the entrance. The oldest, the Colonel Armstrong Tree, is estimated at over 1,400 years old. The reserve gets about 55 inches of rain a year, almost all between September and June, and in summer the fog keeps it damp. If you have an hour to spare after the drive, there's an easy, wheelchair-accessible trail through the grove.",
-        "sources": ["https://en.wikipedia.org/wiki/Armstrong_Redwoods_State_Natural_Reserve"]
-      }
-    },
-    {
-      "id": "bohemian_grove", "priority": 4, "category": "politics",
-      "title": "Bohemian Grove: the most exclusive campsite in America",
-      "lat": 38.4700, "lon": -123.0050, "roads": ["bohemian", "sr116", "river_rd"],
-      "text": "Just downstream at Monte Rio, hidden in the redwoods, is the Bohemian Grove: a 2,700-acre private campground owned by San Francisco's Bohemian Club. Every July it hosts an encampment of more than two weeks for invited members and guests from politics, business and the arts.\n\nIt started innocently. The club was founded in 1872 by newspaper journalists, and in 1878 fewer than a hundred members held an overnight send-off in the Marin redwoods for an actor who was moving to New York. They enjoyed it so much they did it again the next year without him, and it became tradition. From 1893 they camped here, and in 1899 they bought the grove from a logging company that had preserved a stand of old-growth redwoods. Soon wealthy San Francisco businessmen joined, and the money and power followed.\n\nIts most famous moment: in September 1942, the grove hosted a meeting on the early planning of the Manhattan Project, with Ernest Lawrence and J. Robert Oppenheimer, which fed into the development of the atomic bomb. In July 1950, Dwight Eisenhower and Richard Nixon first met there, at a lunch hosted by Herbert Hoover. No woman has ever been granted full membership. And the secrecy breeds legends: in 2000 the broadcaster Alex Jones sneaked in and filmed the annual Cremation of Care ceremony and called it a ritual sacrifice, a claim other reporting doesn't support; the documentary-maker Jon Ronson, using the same footage, compared it to an overgrown frat party. One of the grove's camps, by the way, is named Silverado Squatters, after Stevenson's book.\n\nMonte Rio itself began as a railroad stop shipping redwood lumber to build San Francisco, then reinvented itself as a vacation wonderland, with a seven-storey hotel. Parts of the 1942 film Holiday Inn were shot here.",
-      "sources": ["https://en.wikipedia.org/wiki/Bohemian_Grove", "https://en.wikipedia.org/wiki/Monte_Rio,_California"]
-    },
-    {
-      "id": "pomo_story", "kind": "story", "priority": 4, "category": "indigenous",
-      "title": "The Pomo: the people of the Russian River",
-      "lat": 38.49, "lon": -122.85, "radius": 26000, "roads": ["river_rd", "sr116", "westside", "us101", "guerneville_rd", "sr12_sebastopol", "bohemian", "sr128_alexander"],
-      "text": "The Russian River is Pomo country. The Pomo lands once stretched from the Pacific coast inland to Clear Lake, but the Pomo were never one nation. They lived in small, independent bands, linked by family and marriage, and spoke seven related languages so different that speakers of one couldn't understand another. Linguists think their ancestors may have reached the Clear Lake uplands thousands of years ago, and later spread into the Russian River valley.\n\nThe name itself is a happy accident of history. In one Pomo language, it meant something like those who live at red earth hole, the name of a single village in Potter Valley, perhaps after the red magnesite mined there for beads, or the reddish, iron-rich soil. By 1877 English speakers were using it for the whole people.\n\nAlong the lower Russian River lived speakers of Southern Pomo. As the southernmost Pomo, they were the first to suffer from Spanish colonisation, and Southern Pomo people were used as labour to build the last of the California missions, at Sonoma. The American period that followed made things worse. By the time linguists came to record the language, only the northern groups survived, and in 2012 there was just one fluent speaker left. Since 2011 the Dry Creek Rancheria has run a revitalisation programme, with classes, a mobile app and signs on ancestral land.\n\nToday, several rancherias, small reservations, carry on: Dry Creek, Cloverdale, Lytton and Graton among them. And the language lives in the landscape. The Southern Pomo name for this river is Ashokawna, east water place, and their old Coyote stories mention the beavers that once dammed it.",
-      "sources": ["https://en.wikipedia.org/wiki/Pomo", "https://en.wikipedia.org/wiki/Southern_Pomo_language", "https://en.wikipedia.org/wiki/Russian_River_(California)"]
-    }
-  ]
+ "area": {
+  "id": "river",
+  "name": "Calistoga → Mark West → Russian River"
+ },
+ "clips": [
+  {
+   "id": "mt_st_helena",
+   "priority": 4,
+   "category": "geography",
+   "title": "Mount Saint Helena and the Russian princess",
+   "lat": 38.59,
+   "lon": -122.605,
+   "roads": [
+    "petrified_forest",
+    "sr128_alexander",
+    "sr29"
+   ],
+   "text": "If you can see the big mountain to the north of Calistoga, that's Mount Saint Helena, the peak that closes off the head of the Napa Valley. It has five summits arranged in a rough letter M. The highest is in Sonoma County, and the next is the high point of Napa County. The Napa River starts on its slopes, and it's one of the few mountains in the Bay Area that gets snow in winter.\n\nThe Wappo called it Kanamota, Human Mountain. Spanish colonists called it Mount Mayacamas. The name it has now comes from an unexpected direction: Russia. In 1841, a Russian survey party from Fort Ross, on the Sonoma coast, climbed the peak and left a copper plate on the summit, inscribed with the date and the name of Princess Helena de Gagarin, wife of the fort's commanding officer. So the mountain, and very likely the town of St. Helena, are named after a Russian aristocrat.\n\nGeologically it's made of uplifted volcanic rock, and it has an explosive past. Its eruptions sent pyroclastic flows across this landscape, and one of them, as you're about to hear, turned a forest to stone.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mount_Saint_Helena",
+    "https://en.wikipedia.org/wiki/Napa_River"
+   ]
+  },
+  {
+   "id": "petrified_forest",
+   "priority": 5,
+   "category": "geology",
+   "title": "The Petrified Forest: redwoods turned to stone",
+   "lat": 38.556,
+   "lon": -122.639,
+   "roads": [
+    "petrified_forest",
+    "calistoga_rd"
+   ],
+   "text": "Coming up on Petrified Forest Road is, appropriately, the Petrified Forest. About 3.4 million years ago, a volcanic eruption from the direction of Mount Saint Helena buried a forest of giant redwoods in volcanic ash. Over thousands of years, the trees turned to stone. It's the only petrified forest in California from the Pliocene, and it claims the largest petrified trees in the world. The biggest, nicknamed The Queen, is eight feet wide and 65 feet long, and was around 2,000 years old when the volcano killed it.\n\nThe trees are an extinct species of Sequoia, the redwood genus, and they tell us something surprising: redwoods once grew much further inland than they do today. A Berkeley researcher has been studying fossil pollen from the site since 2012.\n\nAs far as science is concerned, the forest was discovered in 1870 by the palaeontologist Othniel Charles Marsh. Robert Louis Stevenson visited during his 1880 honeymoon and wrote about it in The Silverado Squatters, describing it as owned by an old Swedish ex-sailor who'd stumbled on it while clearing land, and there's a petrified tree named after Stevenson. A woman called Ollie Orre Bockee bought it around 1912 for 14,000 dollars, opened it to tourists two years later at fifty cents a head, and her family has run it ever since. It was damaged in the 2017 fires and has since reopened, and in 2023 it was put up for sale for twelve million dollars.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Petrified_Forest_(California)",
+    "https://en.wikipedia.org/wiki/Mount_Saint_Helena",
+    "https://en.wikipedia.org/wiki/The_Silverado_Squatters"
+   ]
+  },
+  {
+   "id": "volcanoes_story",
+   "kind": "story",
+   "priority": 5,
+   "category": "geology",
+   "title": "Hot ground: the Sonoma Volcanics, Clear Lake and The Geysers",
+   "lat": 38.56,
+   "lon": -122.62,
+   "radius": 25000,
+   "roads": [
+    "petrified_forest",
+    "calistoga_rd",
+    "sr128_alexander",
+    "spring_mtn",
+    "sr29",
+    "silverado"
+   ],
+   "text": "You're crossing the Mayacamas Mountains, and almost everything around you was once molten.\n\nThe rock is called the Sonoma Volcanics: obsidian, pumice, tuff, rhyolite, andesite breccia and basalt lava, several thousand feet thick. It forms most of the mountains around the Napa and Sonoma valleys, and it probably once formed a continuous mass from San Pablo Bay north into Lake County, and from Solano County west to the Santa Rosa plain. Geologists think it erupted from several vents, on and off, over perhaps more than a million years, mostly in the Pliocene, three to five million years ago. It's also the parent material of many of the soils in the Napa and Sonoma wine regions.\n\nThe volcanic story isn't over. To the north, around Clear Lake, is the Clear Lake Volcanic Field, with lava domes, cinder cones and explosion craters. Its last eruption was only about 11,000 years ago, and the U.S. Geological Survey ranks its threat as high. Its volcanic heat is thought to have driven the hot springs that formed mercury and gold ores around Clear Lake.\n\nThat heat also powers The Geysers, up in the Mayacamas north-west of here: the largest geothermal field in the world, with eighteen power plants drawing steam from more than 350 wells. In 2019 it produced around a fifth of California's renewable energy. For something like 12,000 years, Native people built steam baths and thermal pools there for healing and ceremony. In the 1850s it became a resort that drew Ulysses Grant, Theodore Roosevelt and Mark Twain. And despite the name, the steam vents aren't true geysers at all; they're fumaroles. The surveyor who named the place in 1847 got it wrong, and nobody's bothered to change it.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sonoma_Volcanics",
+    "https://en.wikipedia.org/wiki/Clear_Lake_Volcanic_Field",
+    "https://en.wikipedia.org/wiki/The_Geysers",
+    "https://en.wikipedia.org/wiki/Calistoga,_California",
+    "https://en.wikipedia.org/wiki/Mark_West_Springs,_California"
+   ]
+  },
+  {
+   "id": "mark_west",
+   "priority": 4,
+   "category": "fire",
+   "title": "Mark West Springs: in the path of the Tubbs Fire",
+   "lat": 38.5413,
+   "lon": -122.7178,
+   "roads": [
+    "petrified_forest",
+    "calistoga_rd"
+   ],
+   "text": "On the night of the 8th of October 2017, a 76-year-old man saved hundreds of animals with garden hoses. This is where. You're coming down through the Mark West Springs area, named after a Scottish-American pioneer, William Marcus West. The springs here were a resort from 1880, perhaps earlier, and Mark West Creek, which you're following, runs nearly thirty miles from the Mayacamas to the Russian River.\n\nOn the night of the 8th of October 2017, this valley was directly in the path of the Tubbs Fire, racing west from Calistoga on fierce winds toward Santa Rosa. One story from that night stands out. At Safari West, a 400-acre wildlife preserve nearby, home to giraffes, rhinos, cheetahs and around 800 animals, the 76-year-old owner, Peter Lang, stayed behind and fought the flames by himself for more than ten hours, using only garden hoses. Not a single animal died.\n\nDown the hill, the community of Larkfield-Wikiup lost about 500 homes. Two years later, in 2019, the Kincade Fire started in The Geysers to the north and was pushed by extreme winds right to the edge of the same community, into the Tubbs burn scar. Much of what you see here has been rebuilt since.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mark_West_Springs,_California",
+    "https://en.wikipedia.org/wiki/Mark_West_Creek",
+    "https://en.wikipedia.org/wiki/Tubbs_Fire",
+    "https://en.wikipedia.org/wiki/Safari_West",
+    "https://en.wikipedia.org/wiki/Larkfield-Wikiup,_California"
+   ]
+  },
+  {
+   "id": "utopias",
+   "priority": 3,
+   "category": "quirky",
+   "title": "Utopias in the hills: Altruria and Fountain Grove",
+   "lat": 38.513,
+   "lon": -122.73,
+   "roads": [
+    "petrified_forest",
+    "us101",
+    "calistoga_rd"
+   ],
+   "text": "The hills north of Santa Rosa have attracted dreamers. In 1875, a religious leader called Thomas Lake Harris brought his followers, the Brotherhood of the New Life, from New York to found a colony called Fountain Grove. His mansion was called Aestivossa, which he said meant high country of divine joy in a language only he understood, and he insisted his real palace was in interspace. The practical side was run by his California lieutenant, Nagasawa Kanaye, who managed 2,000 acres of vineyards and succeeded Harris as leader until 1934. Fountaingrove is now a wealthy neighbourhood; its round barn, a local landmark, burned in the Tubbs Fire.\n\nThen in October 1894, about thirty Christian socialists led by a Berkeley Unitarian minister, Edward Payne, founded Altruria, a commune in these hills inspired by a utopian novel, A Traveller from Altruria. They grew orchards, sold produce in San Francisco and built a hotel. The hotel sank them. Within a year they needed a bankruptcy plan, and by 1896 every Altrurian settlement was abandoned.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fountain_Grove,_California",
+    "https://en.wikipedia.org/wiki/Altruria,_California"
+   ]
+  },
+  {
+   "id": "fulton_laguna",
+   "priority": 3,
+   "category": "geography",
+   "title": "Fulton and the Laguna de Santa Rosa",
+   "lat": 38.487,
+   "lon": -122.82,
+   "roads": [
+    "river_rd",
+    "guerneville_rd",
+    "sr116"
+   ],
+   "text": "Coming up is a giant natural sponge that can soak up more than 80,000 acre-feet of floodwater. West of the freeway, River Road passes the little community of Fulton, founded by the brothers Thomas and James Fulton, with a post office since 1871. The commuter trains of the SMART line run through it today.\n\nAhead, the land flattens into the floodplain of the Laguna de Santa Rosa, a 22-mile-long wetland that drains most of the Santa Rosa plain. In heavy winter rain it spreads out into a shallow lake that can hold over 80,000 acre-feet of stormwater, an enormous natural sponge. It's the most biologically diverse place in Sonoma County, with over 200 species of birds, bald and golden eagles, otters, mink and bobcats, and three endangered plants found nowhere else. It's also, sadly, listed as the most impaired water body on California's North Coast, after more than a century of farming and building on its floodplain, though restoration began in the 1990s.\n\nThere's a hydrological oddity here too. Mark West Creek, which we followed down from the hills, has been diverted in three places near its meeting with the Laguna, so that it looks as if the creek feeds the Laguna, when naturally it's the other way round.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fulton,_California",
+    "https://en.wikipedia.org/wiki/Laguna_de_Santa_Rosa",
+    "https://en.wikipedia.org/wiki/Mark_West_Creek"
+   ]
+  },
+  {
+   "id": "russian_river_intro",
+   "kind": "intro",
+   "priority": 5,
+   "category": "geography",
+   "title": "Meeting the Russian River",
+   "lat": 38.4896,
+   "lon": -122.8693,
+   "roads": [
+    "river_rd",
+    "westside",
+    "sr116"
+   ],
+   "text": "Welcome to the Russian River, the last leg of the journey. It's the second-largest river in the Bay Area after the Sacramento, with a main stem 115 miles long, flowing south from Mendocino County and then west to the Pacific.\n\nIt has had a lot of names. The Southern Pomo called it Ashokawna, east water place, and also Bidapte, big river. A Spanish land grant of 1843 called it the Rio Grande. Its current name comes from the Russian-American Company, which ran the fur-trading colony at Fort Ross on the coast in the early 1800s. A Russian explorer, Ivan Kuskov, travelled up the river, and an 1817 Russian chart calls it the Slavyanka.\n\nThis is also the Russian River Valley wine appellation, created in 1983: cool, foggy country, because of the valley's closeness to the Pacific. That suits Pinot Noir and Chardonnay, the grapes it's famous for. Vines came here with Mediterranean immigrants in the late 1800s, and by 1900 there were nearly 200 wineries in the region. Before the vines, the river's banks were lined with redwoods, which drew loggers in the late nineteenth century. You'll see the second-growth forest close in as we head downstream.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Russian_River_(California)",
+    "https://en.wikipedia.org/wiki/Russian_River_Valley_AVA"
+   ]
+  },
+  {
+   "id": "el_molino",
+   "priority": 2,
+   "category": "history",
+   "title": "California's first commercial sawmill",
+   "lat": 38.48,
+   "lon": -122.885,
+   "roads": [
+    "river_rd",
+    "sr116"
+   ],
+   "text": "California's first commercial water-powered sawmill was built right around here, and the river destroyed it a few years later. The land around Forestville and Mirabel was once Rancho El Molino, the Ranch of the Mill. It was granted in 1833 to John Bautista Rogers Cooper, a sea captain who'd married General Vallejo's sister. The grant had a strategic purpose: the Mexican authorities wanted settlers pushing west toward the coast to counter the Russian presence at Fort Ross.\n\nIn 1834 Cooper built a water-powered sawmill here, driven by Mark West Creek and cutting redwood. It's recognised as the first water-powered commercial sawmill in California. The river had the last word, though: floods destroyed it in the winter of 1840 to 41.\n\nForestville itself was settled in the late 1860s, originally spelled with two r's, after one of its founders. By 1900 it had a bohemian reputation as a gathering place for writers and artists.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rancho_El_Molino",
+    "https://en.wikipedia.org/wiki/Forestville,_California"
+   ]
+  },
+  {
+   "id": "river_floods",
+   "priority": 4,
+   "category": "water",
+   "title": "Floods, dams and the river that borrows from the Eel",
+   "lat": 38.5065,
+   "lon": -122.918,
+   "roads": [
+    "river_rd",
+    "sr116"
+   ],
+   "text": "This lovely, lazy river has a violent side. Flood stage at Guerneville is 32 feet, and in the second half of the twentieth century the river topped it about five times a decade. The record is 49.5 feet, in February 1986. January 1995 hit 48 feet. Two big dams upstream, Coyote Valley Dam, built in 1959, forming Lake Mendocino, and Warm Springs Dam, finished in 1982, forming Lake Sonoma, now hold back some of the flood water, and flooding is less frequent. But in February 2019 the river rose to levels comparable to 1986.\n\nAnd here's a water fight in the making. Part of the Russian River's summer flow doesn't belong to this river at all. Since 1908, a tunnel in the mountains of Mendocino County, the Potter Valley Project, has diverted water from the Eel River into the headwaters of the Russian. A dam built on the Eel in 1922 lets it keep flowing in summer. That borrowed water helps supply Sonoma Water, which provides Russian River water to more than 600,000 people in Sonoma and Marin counties. But in 2019 the owner, Pacific Gas and Electric, decided the old hydro plant wasn't worth relicensing. The Eel River dams are to be removed, and the Russian River communities are working out how to keep some of that water coming.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Russian_River_(California)",
+    "https://en.wikipedia.org/wiki/Potter_Valley_Project",
+    "https://en.wikipedia.org/wiki/Sonoma_Water"
+   ]
+  },
+  {
+   "id": "korbel",
+   "priority": 2,
+   "category": "wine",
+   "title": "Korbel: Bohemian brothers and California champagne",
+   "lat": 38.507,
+   "lon": -122.965,
+   "roads": [
+    "river_rd",
+    "sr116"
+   ],
+   "text": "Up ahead is a winery that legally prints the word champagne on its labels, and the French can't stop it. On the riverbank near Rio Nido is Korbel, which has made sparkling wine here since 1882. It was founded by Francis Korbel and his brothers, emigrants from Bohemia, who'd also founded a satirical San Francisco magazine called The Wasp. They used the traditional Champagne method, where the wine is fermented a second time in the very bottle you buy.\n\nKorbel still prints the word champagne on its labels, which might make a Frenchman wince. It's legal because of U.S. rules from the 1930s that treat certain place names as semi-generic, as long as the label also says where the grapes really grew, and a 2006 trade agreement with the European Union protected older American brands that already used it. The Heck family bought the company in 1954 and grew it into one of the biggest wine producers in the country, at 1.6 million cases a year.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Korbel_Champagne_Cellars"
+   ]
+  },
+  {
+   "id": "rio_nido",
+   "priority": 2,
+   "category": "quirky",
+   "title": "Rio Nido: there is no Canyon Five",
+   "lat": 38.5135,
+   "lon": -122.98,
+   "roads": [
+    "river_rd",
+    "sr116"
+   ],
+   "text": "Rio Nido, the river nest, is a little resort village tucked into a redwood canyon. In 1908 a San Francisco fraternal lodge, the Eagles, bought the land and divided it among members, and the place was first called Eaglenest. During the Second World War its dance hall heaved with sailors on liberty and troops heading for the Pacific, and big bands played there. A small excursion boat once ran down the river to Guerneville's beach.\n\nTwo local oddities. The town's unofficial slogan is The Moon Is Always Out In Rio Nido. And its roads are named Canyon One, Two, Three, Four, Six and Seven. There is no Canyon Five, the story goes, because of an accident on the road that became Canyon Six.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Rio_Nido,_California"
+   ]
+  },
+  {
+   "id": "guerneville",
+   "kind": "poi",
+   "priority": 5,
+   "category": "history",
+   "title": "Guerneville: from Stumptown to resort town",
+   "lat": 38.502,
+   "lon": -122.996,
+   "roads": [
+    "river_rd",
+    "sr116",
+    "bohemian"
+   ],
+   "text": "Welcome to Guerneville. Julia, Adam, driver: congratulations, you've made it. First, the name: it's said Gurn-vill, and locals sell T-shirts reading Don't call it Guerneyville, although people have been saying it that way since the 1800s.\n\nThe local Pomo used this spot as a summer camp and called it Ceola, the shady place. The redwoods here grew so thickly that local lore says the valley once had the greatest density of living matter on the planet. Then came the loggers. So many trees were cut in the late 1800s that the town's first English name was Stumptown, and the demand for lumber to rebuild San Francisco after the 1906 earthquake made the logging boom. The present name honours George Guerne, a Swiss immigrant who owned the sawmill. The annual parade is still called Stumptown Days. And the forests you see on the hills are mostly less than 200 years old, regrowth after the logging.\n\nIn 1877 the railroad connected the town to the San Francisco ferries, and Guerneville became a summer playground for the city. Jet travel in the 1960s and the 1964 floods hit the old resorts hard. Then in the late 1970s, gay entrepreneurs from San Francisco discovered the area, and their weekends revived the town. It's been known for its liberal, welcoming atmosphere ever since. In summer, fog rolls up the river from the Pacific, and the drip from the fog keeps the redwoods and ferns lush.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Guerneville,_California"
+   ],
+   "more": {
+    "title": "Armstrong Redwoods: the trees the loggers missed",
+    "text": "Just north of town is Armstrong Redwoods State Natural Reserve, 805 acres of coast redwoods, including old-growth forest. In the 1870s, Colonel James Armstrong set the grove aside as a natural park. After his death his daughter and another local family campaigned with meetings, rallies and car caravans to save this last remnant of the old forest, and in 1917 Sonoma County bought it for 80,000 dollars.\n\nThe tallest tree, the Parson Jones Tree, is more than 310 feet high and about a hundred yards from the entrance. The oldest, the Colonel Armstrong Tree, is estimated at over 1,400 years old. The reserve gets about 55 inches of rain a year, almost all between September and June, and in summer the fog keeps it damp. If you have an hour to spare after the drive, there's an easy, wheelchair-accessible trail through the grove.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Armstrong_Redwoods_State_Natural_Reserve"
+    ]
+   }
+  },
+  {
+   "id": "bohemian_grove",
+   "priority": 4,
+   "category": "politics",
+   "title": "Bohemian Grove: the most exclusive campsite in America",
+   "lat": 38.47,
+   "lon": -123.005,
+   "roads": [
+    "bohemian",
+    "sr116",
+    "river_rd"
+   ],
+   "text": "Just downstream at Monte Rio, hidden in the redwoods, is the Bohemian Grove: a 2,700-acre private campground owned by San Francisco's Bohemian Club. Every July it hosts an encampment of more than two weeks for invited members and guests from politics, business and the arts.\n\nIt started innocently. The club was founded in 1872 by newspaper journalists, and in 1878 fewer than a hundred members held an overnight send-off in the Marin redwoods for an actor who was moving to New York. They enjoyed it so much they did it again the next year without him, and it became tradition. From 1893 they camped here, and in 1899 they bought the grove from a logging company that had preserved a stand of old-growth redwoods. Soon wealthy San Francisco businessmen joined, and the money and power followed.\n\nIts most famous moment: in September 1942, the grove hosted a meeting on the early planning of the Manhattan Project, with Ernest Lawrence and J. Robert Oppenheimer, which fed into the development of the atomic bomb. In July 1950, Dwight Eisenhower and Richard Nixon first met there, at a lunch hosted by Herbert Hoover. No woman has ever been granted full membership. And the secrecy breeds legends: in 2000 the broadcaster Alex Jones sneaked in and filmed the annual Cremation of Care ceremony and called it a ritual sacrifice, a claim other reporting doesn't support; the documentary-maker Jon Ronson, using the same footage, compared it to an overgrown frat party. One of the grove's camps, by the way, is named Silverado Squatters, after Stevenson's book.\n\nMonte Rio itself began as a railroad stop shipping redwood lumber to build San Francisco, then reinvented itself as a vacation wonderland, with a seven-storey hotel. Parts of the 1942 film Holiday Inn were shot here.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bohemian_Grove",
+    "https://en.wikipedia.org/wiki/Monte_Rio,_California"
+   ]
+  },
+  {
+   "id": "pomo_story",
+   "kind": "story",
+   "priority": 4,
+   "category": "indigenous",
+   "title": "The Pomo: the people of the Russian River",
+   "lat": 38.49,
+   "lon": -122.85,
+   "radius": 26000,
+   "roads": [
+    "river_rd",
+    "sr116",
+    "westside",
+    "us101",
+    "guerneville_rd",
+    "sr12_sebastopol",
+    "bohemian",
+    "sr128_alexander"
+   ],
+   "text": "The Russian River is Pomo country. The Pomo lands once stretched from the Pacific coast inland to Clear Lake, but the Pomo were never one nation. They lived in small, independent bands, linked by family and marriage, and spoke seven related languages so different that speakers of one couldn't understand another. Linguists think their ancestors may have reached the Clear Lake uplands thousands of years ago, and later spread into the Russian River valley.\n\nThe name itself is a happy accident of history. In one Pomo language, it meant something like those who live at red earth hole, the name of a single village in Potter Valley, perhaps after the red magnesite mined there for beads, or the reddish, iron-rich soil. By 1877 English speakers were using it for the whole people.\n\nAlong the lower Russian River lived speakers of Southern Pomo. As the southernmost Pomo, they were the first to suffer from Spanish colonisation, and Southern Pomo people were used as labour to build the last of the California missions, at Sonoma. The American period that followed made things worse. By the time linguists came to record the language, only the northern groups survived, and in 2012 there was just one fluent speaker left. Since 2011 the Dry Creek Rancheria has run a revitalisation programme, with classes, a mobile app and signs on ancestral land.\n\nToday, several rancherias, small reservations, carry on: Dry Creek, Cloverdale, Lytton and Graton among them. And the language lives in the landscape. The Southern Pomo name for this river is Ashokawna, east water place, and their old Coyote stories mention the beavers that once dammed it.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pomo",
+    "https://en.wikipedia.org/wiki/Southern_Pomo_language",
+    "https://en.wikipedia.org/wiki/Russian_River_(California)"
+   ]
+  }
+ ]
 }

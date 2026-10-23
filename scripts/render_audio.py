@@ -1,13 +1,14 @@
 """Render narration with Kokoro (local) from build/tts-jobs.json.
 
-Each clip: Kokoro 24 kHz -> loudness-normalised (EBU R128, -16 LUFS, -1.5 dBTP) with short
+Each clip: Kokoro 24 kHz -> loudness-normalised (EBU R128, -13 LUFS, limited) with short
 fades -> mono AAC 64 kbps .m4a. Existing files are skipped (filenames carry a content hash).
 Writes build/durations.json. Usage: .venv/bin/python scripts/render_audio.py [--voice af_heart]
 """
 import json, os, subprocess, sys, tempfile, time
 import numpy as np, soundfile as sf
 
-jobs = json.load(open("build/tts-jobs.json"))
+jobs_path = sys.argv[sys.argv.index("--jobs") + 1] if "--jobs" in sys.argv else "build/tts-jobs.json"
+jobs = json.load(open(jobs_path))
 voice = jobs["voice"]
 if "--voice" in sys.argv:
     voice = sys.argv[sys.argv.index("--voice") + 1]
@@ -40,7 +41,8 @@ if todo:
             sf.write(tmp.name, audio, 24000)
         dur = len(audio) / 24000 + 0.4
         os.makedirs(os.path.dirname(j["out"]), exist_ok=True)
-        af = (f"adelay=150,apad=pad_dur=0.25,loudnorm=I=-16:TP=-1.5:LRA=11,"
+        # -13 LUFS: louder than podcast norm so the voice cuts through road noise and ducked music
+        af = (f"adelay=150,apad=pad_dur=0.25,loudnorm=I=-12:TP=-1.0:LRA=8,alimiter=limit=0.89:level=false,"
               f"afade=t=in:d=0.12,afade=t=out:st={max(0, dur - 0.35):.2f}:d=0.35")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp.name, "-af", af, "-ar", "44100", "-ac", "1",
                         "-c:a", "aac", "-b:a", "64k", "-movflags", "+faststart", j["out"]], check=True)

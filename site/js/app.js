@@ -7,7 +7,7 @@ const store = {
   get(k, d) { try { const v = localStorage.getItem('rt.' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem('rt.' + k, JSON.stringify(v)); } catch (e) {} },
 };
-const settings = Object.assign({ talk: 'normal', rate: '1', mode: 'B', simSpeed: '30', voice: '', awake: 'both' }, store.get('settings', {}));
+const settings = Object.assign({ talk: 'normal', rate: '1', mode: 'G', simSpeed: '30', voice: '', awake: 'both' }, store.get('settings', {}));
 const saveSettings = () => store.set('settings', settings);
 
 let net, clips, byId, routes, engine, manifest;
@@ -350,8 +350,8 @@ function renderSettings() {
     C: 'transient-solo: meant to pause other audio while speaking, which may let Spotify resume afterwards.',
     D: 'playback: behaves like a media app — pauses Spotify.',
     E: 'speechSynthesis: the phone’s own voice instead of the recordings. Robotic unless you install an Apple “Premium” voice (see below).',
-    G: 'EXPERIMENT: recorded voice in a mixable session, plus a silent phone-voice running alongside to make iOS duck the music like mode E. Test it on the audio test page first.',
-    H: 'EXPERIMENT: like G, but with the “transient” session.',
+    G: 'Recommended (your test, 23 Oct): the natural recorded voice; the music ducks while it talks and comes back afterwards. Keep the ring/silent switch OFF in this mode.',
+    H: 'Like G (also ducked and restored in your test), with the “transient” session.',
     F: 'ambient: meant to mix with music without ducking; may be silenced by the silent switch.',
   };
   let res = {}; try { res = JSON.parse(localStorage.getItem('audioTestResults') || '{}'); } catch (e) {}

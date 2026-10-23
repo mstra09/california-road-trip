@@ -29,7 +29,7 @@ if (!args.includes('--skip-audio')) {
     const dur = +execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f]).toString();
     louds.push(I);
     if (!(dur > 15 && dur < 260)) fail(`${c.id}: odd duration ${dur}s`);
-    if (!(I > -19 && I < -13)) fail(`${c.id}: loudness ${I} LUFS outside -19..-13`);
+    if (!(I > -15 && I < -11)) fail(`${c.id}: loudness ${I} LUFS outside -15..-11`);
   }
   const mb = clips.reduce((a, c) => a + (fs.existsSync('site/' + c.audio) ? fs.statSync('site/' + c.audio).size : 0), 0) / 1e6;
   louds.sort((a, b) => a - b);

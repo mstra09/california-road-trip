@@ -1,61 +1,198 @@
 {
-  "area": { "id": "stories", "name": "Long stories" },
-  "clips": [
-    {
-      "id": "goldrush_story", "kind": "story", "priority": 4, "category": "history",
-      "title": "The Gold Rush, and how it remade this whole region",
-      "lat": 38.50, "lon": -121.75, "radius": 30000, "roads": ["i80"],
-      "text": "Let's talk about the event that made Sacramento, and in a roundabout way, much of what you'll see today.\n\nOn the 24th of January 1848, James Marshall was building a sawmill for the Sacramento pioneer John Sutter, up the American River at Coloma, when he spotted something shiny in the tailrace. It was gold. Sutter tried to keep it quiet, because he feared a rush would wreck his plans for an agricultural empire. He failed, thanks partly to Sam Brannan, who publicised it. About 300,000 people poured into California, half by sea, half overland. San Francisco went from about 200 residents in 1846 to around 36,000 by 1852, and California became a state in September 1850.\n\nWatch how the rush ripples through today's stops. The Town of Washington, now West Sacramento, was a rest stop for travellers heading for the diggings. Dixon began as Silveyville, a halfway point for miners. Alfred Tubbs, who later founded Chateau Montelena, made his fortune selling rope to the rush. Dr. Bale of the grist mill went off to mine and died of a fever. Greystone Cellars in St. Helena was built by the heir to a gold-mine fortune. William Hood of Kenwood got rich building houses for the flood of newcomers. And wine took off: the new population created a market, and in the 1850s vineyards spread across Napa, Sonoma and beyond.\n\nThe rush was a catastrophe for Native Californians. Disease, starvation and violence accelerated a collapse in population, and whole tribes were displaced. The Patwin of this valley, as we heard, were among them.",
-      "sources": ["https://en.wikipedia.org/wiki/California_gold_rush", "https://en.wikipedia.org/wiki/History_of_California_wine", "https://en.wikipedia.org/wiki/West_Sacramento,_California", "https://en.wikipedia.org/wiki/Dixon,_California", "https://en.wikipedia.org/wiki/Chateau_Montelena", "https://en.wikipedia.org/wiki/Edward_Turner_Bale", "https://en.wikipedia.org/wiki/The_Culinary_Institute_of_America_at_Greystone", "https://en.wikipedia.org/wiki/Rancho_Los_Guilicos", "https://en.wikipedia.org/wiki/Patwin"]
-    },
-    {
-      "id": "delta_story", "kind": "story", "priority": 3, "category": "water",
-      "title": "The Delta: California's Holland",
-      "lat": 38.35, "lon": -121.95, "radius": 30000, "roads": ["i80", "i505_128"],
-      "text": "South of the freeway, out of sight beyond the fields, lies one of the most important and most fragile landscapes in America: the Sacramento-San Joaquin River Delta. The flood water from the Yolo Bypass drains into it, and so does about half of all the water that runs off California's land, more than thirty million acre-feet a year.\n\nIts origin is a bottleneck. Around 560,000 years ago, water broke through the coastal mountains and carved the Carquinez Strait and San Francisco Bay. All of the Central Valley's rivers had to squeeze out through that narrow gap, which slowed them down. Later, as sea level rose, the tides pushed back up through the strait and slowed them further, so the rivers dropped their sediment and built a vast freshwater marsh of channels, sloughs and low islands of peat and tules.\n\nThen people drained it. Today there are about 57 reclaimed islands and tracts, ringed by 1,100 miles of levees, and nearly three-quarters of the Delta is farmland. But drained peat oxidises and is eroded by the wind, so much of the Delta now sits below sea level behind its levees, which is why it's nicknamed California's Holland. And at its southern end, giant pumps send Delta water to farms in the San Joaquin Valley and to the cities of Southern California. Every argument about California water, from fish to farms to drinking water, ends up in the Delta.",
-      "sources": ["https://en.wikipedia.org/wiki/Sacramento%E2%80%93San_Joaquin_River_Delta", "https://en.wikipedia.org/wiki/Yolo_Bypass"]
-    },
-    {
-      "id": "tule_fog", "kind": "story", "priority": 2, "category": "geography",
-      "title": "Tule fog: the valley's winter ghost",
-      "lat": 38.48, "lon": -121.80, "radius": 28000, "roads": ["i80", "i505_128"],
-      "text": "A practical note about this valley, especially if you ever drive it in winter. From November to March, after the first big rains, the Central Valley is prone to tule fog, named after the tule-reed wetlands that once covered it.\n\nIt's what meteorologists call radiation fog. After rain, the ground is damp and the air humid. On long, still winter nights, the ground cools quickly, and the cold air near the surface is trapped beneath warmer air above, a temperature inversion, until its moisture condenses into a thick, low blanket. It can stretch over 400 miles, from Bakersfield to Red Bluff. As of 2005, tule fog was the leading cause of weather-related road accidents in California. Today, late in October, you're just ahead of the official season. But if you ever see the valley disappear into a white wall on a winter morning, slow right down.",
-      "sources": ["https://en.wikipedia.org/wiki/Tule_fog"]
-    },
-    {
-      "id": "farm_labour_story", "kind": "story", "priority": 4, "category": "politics",
-      "title": "Who does the work? Farm labour in the valleys",
-      "lat": 38.42, "lon": -122.30, "radius": 32000, "roads": ["sr29", "silverado", "i80", "i505_128", "carneros", "sonoma_valley", "sr12_jameson"],
-      "text": "Every vineyard and orchard you pass depends on people who rarely appear in the wine brochures. The story of farm labour here is a story of successive waves.\n\nThe first workers were Native Californians, often forced: the Patwin were compelled into unpaid labour on ranches and in mines, and by 1870 the Native population of the Napa Valley consisted of only a few labourers and servants working for the settlers. In the late 1800s, Chinese and Japanese immigrants worked in Vacaville's orchards and packing houses. During the Second World War, German prisoners of war were put to work from a camp near Windsor, built on the site of an old migrant labour camp.\n\nThe biggest change came with the Bracero Program, an agreement between the United States and Mexico that began in Stockton, in the Central Valley, in August 1942, to fill wartime labour shortages. Over 22 years it offered several million contracts to Mexican workers in 24 states. On paper they were promised decent housing, food, a minimum wage of thirty cents an hour and protection from discrimination. The programme ended in 1964. Economists have since found it didn't depress American farmworkers' wages, and that ending it pushed farms toward mechanisation. Since then, temporary farmworkers have come on H-2A visas.\n\nToday, around a third of Napa County's residents are Hispanic or Latino. And the tension between luxury and labour is very much alive. In 2026, Thomas Keller of the French Laundry opposed a planned 120-unit apartment building in Yountville for workers priced out of the town, while former employees sued his restaurant group, alleging they'd been made to work off the clock.",
-      "sources": ["https://en.wikipedia.org/wiki/Bracero_Program", "https://en.wikipedia.org/wiki/Patwin", "https://en.wikipedia.org/wiki/Napa,_California", "https://en.wikipedia.org/wiki/Vacaville,_California", "https://en.wikipedia.org/wiki/Windsor,_California", "https://en.wikipedia.org/wiki/Napa_County,_California", "https://en.wikipedia.org/wiki/The_French_Laundry"]
-    },
-    {
-      "id": "ag_preserve_story", "kind": "story", "priority": 4, "category": "politics",
-      "title": "Why the Napa Valley isn't covered in houses",
-      "lat": 38.45, "lon": -122.40, "radius": 22000, "roads": ["sr29", "silverado", "oakville_grade", "i505_128"],
-      "text": "Notice something about the Napa Valley floor: there are almost no subdivisions or shopping centres between the towns. That's not an accident. It's the result of one of the most important land-use decisions in California history.\n\nNeighbouring Sonoma, Solano and Yolo counties have let large stretches of farmland be rezoned for housing and commerce. In 1968, Napa's vintners and civic leaders went the other way. Using a new state law, the Williamson Act, which gave landowners tax breaks for keeping land in agriculture, they created an agricultural preserve on the valley floor between Napa and Calistoga. It was the first of its kind in California. It began at 23,000 acres and has grown to over 30,000. In 1990 voters went further with Measure J, which froze county zoning changes on farmland until 2020 unless two-thirds of voters agreed.\n\nThe fights never stop, though. Locals battled the Wine Train in the 1980s, fearing even more tourists. County rules even stop Castello di Amorosa from being rented out for weddings. And the valley's success creates its own squeeze: towns too expensive for the people who work in them, as the 2026 fight over worker housing in Yountville shows. The preserve kept the valley green; who gets to live in it is the next argument.",
-      "sources": ["https://en.wikipedia.org/wiki/Napa_County,_California", "https://en.wikipedia.org/wiki/Napa_Valley_Wine_Train", "https://en.wikipedia.org/wiki/Castello_di_Amorosa", "https://en.wikipedia.org/wiki/The_French_Laundry"]
-    },
-    {
-      "id": "cannabis_story", "kind": "story", "priority": 3, "category": "politics",
-      "title": "Cannabis: California's other crop",
-      "lat": 38.45, "lon": -122.88, "radius": 25000, "roads": ["sr116", "bohemian", "river_rd", "westside", "guerneville_rd", "sr12_sebastopol"],
-      "text": "Wine isn't the only crop with a complicated legal history in Northern California.\n\nCalifornia has been at the forefront of cannabis politics for half a century. In 1972 it held the nation's first ballot initiative to legalise cannabis, Proposition 19, which failed. In 1996, Proposition 215, the Compassionate Use Act, made California the first state to legalise medical cannabis, with 56 percent of the vote. And in November 2016, Proposition 64 legalised recreational use, with 57 percent. Under that law, cities and counties can't stop adults from growing small amounts for their own use.\n\nLegalisation turned out to be messy. Growers and suppliers had to register, follow regulations and get permits, and more than half of the nonprofit dispensaries that had legally supplied medical cannabis closed. Legal businesses pay substantial state and local taxes, and reducing illegal growing, which continues in remote rural areas, is seen as essential to their survival. And it's all still illegal under federal law, as is sending cannabis to other states. In other words, much like the vintners of the Prohibition era, today's cannabis farmers live in a strange legal twilight between what the state allows and what Washington forbids.",
-      "sources": ["https://en.wikipedia.org/wiki/Cannabis_in_California"]
-    },
-    {
-      "id": "russians_story", "kind": "story", "priority": 4, "category": "history",
-      "title": "The Russians in California",
-      "lat": 38.48, "lon": -122.86, "radius": 26000, "roads": ["river_rd", "sr116", "westside", "bohemian", "guerneville_rd", "us101"],
-      "text": "Today we've met Russians again and again: a river, a mountain, a farm near Graton. Here's the whole story.\n\nRussian traders pushed east across Siberia and the North Pacific, and in 1799 they founded a colony in Alaska, run by the Russian-American Company. Their business was fur, above all sea otter. From 1803, American ship captains took Alaskan Native hunters south on joint ventures to hunt otters along the California coast; between 1805 and 1812 alone, ten American ships with Aleut hunters gathered over 22,000 pelts.\n\nIn 1812 the company built its own base, Fort Ross, on the Sonoma coast, in the territory of the Kashaya Pomo. It was remarkably cosmopolitan, with Native Californians, Native Alaskans, Russians, Finns and Swedes. They named Bodega Bay Rumyantsev Bay. They explored the river, which became the Slavyanka and later the Russian River. In 1836 their agronomist set up a farm with a vineyard between Occidental and Graton. And in 1841 a Russian survey party climbed Mount Saint Helena and left a copper plate naming it after the commander's wife.\n\nThe Russian presence had big consequences. Spain and then Mexico built the mission at Sonoma, the presidio, and ranchos like Rancho El Molino partly to block them. And the Russian connection outlived the fort: the young Finnish sailor who'd first come to Alaska on a Russian-American Company ship was Gustave Niebaum, later founder of Inglenook in Rutherford.\n\nIn 1841 the Russians offered to sell Fort Ross to General Vallejo. Mexican officials dithered, and in the end John Sutter bought it, the same Sutter on whose land gold was found seven years later.",
-      "sources": ["https://en.wikipedia.org/wiki/Fort_Ross,_California", "https://en.wikipedia.org/wiki/Russian-American_Company", "https://en.wikipedia.org/wiki/Russian_River_(California)", "https://en.wikipedia.org/wiki/Graton,_California", "https://en.wikipedia.org/wiki/Mount_Saint_Helena", "https://en.wikipedia.org/wiki/Rancho_El_Molino", "https://en.wikipedia.org/wiki/Gustave_Niebaum", "https://en.wikipedia.org/wiki/Mariano_Guadalupe_Vallejo", "https://en.wikipedia.org/wiki/California_gold_rush"]
-    },
-    {
-      "id": "grape_king_story", "kind": "story", "priority": 3, "category": "wine",
-      "title": "The Grape King of California",
-      "lat": 38.49, "lon": -122.72, "radius": 15000, "roads": ["us101", "petrified_forest", "calistoga_rd", "guerneville_rd", "sonoma_valley", "river_rd"],
-      "text": "Here's a wine story you won't hear in many tasting rooms.\n\nCalifornia's first wine grape was the Mission grape, brought by the Spanish, and it dominated California wine until about 1880. The Gold Rush created a thirsty market, and pioneers like Agoston Haraszthy imported cuttings from 165 of Europe's great vineyards. Charles Krug, a Prussian political dissident, learned the trade as Haraszthy's apprentice in Sonoma before founding his own winery in St. Helena.\n\nNorth of Santa Rosa, at the utopian colony of Fountain Grove, the vineyards were run by Nagasawa Kanaye. He became known as the Grape King of California, one of the biggest winemakers in the state. He hosted lavish dinners for guests including John Muir, Thomas Edison and Henry Ford, and according to the history of California wine, Fountain Grove's cellars kept flowing freely right through Prohibition.\n\nThat's a reminder that wine country's history is more diverse than the château architecture suggests: Spanish missionaries, a Hungarian adventurer, German and Italian immigrants, a Finnish sea captain, and Nagasawa the Grape King, all on land that had been Pomo, Wappo, Miwok and Patwin for thousands of years. Today there are more than 1,700 wineries in the North Bay.",
-      "sources": ["https://en.wikipedia.org/wiki/History_of_California_wine", "https://en.wikipedia.org/wiki/Fountain_Grove,_California", "https://en.wikipedia.org/wiki/Wine_Country"]
-    }
-  ]
+ "area": {
+  "id": "stories",
+  "name": "Long stories"
+ },
+ "clips": [
+  {
+   "id": "goldrush_story",
+   "kind": "story",
+   "priority": 4,
+   "category": "history",
+   "title": "The Gold Rush, and how it remade this whole region",
+   "lat": 38.5,
+   "lon": -121.75,
+   "radius": 30000,
+   "roads": [
+    "i80"
+   ],
+   "text": "Let's talk about the event that made Sacramento, and in a roundabout way, much of what you'll see today.\n\nOn the 24th of January 1848, James Marshall was building a sawmill for the Sacramento pioneer John Sutter, up the American River at Coloma, when he spotted something shiny in the tailrace. It was gold. Sutter tried to keep it quiet, because he feared a rush would wreck his plans for an agricultural empire. He failed, thanks partly to Sam Brannan, who publicised it. About 300,000 people poured into California, half by sea, half overland. San Francisco went from about 200 residents in 1846 to around 36,000 by 1852, and California became a state in September 1850.\n\nWatch how the rush ripples through today's stops. The Town of Washington, now West Sacramento, was a rest stop for travellers heading for the diggings. Dixon began as Silveyville, a halfway point for miners. Alfred Tubbs, who later founded Chateau Montelena, made his fortune selling rope to the rush. Dr. Bale of the grist mill went off to mine and died of a fever. Greystone Cellars in St. Helena was built by the heir to a gold-mine fortune. William Hood of Kenwood got rich building houses for the flood of newcomers. And wine took off: the new population created a market, and in the 1850s vineyards spread across Napa, Sonoma and beyond.\n\nThe rush was a catastrophe for Native Californians. Disease, starvation and violence accelerated a collapse in population, and whole tribes were displaced. The Patwin of this valley, as we heard, were among them.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/California_gold_rush",
+    "https://en.wikipedia.org/wiki/History_of_California_wine",
+    "https://en.wikipedia.org/wiki/West_Sacramento,_California",
+    "https://en.wikipedia.org/wiki/Dixon,_California",
+    "https://en.wikipedia.org/wiki/Chateau_Montelena",
+    "https://en.wikipedia.org/wiki/Edward_Turner_Bale",
+    "https://en.wikipedia.org/wiki/The_Culinary_Institute_of_America_at_Greystone",
+    "https://en.wikipedia.org/wiki/Rancho_Los_Guilicos",
+    "https://en.wikipedia.org/wiki/Patwin"
+   ]
+  },
+  {
+   "id": "delta_story",
+   "kind": "story",
+   "priority": 3,
+   "category": "water",
+   "title": "The Delta: California's Holland",
+   "lat": 38.35,
+   "lon": -121.95,
+   "radius": 30000,
+   "roads": [
+    "i80",
+    "i505_128"
+   ],
+   "text": "South of the freeway, out of sight beyond the fields, lies one of the most important and most fragile landscapes in America: the Sacramento-San Joaquin River Delta. The flood water from the Yolo Bypass drains into it, and so does about half of all the water that runs off California's land, more than thirty million acre-feet a year.\n\nIts origin is a bottleneck. Around 560,000 years ago, water broke through the coastal mountains and carved the Carquinez Strait and San Francisco Bay. All of the Central Valley's rivers had to squeeze out through that narrow gap, which slowed them down. Later, as sea level rose, the tides pushed back up through the strait and slowed them further, so the rivers dropped their sediment and built a vast freshwater marsh of channels, sloughs and low islands of peat and tules.\n\nThen people drained it. Today there are about 57 reclaimed islands and tracts, ringed by 1,100 miles of levees, and nearly three-quarters of the Delta is farmland. But drained peat oxidises and is eroded by the wind, so much of the Delta now sits below sea level behind its levees, which is why it's nicknamed California's Holland. And at its southern end, giant pumps send Delta water to farms in the San Joaquin Valley and to the cities of Southern California. Every argument about California water, from fish to farms to drinking water, ends up in the Delta.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sacramento%E2%80%93San_Joaquin_River_Delta",
+    "https://en.wikipedia.org/wiki/Yolo_Bypass"
+   ]
+  },
+  {
+   "id": "tule_fog",
+   "kind": "story",
+   "priority": 2,
+   "category": "geography",
+   "title": "Tule fog: the valley's winter ghost",
+   "lat": 38.48,
+   "lon": -121.8,
+   "radius": 28000,
+   "roads": [
+    "i80",
+    "i505_128"
+   ],
+   "text": "A practical note about this valley, especially if you ever drive it in winter. From November to March, after the first big rains, the Central Valley is prone to tule fog, named after the tule-reed wetlands that once covered it.\n\nIt's what meteorologists call radiation fog. After rain, the ground is damp and the air humid. On long, still winter nights, the ground cools quickly, and the cold air near the surface is trapped beneath warmer air above, a temperature inversion, until its moisture condenses into a thick, low blanket. It can stretch over 400 miles, from Bakersfield to Red Bluff. As of 2005, tule fog was the leading cause of weather-related road accidents in California. Today, late in October, you're just ahead of the official season. But if you ever see the valley disappear into a white wall on a winter morning, slow right down.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tule_fog"
+   ]
+  },
+  {
+   "id": "farm_labour_story",
+   "kind": "story",
+   "priority": 4,
+   "category": "politics",
+   "title": "Who does the work? Farm labour in the valleys",
+   "lat": 38.42,
+   "lon": -122.3,
+   "radius": 32000,
+   "roads": [
+    "sr29",
+    "silverado",
+    "i80",
+    "i505_128",
+    "carneros",
+    "sonoma_valley",
+    "sr12_jameson"
+   ],
+   "text": "Every vineyard and orchard you pass depends on people who rarely appear in the wine brochures. The story of farm labour here is a story of successive waves.\n\nThe first workers were Native Californians, often forced: the Patwin were compelled into unpaid labour on ranches and in mines, and by 1870 the Native population of the Napa Valley consisted of only a few labourers and servants working for the settlers. In the late 1800s, Chinese and Japanese immigrants worked in Vacaville's orchards and packing houses. During the Second World War, German prisoners of war were put to work from a camp near Windsor, built on the site of an old migrant labour camp.\n\nThe biggest change came with the Bracero Program, an agreement between the United States and Mexico that began in Stockton, in the Central Valley, in August 1942, to fill wartime labour shortages. Over 22 years it offered several million contracts to Mexican workers in 24 states. On paper they were promised decent housing, food, a minimum wage of thirty cents an hour and protection from discrimination. The programme ended in 1964. Economists have since found it didn't depress American farmworkers' wages, and that ending it pushed farms toward mechanisation. Since then, temporary farmworkers have come on H-2A visas.\n\nToday, around a third of Napa County's residents are Hispanic or Latino. And the tension between luxury and labour is very much alive. In 2026, Thomas Keller of the French Laundry opposed a planned 120-unit apartment building in Yountville for workers priced out of the town, while former employees sued his restaurant group, alleging they'd been made to work off the clock.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bracero_Program",
+    "https://en.wikipedia.org/wiki/Patwin",
+    "https://en.wikipedia.org/wiki/Napa,_California",
+    "https://en.wikipedia.org/wiki/Vacaville,_California",
+    "https://en.wikipedia.org/wiki/Windsor,_California",
+    "https://en.wikipedia.org/wiki/Napa_County,_California",
+    "https://en.wikipedia.org/wiki/The_French_Laundry"
+   ]
+  },
+  {
+   "id": "ag_preserve_story",
+   "kind": "story",
+   "priority": 4,
+   "category": "politics",
+   "title": "Why the Napa Valley isn't covered in houses",
+   "lat": 38.45,
+   "lon": -122.4,
+   "radius": 22000,
+   "roads": [
+    "sr29",
+    "silverado",
+    "oakville_grade",
+    "i505_128"
+   ],
+   "text": "Notice something about the Napa Valley floor: there are almost no subdivisions or shopping centres between the towns. That's not an accident. It's the result of one of the most important land-use decisions in California history.\n\nNeighbouring Sonoma, Solano and Yolo counties have let large stretches of farmland be rezoned for housing and commerce. In 1968, Napa's vintners and civic leaders went the other way. Using a new state law, the Williamson Act, which gave landowners tax breaks for keeping land in agriculture, they created an agricultural preserve on the valley floor between Napa and Calistoga. It was the first of its kind in California. It began at 23,000 acres and has grown to over 30,000. In 1990 voters went further with Measure J, which froze county zoning changes on farmland until 2020 unless two-thirds of voters agreed.\n\nThe fights never stop, though. Locals battled the Wine Train in the 1980s, fearing even more tourists. County rules even stop Castello di Amorosa from being rented out for weddings. And the valley's success creates its own squeeze: towns too expensive for the people who work in them, as the 2026 fight over worker housing in Yountville shows. The preserve kept the valley green; who gets to live in it is the next argument.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Napa_County,_California",
+    "https://en.wikipedia.org/wiki/Napa_Valley_Wine_Train",
+    "https://en.wikipedia.org/wiki/Castello_di_Amorosa",
+    "https://en.wikipedia.org/wiki/The_French_Laundry"
+   ]
+  },
+  {
+   "id": "cannabis_story",
+   "kind": "story",
+   "priority": 3,
+   "category": "politics",
+   "title": "Cannabis: California's other crop",
+   "lat": 38.45,
+   "lon": -122.88,
+   "radius": 25000,
+   "roads": [
+    "sr116",
+    "bohemian",
+    "river_rd",
+    "westside",
+    "guerneville_rd",
+    "sr12_sebastopol"
+   ],
+   "text": "Wine isn't the only crop with a complicated legal history in Northern California.\n\nCalifornia has been at the forefront of cannabis politics for half a century. In 1972 it held the nation's first ballot initiative to legalise cannabis, Proposition 19, which failed. In 1996, Proposition 215, the Compassionate Use Act, made California the first state to legalise medical cannabis, with 56 percent of the vote. And in November 2016, Proposition 64 legalised recreational use, with 57 percent. Under that law, cities and counties can't stop adults from growing small amounts for their own use.\n\nLegalisation turned out to be messy. Growers and suppliers had to register, follow regulations and get permits, and more than half of the nonprofit dispensaries that had legally supplied medical cannabis closed. Legal businesses pay substantial state and local taxes, and reducing illegal growing, which continues in remote rural areas, is seen as essential to their survival. And it's all still illegal under federal law, as is sending cannabis to other states. In other words, much like the vintners of the Prohibition era, today's cannabis farmers live in a strange legal twilight between what the state allows and what Washington forbids.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Cannabis_in_California"
+   ]
+  },
+  {
+   "id": "russians_story",
+   "kind": "story",
+   "priority": 4,
+   "category": "history",
+   "title": "The Russians in California",
+   "lat": 38.48,
+   "lon": -122.86,
+   "radius": 26000,
+   "roads": [
+    "river_rd",
+    "sr116",
+    "westside",
+    "bohemian",
+    "guerneville_rd",
+    "us101"
+   ],
+   "text": "Today we've met Russians again and again: a river, a mountain, a farm near Graton. Here's the whole story.\n\nRussian traders pushed east across Siberia and the North Pacific, and in 1799 they founded a colony in Alaska, run by the Russian-American Company. Their business was fur, above all sea otter. From 1803, American ship captains took Alaskan Native hunters south on joint ventures to hunt otters along the California coast; between 1805 and 1812 alone, ten American ships with Aleut hunters gathered over 22,000 pelts.\n\nIn 1812 the company built its own base, Fort Ross, on the Sonoma coast, in the territory of the Kashaya Pomo. It was remarkably cosmopolitan, with Native Californians, Native Alaskans, Russians, Finns and Swedes. They named Bodega Bay Rumyantsev Bay. They explored the river, which became the Slavyanka and later the Russian River. In 1836 their agronomist set up a farm with a vineyard between Occidental and Graton. And in 1841 a Russian survey party climbed Mount Saint Helena and left a copper plate naming it after the commander's wife.\n\nThe Russian presence had big consequences. Spain and then Mexico built the mission at Sonoma, the presidio, and ranchos like Rancho El Molino partly to block them. And the Russian connection outlived the fort: the young Finnish sailor who'd first come to Alaska on a Russian-American Company ship was Gustave Niebaum, later founder of Inglenook in Rutherford.\n\nIn 1841 the Russians offered to sell Fort Ross to General Vallejo. Mexican officials dithered, and in the end John Sutter bought it, the same Sutter on whose land gold was found seven years later.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fort_Ross,_California",
+    "https://en.wikipedia.org/wiki/Russian-American_Company",
+    "https://en.wikipedia.org/wiki/Russian_River_(California)",
+    "https://en.wikipedia.org/wiki/Graton,_California",
+    "https://en.wikipedia.org/wiki/Mount_Saint_Helena",
+    "https://en.wikipedia.org/wiki/Rancho_El_Molino",
+    "https://en.wikipedia.org/wiki/Gustave_Niebaum",
+    "https://en.wikipedia.org/wiki/Mariano_Guadalupe_Vallejo",
+    "https://en.wikipedia.org/wiki/California_gold_rush"
+   ]
+  },
+  {
+   "id": "grape_king_story",
+   "kind": "story",
+   "priority": 3,
+   "category": "wine",
+   "title": "The Grape King of California",
+   "lat": 38.49,
+   "lon": -122.72,
+   "radius": 15000,
+   "roads": [
+    "us101",
+    "petrified_forest",
+    "calistoga_rd",
+    "guerneville_rd",
+    "sonoma_valley",
+    "river_rd"
+   ],
+   "text": "Here's a wine story you won't hear in many tasting rooms.\n\nCalifornia's first wine grape was the Mission grape, brought by the Spanish, and it dominated California wine until about 1880. The Gold Rush created a thirsty market, and pioneers like Agoston Haraszthy imported cuttings from 165 of Europe's great vineyards. Charles Krug, a Prussian political dissident, learned the trade as Haraszthy's apprentice in Sonoma before founding his own winery in St. Helena.\n\nNorth of Santa Rosa, at the utopian colony of Fountain Grove, the vineyards were run by Nagasawa Kanaye. He became known as the Grape King of California, one of the biggest winemakers in the state. He hosted lavish dinners for guests including John Muir, Thomas Edison and Henry Ford, and according to the history of California wine, Fountain Grove's cellars kept flowing freely right through Prohibition.\n\nThat's a reminder that wine country's history is more diverse than the château architecture suggests: Spanish missionaries, a Hungarian adventurer, German and Italian immigrants, a Finnish sea captain, and Nagasawa the Grape King, all on land that had been Pomo, Wappo, Miwok and Patwin for thousands of years. Today there are more than 1,700 wineries in the North Bay.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/History_of_California_wine",
+    "https://en.wikipedia.org/wiki/Fountain_Grove,_California",
+    "https://en.wikipedia.org/wiki/Wine_Country"
+   ]
+  }
+ ]
 }

@@ -76,13 +76,13 @@
 <script type="module">
 import * as S from '../js/speech.js';
 const MODES = [
-  { id:'A', name:'Mode A — plain audio element', desc:'One HTMLAudioElement, unlocked by your tap, reused by a timer. No audio-session hint.', session:null },
+  { id:'A', name:'Mode A — plain audio element', desc:'One HTMLAudioElement, unlocked by your tap, reused by a timer. No audio-session hint. (Test clip is the app’s real recorded voice.)', session:null },
   { id:'B', name:'Mode B — audioSession "transient"', desc:'Same as A, with navigator.audioSession.type = "transient" (meant for short sounds; should duck other audio).', session:'transient' },
   { id:'C', name:'Mode C — audioSession "transient-solo"', desc:'Same as A, with "transient-solo" (meant to pause others briefly, then let them resume).', session:'transient-solo' },
   { id:'D', name:'Mode D — audioSession "playback"', desc:'Same as A, with "playback" (media playback; usually interrupts others).', session:'playback' },
   { id:'E', name:'Mode E — speechSynthesis', desc:'The browser\'s built-in text-to-speech voice, primed by your tap.', session:null, speech:true },
   { id:'F', name:'Mode F (bonus) — audioSession "ambient"', desc:'Same as A, with "ambient" (mixes with music, no ducking). Voice may be hard to hear over music.', session:'ambient' },
-  { id:'G', name:'Mode G (new) — recorded voice + silent speech, "ambient"', desc:'The natural recorded voice in a mixable session, with an inaudible phone-voice running alongside to trigger the same ducking as mode E. Silent switch must be off.', session:'ambient', duck:true },
+  { id:'G', name:'Mode G (new) — recorded voice + silent speech, "ambient"', desc:'The app’s recorded voice (Kokoro, the one you’ll hear on the road) in a mixable session, with an inaudible phone-voice running alongside to trigger the same ducking as mode E. Silent switch must be off.', session:'ambient', duck:true },
   { id:'H', name:'Mode H (new) — recorded voice + silent speech, "transient"', desc:'Like G but with the "transient" session.', session:'transient', duck:true },
 ];
 const RESULTS = ['Ducked then restored','Paused, then resumed','Paused, stayed paused','Kept full volume','No voice heard'];

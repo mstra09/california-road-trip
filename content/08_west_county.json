@@ -1,59 +1,146 @@
 {
-  "area": { "id": "westcounty", "name": "Sebastopol, SR 116 & the Bohemian Highway" },
-  "clips": [
-    {
-      "id": "sebastopol", "priority": 4, "category": "history",
-      "title": "Sebastopol: a bar fight and the Gravenstein apple",
-      "lat": 38.4020, "lon": -122.8240, "roads": ["sr12_sebastopol", "sr116", "bohemian"],
-      "text": "Welcome to Sebastopol, which has one of the best names on the map. The settlement was originally called Pine Grove. In the late 1850s, so the story goes, a bar fight broke out, and a bystander compared the long-running brawl to the Allied siege of the Russian port of Sevastopol in the Crimean War, which had ended a few years earlier. The name stuck, and Pine Grove survives only in the name of the general store downtown. And remember the Yountville story: that town was first named Sebastopol too, and had to change because this one got there first.\n\nThe Coast Miwok and Pomo were here first, and the town sits on top of several village sites. Later settlers came from all over, including a substantial Chinese community that built a Chinatown downtown from the 1880s.\n\nThen came apples. Sebastopol called itself the Gravenstein Apple Capital of the World. The Gravenstein is an old variety from Denmark, dating back to the 1600s or earlier: tart, juicy and perfect for sauce and cider, but it doesn't keep, so you can only get it in season. In 2005, Denmark's food minister declared it the Danish national apple. Here there's still a Gravenstein Apple Fair every August. The 1906 earthquake reduced most of the town's early buildings to rubble; nearby Santa Rosa was the worst-hit town of all. These days old apple warehouses have become The Barlow, a 32-million-dollar marketplace of tasting rooms and restaurants.",
-      "sources": ["https://en.wikipedia.org/wiki/Sebastopol,_California", "https://en.wikipedia.org/wiki/Gravenstein", "https://en.wikipedia.org/wiki/Yountville,_California"],
-      "more": {
-        "title": "Burbank's Gold Ridge farm and the electric railway",
-        "text": "Luther Burbank needed more room than his Santa Rosa garden allowed, so in 1885 he bought a farm here in what was called the Gold Ridge district, chosen for its variety of slopes, exposures and elevations. At its peak, some estimates put the number of experiments running on the farm at over 60,000, with up to twenty workers. Three acres survive, with over 250 living plants from Burbank's work, looked after entirely by volunteers.\n\nSebastopol also had an electric railway. From 1903 to 1947, the Petaluma and Santa Rosa Railway ran trolleys and freight around the county, set up partly to break the Northwestern Pacific's monopoly over farmers and commuters. All that's left are one passenger car in a railway museum and its stone power house on Petaluma Avenue here, which has since become a series of brew pubs.",
-        "sources": ["https://en.wikipedia.org/wiki/Luther_Burbank%27s_Gold_Ridge_Experiment_Farm", "https://en.wikipedia.org/wiki/Petaluma_and_Santa_Rosa_Railway_Powerhouse"]
-      }
-    },
-    {
-      "id": "wilson_grove", "priority": 3, "category": "geology",
-      "title": "Sebastopol's sea-floor sandstone",
-      "lat": 38.4250, "lon": -122.8480, "roads": ["sr116", "bohemian", "sr12_sebastopol"],
-      "text": "Here's a surprise for a town twenty miles inland. On the Macrostrat maps, Highway 116 north of Sebastopol runs for more than ten kilometres across the Wilson Grove Formation, a pale, buff-weathering sandstone laid down in the sea between the late Miocene and late Pliocene, roughly eleven to three million years ago. It locally contains beds of shell hash, broken-up mollusc and snail shells, plus pebble conglomerate and volcanic ash. In other words, much of the Gold Ridge country around Sebastopol is an old sea floor, lifted up as the Coast Ranges rose.\n\nTo the east, by contrast, the Santa Rosa plain is made of alluvial fans, and to the north and west, as the road climbs toward the river, it crosses into the much older, harder sandstones of the Franciscan Complex.",
-      "sources": ["https://macrostrat.org/api/v2/geologic_units/map?lat=38.43142&lng=-122.85497&scale=large", "https://macrostrat.org/api/v2/geologic_units/map?lat=38.47371&lng=-122.90315&scale=large"]
-    },
-    {
-      "id": "graton", "priority": 3, "category": "history",
-      "title": "Graton: the edge of the Russian empire",
-      "lat": 38.4360, "lon": -122.8690, "roads": ["sr116", "guerneville_rd", "bohemian"],
-      "text": "Graton, just off the highway, is a little apple town turned wine town, with a big claim: it lies roughly at the furthest south-eastern reach of Russian colonisation in the Americas.\n\nThe Russians of Fort Ross, on the coast, needed food. So in 1836 their agronomist, Yegor Chernykh, set up a farm on Purrington Creek, between today's Occidental and Graton, with barracks and five other buildings. He grew vegetables, fruit and wheat, and he also planted a large vineyard, introducing what would become the area's major crop.\n\nThere's a second, more painful history in the hills nearby: the Graton Rancheria. Many California tribes signed treaties with the United States in 1851 that promised them land, but the treaties were never ratified, leaving them landless. In 1920, a federal inspector bought fifteen acres north-west of Sebastopol for the homeless Coast Miwok and Pomo people of the Marshall, Bodega, Tomales and Sebastopol areas. When seventy-five people tried to move there, they found only three acres were habitable, with little water and steep ground. In 1958, under the federal policy of termination, the government ended the rancheria altogether.",
-      "sources": ["https://en.wikipedia.org/wiki/Graton,_California", "https://en.wikipedia.org/wiki/Graton_Rancheria"]
-    },
-    {
-      "id": "freestone", "priority": 3, "category": "quirky",
-      "title": "Freestone: the innkeeper who burned the bridge",
-      "lat": 38.3720, "lon": -122.9120, "roads": ["bohemian"],
-      "text": "Freestone, population about thirty-two, is the gateway to the Bohemian Highway, and the first place Sonoma County ever named a historic district, in 1974. It's named after a sandstone quarry opened around 1861.\n\nIts best story belongs to the Hinds Hotel, the two-storey building put up in August 1876 by a Tennessee farmer, Hollis Hinds, when he heard the railroad was coming. Carpenters building the railway line stayed there. And according to first-hand reports, the innkeeper had parts of a bridge the carpenters were building secretly burned at night, so the work would take longer and his guests would stay longer. He went to jail for it.\n\nDecades before, in the 1830s, three settlers named James, McIntosh, Black and Dawson, were allowed by General Vallejo to settle here and built a sawmill; their dispute split the land into three ranchos. And in the 1970s the old hotel was the social headquarters for Christo and Jeanne-Claude's landmark installation, Running Fence.",
-      "sources": ["https://en.wikipedia.org/wiki/Freestone,_California", "https://en.wikipedia.org/wiki/Hinds_Hotel"]
-    },
-    {
-      "id": "occidental", "priority": 3, "category": "quirky",
-      "title": "Occidental: Dutch Bill, sawmills and a commune deeded to God",
-      "lat": 38.4070, "lon": -122.9480, "roads": ["bohemian"],
-      "text": "Occidental was founded in 1876 as a stop on the North Pacific Coast Railroad, a line from the Sausalito ferry up to the redwoods at Cazadero. A local landowner, a Danish seaman known as Dutch Bill Howard, who'd jumped ship in San Francisco Bay in 1849, donated the right-of-way in exchange for a lifetime pass, and got the station named after him. The creek beside the highway is still Dutch Bill Creek. The railroad set off a timber boom, and by 1877 there were six sawmills around Occidental.\n\nA century later this area became a hub of the counterculture. In 1966, Lou Gottlieb of the folk group the Limeliters bought land near here, and in 1967 he opened it to anyone who wanted to live there, under a principle he called Land Access To Which Is Denied No One. Morning Star Ranch drew hundreds of hippies from the Haight-Ashbury, and the county answered with injunctions, arrests and bulldozers. In 1969 Gottlieb tried deeding the land to God. The courts did not accept God as the owner.\n\nThe spirit lives on more quietly at the Occidental Arts and Ecology Center, whose Mother Garden received the first ever organic agricultural easement in the United States, in 1994, requiring it to stay organic for ever.",
-      "sources": ["https://en.wikipedia.org/wiki/Occidental,_California", "https://en.wikipedia.org/wiki/Dutch_Bill_Creek", "https://en.wikipedia.org/wiki/Morningstar_Commune", "https://en.wikipedia.org/wiki/Occidental_Arts_and_Ecology_Center"]
-    },
-    {
-      "id": "camp_meeker", "priority": 2, "category": "history",
-      "title": "Camp Meeker: the logger's subdivision",
-      "lat": 38.4250, "lon": -122.9580, "roads": ["bohemian"],
-      "text": "Camp Meeker is named after Melvin Cyrus Meeker, a lumber baron who opened mills here around 1866. This valley's redwoods built San Francisco, and then, after 1906, rebuilt it. Meeker is the same man who sold the old-growth grove at Monte Rio to the Bohemian Club.\n\nOnce the trees were cut, Meeker had an idea. In 1898 he subdivided the logged land into tiny lots, twenty-five feet by twelve, each with a one-room cabin, and sold them for seventy-five dollars to San Franciscans looking for a summer escape. Today it's a village of about 425 people tucked among the second-growth redwoods, with some streets so steep and narrow they feel like old railway grades.\n\nDutch Bill Creek runs through the middle, and it's become a small conservation success. Wild coho salmon were found spawning here in 2001, young coho have been released since 2006, and in 2009 an old swimming-hole dam, one of the worst barriers to salmon in the whole Russian River watershed, was removed and replaced with a footbridge.",
-      "sources": ["https://en.wikipedia.org/wiki/Camp_Meeker,_California", "https://en.wikipedia.org/wiki/Dutch_Bill_Creek", "https://en.wikipedia.org/wiki/Bohemian_Grove"]
-    },
-    {
-      "id": "coast_miwok_story", "kind": "story", "priority": 4, "category": "indigenous",
-      "title": "The Coast Miwok",
-      "lat": 38.33, "lon": -122.75, "radius": 30000, "roads": ["bohemian", "sr116", "sr12_sebastopol", "carneros", "sonoma_valley", "guerneville_rd"],
-      "text": "The country from the Golden Gate north to the Sonoma coast, and east as far as Sonoma Creek, belonged to the Coast Miwok. That includes the hills around Sebastopol and Freestone and the lower Sonoma Valley.\n\nThe Coast Miwok lived in small bands without a central government. In spring they went to the coast for salmon, shellfish and seaweed. The rest of the year, acorns from black and tanoaks were the staple, along with deer and rabbit. Hunters rubbed themselves with a plant called Brewer's angelica to hide their scent from deer. They used yerba buena tea as medicine, burned poison oak to make tattoo pigment, and built cone-shaped houses, called kotcha, from tule grass or redwood bark. They were, and are, superb basket makers.\n\nEthnographers in the early twentieth century recorded three main groups: the Olamentko around Bodega Bay, the Lekatuit in south-central Sonoma County, and the Huukuiko in Marin and southern Sonoma. The word Miwok itself simply means people, in a related Sierra language.\n\nWithin two generations of the Spaniards' arrival, the peoples of this region had been dispossessed of their land and decimated by disease. Later, broken federal treaties left them landless, and the little rancheria near Graton, set aside for them and their Pomo neighbours in 1920, was barely habitable and was terminated in 1958. If you ever visit Point Reyes National Seashore, there's a recreated Coast Miwok village there called Kule Loklo.",
-      "sources": ["https://en.wikipedia.org/wiki/Coast_Miwok", "https://en.wikipedia.org/wiki/Graton_Rancheria", "https://en.wikipedia.org/wiki/Sonoma_Valley"]
-    }
-  ]
+ "area": {
+  "id": "westcounty",
+  "name": "Sebastopol, SR 116 & the Bohemian Highway"
+ },
+ "clips": [
+  {
+   "id": "sebastopol",
+   "priority": 4,
+   "category": "history",
+   "title": "Sebastopol: a bar fight and the Gravenstein apple",
+   "lat": 38.402,
+   "lon": -122.824,
+   "roads": [
+    "sr12_sebastopol",
+    "sr116",
+    "bohemian"
+   ],
+   "text": "Welcome to Sebastopol, which has one of the best names on the map. The settlement was originally called Pine Grove. In the late 1850s, so the story goes, a bar fight broke out, and a bystander compared the long-running brawl to the Allied siege of the Russian port of Sevastopol in the Crimean War, which had ended a few years earlier. The name stuck, and Pine Grove survives only in the name of the general store downtown. And remember the Yountville story: that town was first named Sebastopol too, and had to change because this one got there first.\n\nThe Coast Miwok and Pomo were here first, and the town sits on top of several village sites. Later settlers came from all over, including a substantial Chinese community that built a Chinatown downtown from the 1880s.\n\nThen came apples. Sebastopol called itself the Gravenstein Apple Capital of the World. The Gravenstein is an old variety from Denmark, dating back to the 1600s or earlier: tart, juicy and perfect for sauce and cider, but it doesn't keep, so you can only get it in season. In 2005, Denmark's food minister declared it the Danish national apple. Here there's still a Gravenstein Apple Fair every August. The 1906 earthquake reduced most of the town's early buildings to rubble; nearby Santa Rosa was the worst-hit town of all. These days old apple warehouses have become The Barlow, a 32-million-dollar marketplace of tasting rooms and restaurants.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sebastopol,_California",
+    "https://en.wikipedia.org/wiki/Gravenstein",
+    "https://en.wikipedia.org/wiki/Yountville,_California"
+   ],
+   "more": {
+    "title": "Burbank's Gold Ridge farm and the electric railway",
+    "text": "Luther Burbank needed more room than his Santa Rosa garden allowed, so in 1885 he bought a farm here in what was called the Gold Ridge district, chosen for its variety of slopes, exposures and elevations. At its peak, some estimates put the number of experiments running on the farm at over 60,000, with up to twenty workers. Three acres survive, with over 250 living plants from Burbank's work, looked after entirely by volunteers.\n\nSebastopol also had an electric railway. From 1903 to 1947, the Petaluma and Santa Rosa Railway ran trolleys and freight around the county, set up partly to break the Northwestern Pacific's monopoly over farmers and commuters. All that's left are one passenger car in a railway museum and its stone power house on Petaluma Avenue here, which has since become a series of brew pubs.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Luther_Burbank%27s_Gold_Ridge_Experiment_Farm",
+     "https://en.wikipedia.org/wiki/Petaluma_and_Santa_Rosa_Railway_Powerhouse"
+    ]
+   }
+  },
+  {
+   "id": "wilson_grove",
+   "priority": 3,
+   "category": "geology",
+   "title": "Sebastopol's sea-floor sandstone",
+   "lat": 38.425,
+   "lon": -122.848,
+   "roads": [
+    "sr116",
+    "bohemian",
+    "sr12_sebastopol"
+   ],
+   "text": "Here's a surprise for a town twenty miles inland. On the Macrostrat maps, Highway 116 north of Sebastopol runs for more than ten kilometres across the Wilson Grove Formation, a pale, buff-weathering sandstone laid down in the sea between the late Miocene and late Pliocene, roughly eleven to three million years ago. It locally contains beds of shell hash, broken-up mollusc and snail shells, plus pebble conglomerate and volcanic ash. In other words, much of the Gold Ridge country around Sebastopol is an old sea floor, lifted up as the Coast Ranges rose.\n\nTo the east, by contrast, the Santa Rosa plain is made of alluvial fans, and to the north and west, as the road climbs toward the river, it crosses into the much older, harder sandstones of the Franciscan Complex.",
+   "sources": [
+    "https://macrostrat.org/api/v2/geologic_units/map?lat=38.43142&lng=-122.85497&scale=large",
+    "https://macrostrat.org/api/v2/geologic_units/map?lat=38.47371&lng=-122.90315&scale=large"
+   ]
+  },
+  {
+   "id": "graton",
+   "priority": 3,
+   "category": "history",
+   "title": "Graton: the edge of the Russian empire",
+   "lat": 38.436,
+   "lon": -122.869,
+   "roads": [
+    "sr116",
+    "guerneville_rd",
+    "bohemian"
+   ],
+   "text": "Graton, just off the highway, is a little apple town turned wine town, with a big claim: it lies roughly at the furthest south-eastern reach of Russian colonisation in the Americas.\n\nThe Russians of Fort Ross, on the coast, needed food. So in 1836 their agronomist, Yegor Chernykh, set up a farm on Purrington Creek, between today's Occidental and Graton, with barracks and five other buildings. He grew vegetables, fruit and wheat, and he also planted a large vineyard, introducing what would become the area's major crop.\n\nThere's a second, more painful history in the hills nearby: the Graton Rancheria. Many California tribes signed treaties with the United States in 1851 that promised them land, but the treaties were never ratified, leaving them landless. In 1920, a federal inspector bought fifteen acres north-west of Sebastopol for the homeless Coast Miwok and Pomo people of the Marshall, Bodega, Tomales and Sebastopol areas. When seventy-five people tried to move there, they found only three acres were habitable, with little water and steep ground. In 1958, under the federal policy of termination, the government ended the rancheria altogether.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Graton,_California",
+    "https://en.wikipedia.org/wiki/Graton_Rancheria"
+   ]
+  },
+  {
+   "id": "freestone",
+   "priority": 3,
+   "category": "quirky",
+   "title": "Freestone: the innkeeper who burned the bridge",
+   "lat": 38.372,
+   "lon": -122.912,
+   "roads": [
+    "bohemian"
+   ],
+   "text": "Freestone, population about thirty-two, is the gateway to the Bohemian Highway, and the first place Sonoma County ever named a historic district, in 1974. It's named after a sandstone quarry opened around 1861.\n\nIts best story belongs to the Hinds Hotel, the two-storey building put up in August 1876 by a Tennessee farmer, Hollis Hinds, when he heard the railroad was coming. Carpenters building the railway line stayed there. And according to first-hand reports, the innkeeper had parts of a bridge the carpenters were building secretly burned at night, so the work would take longer and his guests would stay longer. He went to jail for it.\n\nDecades before, in the 1830s, three settlers named James, McIntosh, Black and Dawson, were allowed by General Vallejo to settle here and built a sawmill; their dispute split the land into three ranchos. And in the 1970s the old hotel was the social headquarters for Christo and Jeanne-Claude's landmark installation, Running Fence.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Freestone,_California",
+    "https://en.wikipedia.org/wiki/Hinds_Hotel"
+   ]
+  },
+  {
+   "id": "occidental",
+   "priority": 3,
+   "category": "quirky",
+   "title": "Occidental: Dutch Bill, sawmills and a commune deeded to God",
+   "lat": 38.407,
+   "lon": -122.948,
+   "roads": [
+    "bohemian"
+   ],
+   "text": "This next town has a creek named after a sailor who jumped ship, and a commune that tried to give its land to God. Occidental was founded in 1876 as a stop on the North Pacific Coast Railroad, a line from the Sausalito ferry up to the redwoods at Cazadero. A local landowner, a Danish seaman known as Dutch Bill Howard, who'd jumped ship in San Francisco Bay in 1849, donated the right-of-way in exchange for a lifetime pass, and got the station named after him. The creek beside the highway is still Dutch Bill Creek. The railroad set off a timber boom, and by 1877 there were six sawmills around Occidental.\n\nA century later this area became a hub of the counterculture. In 1966, Lou Gottlieb of the folk group the Limeliters bought land near here, and in 1967 he opened it to anyone who wanted to live there, under a principle he called Land Access To Which Is Denied No One. Morning Star Ranch drew hundreds of hippies from the Haight-Ashbury, and the county answered with injunctions, arrests and bulldozers. In 1969 Gottlieb tried deeding the land to God. The courts did not accept God as the owner.\n\nThe spirit lives on more quietly at the Occidental Arts and Ecology Center, whose Mother Garden received the first ever organic agricultural easement in the United States, in 1994, requiring it to stay organic for ever.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Occidental,_California",
+    "https://en.wikipedia.org/wiki/Dutch_Bill_Creek",
+    "https://en.wikipedia.org/wiki/Morningstar_Commune",
+    "https://en.wikipedia.org/wiki/Occidental_Arts_and_Ecology_Center"
+   ]
+  },
+  {
+   "id": "camp_meeker",
+   "priority": 2,
+   "category": "history",
+   "title": "Camp Meeker: the logger's subdivision",
+   "lat": 38.425,
+   "lon": -122.958,
+   "roads": [
+    "bohemian"
+   ],
+   "text": "How much would you pay for a cabin plot twenty-five feet by twelve? Here, in 1898, seventy-five dollars. Camp Meeker is named after Melvin Cyrus Meeker, a lumber baron who opened mills here around 1866. This valley's redwoods built San Francisco, and then, after 1906, rebuilt it. Meeker is the same man who sold the old-growth grove at Monte Rio to the Bohemian Club.\n\nOnce the trees were cut, Meeker had an idea. In 1898 he subdivided the logged land into tiny lots, twenty-five feet by twelve, each with a one-room cabin, and sold them for seventy-five dollars to San Franciscans looking for a summer escape. Today it's a village of about 425 people tucked among the second-growth redwoods, with some streets so steep and narrow they feel like old railway grades.\n\nDutch Bill Creek runs through the middle, and it's become a small conservation success. Wild coho salmon were found spawning here in 2001, young coho have been released since 2006, and in 2009 an old swimming-hole dam, one of the worst barriers to salmon in the whole Russian River watershed, was removed and replaced with a footbridge.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Camp_Meeker,_California",
+    "https://en.wikipedia.org/wiki/Dutch_Bill_Creek",
+    "https://en.wikipedia.org/wiki/Bohemian_Grove"
+   ]
+  },
+  {
+   "id": "coast_miwok_story",
+   "kind": "story",
+   "priority": 4,
+   "category": "indigenous",
+   "title": "The Coast Miwok",
+   "lat": 38.33,
+   "lon": -122.75,
+   "radius": 30000,
+   "roads": [
+    "bohemian",
+    "sr116",
+    "sr12_sebastopol",
+    "carneros",
+    "sonoma_valley",
+    "guerneville_rd"
+   ],
+   "text": "The country from the Golden Gate north to the Sonoma coast, and east as far as Sonoma Creek, belonged to the Coast Miwok. That includes the hills around Sebastopol and Freestone and the lower Sonoma Valley.\n\nThe Coast Miwok lived in small bands without a central government. In spring they went to the coast for salmon, shellfish and seaweed. The rest of the year, acorns from black and tanoaks were the staple, along with deer and rabbit. Hunters rubbed themselves with a plant called Brewer's angelica to hide their scent from deer. They used yerba buena tea as medicine, burned poison oak to make tattoo pigment, and built cone-shaped houses, called kotcha, from tule grass or redwood bark. They were, and are, superb basket makers.\n\nEthnographers in the early twentieth century recorded three main groups: the Olamentko around Bodega Bay, the Lekatuit in south-central Sonoma County, and the Huukuiko in Marin and southern Sonoma. The word Miwok itself simply means people, in a related Sierra language.\n\nWithin two generations of the Spaniards' arrival, the peoples of this region had been dispossessed of their land and decimated by disease. Later, broken federal treaties left them landless, and the little rancheria near Graton, set aside for them and their Pomo neighbours in 1920, was barely habitable and was terminated in 1958. If you ever visit Point Reyes National Seashore, there's a recreated Coast Miwok village there called Kule Loklo.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Coast_Miwok",
+    "https://en.wikipedia.org/wiki/Graton_Rancheria",
+    "https://en.wikipedia.org/wiki/Sonoma_Valley"
+   ]
+  }
+ ]
 }

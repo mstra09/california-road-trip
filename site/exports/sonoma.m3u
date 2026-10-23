@@ -1,140 +1,140 @@
 #EXTM3U
 #PLAYLIST:Sonoma: I-80 → Jameson Canyon → Carneros → Sonoma → Glen Ellen → Kenwood → Santa Rosa → Sebastopol → SR 116
-#EXTINF:70,01 Welcome aboard: leaving the capital
-../../audio/trip_intro-4e4c0337.m4a
+#EXTINF:74,01 Welcome aboard: leaving the capital
+../../audio/trip_intro-aa45019c.m4a
 #EXTINF:54,02 Sam Brannan, California's first millionaire
-../../audio/trip_intro_more-5a0fbae9.m4a
-#EXTINF:65,03 West Sacramento: the Town of Washington
-../../audio/west_sac-3f814d27.m4a
+../../audio/trip_intro_more-e06ee1db.m4a
+#EXTINF:71,03 West Sacramento: the Town of Washington
+../../audio/west_sac-bb7e5b19.m4a
 #EXTINF:82,04 The Yolo Bypass: a floodplain on purpose
-../../audio/yolo_bypass-dee20b13.m4a
+../../audio/yolo_bypass-6a172f93.m4a
 #EXTINF:62,05 The causeway, the Tule Jake Road, and a quarter of a million bats
-../../audio/yolo_bypass_more-e7dda409.m4a
-#EXTINF:76,06 Davis: the university farm
-../../audio/davis-4ce296f7.m4a
+../../audio/yolo_bypass_more-a9af0c32.m4a
+#EXTINF:83,06 Davis: the university farm
+../../audio/davis-7ab8fe05.m4a
 #EXTINF:60,07 UC Davis and the wine revolution
-../../audio/davis_more-8cb07f3c.m4a
+../../audio/davis_more-26f0b3f4.m4a
 #EXTINF:97,08 The Gold Rush, and how it remade this whole region
-../../audio/goldrush_story-2bfcbaa8.m4a
+../../audio/goldrush_story-68231ef9.m4a
 #EXTINF:54,09 Tule fog: the valley's winter ghost
-../../audio/tule_fog-4b263c12.m4a
+../../audio/tule_fog-6fd318d8.m4a
 #EXTINF:73,10 Dixon: the town that moved to the tracks
-../../audio/dixon-81ba9173.m4a
+../../audio/dixon-83bca4b4.m4a
 #EXTINF:103,11 Why the valley is so flat: seven miles of buried sea floor
-../../audio/valley_geology-2641d010.m4a
+../../audio/valley_geology-24ff1020.m4a
 #EXTINF:125,12 The Patwin: the people of this valley
-../../audio/patwin_story-5a87715b.m4a
+../../audio/patwin_story-3801f945.m4a
 #EXTINF:95,13 The railroad that beat the Golden Spike
-../../audio/railroad_story-9f662c35.m4a
-#EXTINF:63,14 Interstate 505: the highway that lost its letter
-../../audio/i505-09666bb5.m4a
+../../audio/railroad_story-f88e2db6.m4a
+#EXTINF:68,14 Interstate 505: the highway that lost its letter
+../../audio/i505-e1534957.m4a
 #EXTINF:65,15 The Nut Tree: a fruit stand that fed a Queen
-../../audio/nut_tree-a2e306f2.m4a
+../../audio/nut_tree-2ef5ecb1.m4a
 #EXTINF:85,16 The Delta: California's Holland
-../../audio/delta_story-7c2241e2.m4a
-#EXTINF:93,17 Vacaville and the quarrel over Rancho Los Putos
-../../audio/vacaville-5792e543.m4a
-#EXTINF:57,18 The Vaca Mountains: the first wall of the Coast Ranges
-../../audio/vaca_mtns-11563215.m4a
+../../audio/delta_story-0934fe17.m4a
+#EXTINF:98,17 Vacaville and the quarrel over Rancho Los Putos
+../../audio/vacaville-1162302a.m4a
+#EXTINF:61,18 The Vaca Mountains: the first wall of the Coast Ranges
+../../audio/vaca_mtns-92b0c276.m4a
 #EXTINF:79,19 From the Lincoln Highway to Interstate 80
-../../audio/highway_story-ebcbdaa9.m4a
+../../audio/highway_story-f47d143a.m4a
 #EXTINF:71,20 Jelly Belly: the President's jelly beans
-../../audio/jelly_belly-64a9427a.m4a
-#EXTINF:78,21 Fairfield, Cordelia, and a captain's sense of home
-../../audio/fairfield-c76b7a16.m4a
+../../audio/jelly_belly-0351f698.m4a
+#EXTINF:81,21 Fairfield, Cordelia, and a captain's sense of home
+../../audio/fairfield-f30de84b.m4a
 #EXTINF:56,22 The Rockville Stone Chapel and a congregation split by war
-../../audio/fairfield_more-d5020f25.m4a
-#EXTINF:64,23 The Suisun Marsh
-../../audio/suisun_marsh-22f7195f.m4a
-#EXTINF:58,24 Jameson Canyon: through the hills on the Lincoln Highway
-../../audio/jameson-88dfcf32.m4a
+../../audio/fairfield_more-0ea5f360.m4a
+#EXTINF:70,23 The Suisun Marsh
+../../audio/suisun_marsh-ab202f01.m4a
+#EXTINF:65,24 Jameson Canyon: through the hills on the Lincoln Highway
+../../audio/jameson-5b8ca9cc.m4a
 #EXTINF:79,25 Entering the Napa Valley
-../../audio/napa_intro-54b0f6d0.m4a
-#EXTINF:89,26 Napa: a river town
-../../audio/napa_town-dae765d8.m4a
+../../audio/napa_intro-bf471e7b.m4a
+#EXTINF:95,26 Napa: a river town
+../../audio/napa_town-9c6cafd3.m4a
 #EXTINF:78,27 Floods, gentrification and the goddess of plenty
-../../audio/napa_town_more-93b5f170.m4a
+../../audio/napa_town_more-4850d008.m4a
 #EXTINF:105,28 Who does the work? Farm labour in the valleys
-../../audio/farm_labour_story-50d9ff8d.m4a
+../../audio/farm_labour_story-9aa97f40.m4a
 #EXTINF:58,29 di Rosa: moonshine, mushrooms and modern art
-../../audio/di_rosa-7dfd91fe.m4a
-#EXTINF:66,30 Los Carneros: the land of the rams
-../../audio/carneros_intro-d3a733b9.m4a
-#EXTINF:70,31 Bliss: the most famous hill in the world
-../../audio/bliss-0c20af25.m4a
-#EXTINF:57,32 Schellville junction and a quarter-scale railroad
-../../audio/schellville-9a7b0187.m4a
+../../audio/di_rosa-ed7dbce8.m4a
+#EXTINF:73,30 Los Carneros: the land of the rams
+../../audio/carneros_intro-4ca0b396.m4a
+#EXTINF:75,31 Bliss: the most famous hill in the world
+../../audio/bliss-5f892c70.m4a
+#EXTINF:66,32 Schellville junction and a quarter-scale railroad
+../../audio/schellville-2d4a257f.m4a
 #EXTINF:97,33 The Bear Flag Revolt: a republic that lasted 25 days
-../../audio/bear_flag-70b27213.m4a
+../../audio/bear_flag-699863c8.m4a
 #EXTINF:99,34 The Count of Buena Vista and the birth of California wine
-../../audio/haraszthy-57279550.m4a
+../../audio/haraszthy-90f2b181.m4a
 #EXTINF:74,35 Sonoma: the last mission and the largest plaza
-../../audio/sonoma_intro-85aea390.m4a
+../../audio/sonoma_intro-624c070b.m4a
 #EXTINF:46,36 The Blue Wing Inn: a gold-rush hotel with a gambling hall
-../../audio/sonoma_intro_more-db7925be.m4a
+../../audio/sonoma_intro_more-e91a0f3f.m4a
 #EXTINF:109,37 General Vallejo: the man in the middle
-../../audio/vallejo_story-1b07189a.m4a
-#EXTINF:62,38 The Springs: hot water and Guadalcanal veterans
-../../audio/springs-43b13f64.m4a
+../../audio/vallejo_story-0c9a1212.m4a
+#EXTINF:70,38 The Springs: hot water and Guadalcanal veterans
+../../audio/springs-9afbc874.m4a
 #EXTINF:64,39 Eldridge: the dark history of the Sonoma Developmental Center
-../../audio/sdc-1211b805.m4a
+../../audio/sdc-b1e3b4fc.m4a
 #EXTINF:102,40 Jack London and the Valley of the Moon
-../../audio/jack_london-fed83d55.m4a
+../../audio/jack_london-84e9828d.m4a
 #EXTINF:109,41 How the Napa Valley was built: volcanoes, faults and gravel
-../../audio/napa_geology-5e108c4c.m4a
+../../audio/napa_geology-ffbcbdcc.m4a
 #EXTINF:82,42 Why the Napa Valley isn't covered in houses
-../../audio/ag_preserve_story-df2388a1.m4a
-#EXTINF:73,43 Volcanic glass of the Valley of the Moon
-../../audio/obsidian-f9e089e6.m4a
-#EXTINF:77,44 Kenwood: the town that couldn't pick a name
-../../audio/kenwood-96964f3e.m4a
+../../audio/ag_preserve_story-7568155e.m4a
+#EXTINF:76,43 Volcanic glass of the Valley of the Moon
+../../audio/obsidian-c1d25cda.m4a
+#EXTINF:80,44 Kenwood: the town that couldn't pick a name
+../../audio/kenwood-ae3119f4.m4a
 #EXTINF:102,45 The Wappo: the brave ones
-../../audio/wappo_story-5f243aec.m4a
+../../audio/wappo_story-519620c9.m4a
 #EXTINF:93,46 Bust: phylloxera, Prohibition and the Depression
-../../audio/phylloxera_prohibition-f9769b74.m4a
+../../audio/phylloxera_prohibition-ce233f23.m4a
 #EXTINF:113,47 The Judgment of Paris
-../../audio/judgment_paris-3a3faece.m4a
+../../audio/judgment_paris-5271f55b.m4a
 #EXTINF:155,48 Wine country on fire: 2017, 2020, and the insurance crisis
-../../audio/fires_story-944c6336.m4a
+../../audio/fires_story-9f68b904.m4a
 #EXTINF:106,49 Hot ground: the Sonoma Volcanics, Clear Lake and The Geysers
-../../audio/volcanoes_story-a17159dc.m4a
+../../audio/volcanoes_story-668e362e.m4a
 #EXTINF:76,50 The Rodgers Creek Fault: the Hayward Fault's northern half
-../../audio/rodgers_creek-3eac73e0.m4a
+../../audio/rodgers_creek-5bbfeb85.m4a
 #EXTINF:78,51 The Grape King of California
-../../audio/grape_king_story-bcb6ec10.m4a
-#EXTINF:73,52 Santa Rosa: the slaughtering place and the Carrillo adobe
-../../audio/santa_rosa-11e5b395.m4a
+../../audio/grape_king_story-417d79e9.m4a
+#EXTINF:76,52 Santa Rosa: the slaughtering place and the Carrillo adobe
+../../audio/santa_rosa-4c90a276.m4a
 #EXTINF:80,53 Charles Schulz, Snoopy and the ice rink
-../../audio/schulz-1863e41b.m4a
+../../audio/schulz-6543fb7c.m4a
 #EXTINF:72,54 Luther Burbank: the plant wizard of Santa Rosa
-../../audio/burbank-839d92e2.m4a
+../../audio/burbank-b95c68f4.m4a
 #EXTINF:54,55 Believe It or Not: Robert Ripley of Santa Rosa
-../../audio/ripley-54a4c626.m4a
+../../audio/ripley-3f8c1629.m4a
 #EXTINF:89,56 The Coast Miwok
-../../audio/coast_miwok_story-8b843d83.m4a
+../../audio/coast_miwok_story-c58ad959.m4a
 #EXTINF:90,57 Sebastopol: a bar fight and the Gravenstein apple
-../../audio/sebastopol-922b3ffc.m4a
+../../audio/sebastopol-b3f5a62b.m4a
 #EXTINF:53,58 Burbank's Gold Ridge farm and the electric railway
-../../audio/sebastopol_more-89b5285b.m4a
+../../audio/sebastopol_more-d122fb81.m4a
 #EXTINF:50,59 Sebastopol's sea-floor sandstone
-../../audio/wilson_grove-1de03fae.m4a
+../../audio/wilson_grove-1f8187ca.m4a
 #EXTINF:74,60 Graton: the edge of the Russian empire
-../../audio/graton-a3a3b962.m4a
+../../audio/graton-85e21bc6.m4a
 #EXTINF:81,61 Cannabis: California's other crop
-../../audio/cannabis_story-fc26cd77.m4a
+../../audio/cannabis_story-aa9ccec7.m4a
 #EXTINF:74,62 Meeting the Russian River
-../../audio/russian_river_intro-2d2f273b.m4a
-#EXTINF:53,63 California's first commercial sawmill
-../../audio/el_molino-9c2db6a7.m4a
+../../audio/russian_river_intro-34b9cd84.m4a
+#EXTINF:61,63 California's first commercial sawmill
+../../audio/el_molino-6e6ed841.m4a
 #EXTINF:101,64 The Pomo: the people of the Russian River
-../../audio/pomo_story-680b46c3.m4a
+../../audio/pomo_story-58b26a07.m4a
 #EXTINF:109,65 The Russians in California
-../../audio/russians_story-727f9559.m4a
-#EXTINF:54,66 Korbel: Bohemian brothers and California champagne
-../../audio/korbel-25a49ec4.m4a
+../../audio/russians_story-da44346b.m4a
+#EXTINF:61,66 Korbel: Bohemian brothers and California champagne
+../../audio/korbel-11ecd3a9.m4a
 #EXTINF:44,67 Rio Nido: there is no Canyon Five
-../../audio/rio_nido-3ce945b3.m4a
-#EXTINF:86,68 Guerneville: from Stumptown to resort town
-../../audio/guerneville-c1cd3631.m4a
+../../audio/rio_nido-8c665f45.m4a
+#EXTINF:88,68 Guerneville: from Stumptown to resort town
+../../audio/guerneville-81ed701b.m4a
 #EXTINF:55,69 Armstrong Redwoods: the trees the loggers missed
-../../audio/guerneville_more-84582cdb.m4a
+../../audio/guerneville_more-d0d0d98d.m4a

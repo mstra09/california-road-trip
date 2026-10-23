@@ -8,6 +8,7 @@ import { Network, anchorsFor } from '../site/js/engine.js';
 
 const MODE = process.argv[2] || 'final';
 const VOICE = process.env.VOICE || 'af_heart';
+const AUDIO_VER = 'lufs13';   // bump to force every clip to re-render
 const roads = JSON.parse(fs.readFileSync('data/roads.json', 'utf8'));
 fs.mkdirSync('build', { recursive: true });
 fs.mkdirSync('site/data', { recursive: true });
@@ -75,7 +76,7 @@ for (const c of clips) {
       c.radius = c.radius || 20000;
     }
   }
-  const h = crypto.createHash('sha1').update(VOICE + '|' + c.tts).digest('hex').slice(0, 8);
+  const h = crypto.createHash('sha1').update(VOICE + '|' + AUDIO_VER + '|' + c.tts).digest('hex').slice(0, 8);
   c.audio = `audio/${c.id}-${h}.m4a`;
 }
 

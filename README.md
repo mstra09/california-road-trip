@@ -57,7 +57,8 @@ offline once cached.
   (no API key). Six voices were rendered for comparison in `voice-samples/` (also in the app's Settings).
   **Default: `af_heart`** (American female), the voice rated highest in Kokoro's own voice quality grades, with a
   warm, unhurried delivery suited to narration. Audio is loudness-normalised (EBU R128, −16 LUFS, −1.5 dBTP),
-  has short fades, and is mono AAC 64 kbps: ~78 MB total.
+  has short fades, and is mono AAC 64 kbps: ~78 MB total. Loudness was raised to about −13 LUFS on 23 Oct so the voice
+  cuts through road noise and ducked music.
 - **Build** (`scripts/build.sh`): content → TTS jobs → Kokoro render (skips unchanged clips; filenames carry a
   content hash) → app data with each clip's position along every road it applies to → exports → precache list.
 - **Engine** (`site/js/engine.js`): map-matches each GPS fix to the road network, works out direction from
@@ -111,7 +112,8 @@ orphan commit on `gh-pages`, so audio never bloats the main branch history. No b
   - **F ambient**: mixes with music at full volume and may be muted by the silent switch.
   - **G / H (experimental)**: the recorded Kokoro voice in a mixable session, plus an inaudible phone-voice
     utterance running alongside it, to get the duck-then-resume behaviour that mode E showed. Untested on iPhone.
-  - User's test (23 Oct): only **E** ducked and restored Spotify. E uses the phone's own voice; installing a free
+  - User's tests (23 Oct): **E, G and H** duck and restore Spotify; **G is now the default** (natural recorded voice).
+    Earlier, only **E** of A–F ducked and restored Spotify. E uses the phone's own voice; installing a free
     Apple "Premium" voice (Settings → Accessibility → Spoken Content → Voices) and choosing it in the app's Settings
     makes E sound far less robotic.
   After each clip the app empties the audio element and resets the session, which is the most a web page can do
