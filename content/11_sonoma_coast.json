@@ -14,11 +14,11 @@
    "roads": [
     "sr116_coast"
    ],
-   "text": "Good morning, road-trippers! Julia, Adam, our heroic driver: welcome to day two. And what a day. We're following the Russian River all the way to the ocean. Then it's down the wild Sonoma Coast to Bodega Bay, where Alfred Hitchcock made birds terrifying. After that, either along Tomales Bay and the Point Reyes coast, or inland through Petaluma, to the giant redwoods of Muir Woods. Then over the Golden Gate Bridge and through San Francisco to the airport.\n\nQuick warm-up quiz while you finish your coffee. Today we're going to cross the biggest, most famous fault line in America, more than once. What's it called? [[pause 4]] The San Andreas Fault! And here's the wild bit: by this afternoon we'll have driven on a different tectonic plate. Some of the land we're passing is moving north at about an inch a year. More on that later. Let's go find the ocean!",
+   "text": "Good morning, road-trippers! Day two. Mike's on driving duty, Adam and Julia are in charge of snacks, and I'm in charge of the chat.\n\nHere's the plan. We follow the Russian River to the ocean, then drive down the wild Sonoma Coast to Bodega Bay, where Hitchcock made birds terrifying. Then either along Tomales Bay and Point Reyes, or inland through Petaluma, to the giant redwoods of Muir Woods. And finally over the Golden Gate Bridge, through San Francisco, to the airport.\n\nBig trees first, if you've got an hour before you leave: Armstrong Redwoods is just north of Guerneville. The Parson Jones Tree, a hundred yards from the entrance, is more than 310 feet tall, and the Colonel Armstrong Tree is over 1,400 years old. And Muir Woods is later today. Seafood too: oysters on Tomales Bay, and crab country around Bodega Bay.\n\nI've packed the rest of today with a bit of everything. Earthquakes and geography, obviously, because we'll be driving along the San Andreas Fault for a good chunk of the morning. A nuclear power fight that Julia will enjoy. Offshore wind politics for Adam. Some infrastructure and logistics stories for Mike. A famous sailing comeback, the Olympics that came out of nowhere, and a few things that happened in the news this past year or two. Let's go find the ocean.",
    "sources": [
     "https://en.wikipedia.org/wiki/Russian_River_(California)",
     "https://en.wikipedia.org/wiki/San_Andreas_Fault",
-    "https://en.wikipedia.org/wiki/Bolinas,_California"
+    "https://en.wikipedia.org/wiki/Armstrong_Redwoods_State_Natural_Reserve"
    ],
    "kind": "intro"
   },
@@ -32,7 +32,7 @@
    "roads": [
     "sr116_coast"
    ],
-   "text": "Picture this road with a little narrow-gauge train chugging along beside the river. From the 1870s, the North Pacific Coast Railroad ran from Cazadero, through Monte Rio and Duncans Mills, all the way down to the Sausalito ferry. And you'll hear its name again and again today, because it also stopped at Valley Ford, Tomales, Marshall and Point Reyes Station.\n\nAt first it hauled redwood lumber to build San Francisco. In 1877 Alexander Duncan set up a sawmill right here, and the town grew up around it, with two hotels, a saloon, a blacksmith and a livery stable. When the mills moved on, the trains started carrying San Franciscans up to summer cabins instead. Monte Rio, back there, branded itself Vacation Wonderland, and even had a seven-story hotel downtown. Parts of the 1942 Oscar-winning film Holiday Inn were shot at a resort in Monte Rio.\n\nQuiz: the railroad shut down in the 1930s, and Duncans Mills slowly faded. Then, in 1976, something brought it back to life. What do you think? [[pause 5]] America's two-hundredth birthday! A Bicentennial restoration project fixed up the old buildings. And there's still an original depot here, with some of the old railroad cars.",
+   "text": "Picture this road with a little narrow-gauge train chugging along beside the river. From the 1870s, the North Pacific Coast Railroad ran from Cazadero, through Monte Rio and Duncans Mills, all the way down to the ferry at Sausalito. Remember that name, because the same railway also stopped at Valley Ford, Tomales, Marshall and Point Reyes Station. We're basically following its ghost all morning.\n\nThe business model changed twice. First, it hauled redwood lumber to build San Francisco: in 1877 Alexander Duncan set up a sawmill right here, and a town grew around it, with two hotels, a saloon, a blacksmith and a livery stable. When the timber ran out, the railroad pivoted to tourists, carrying San Franciscans up to summer cabins. Monte Rio, back there, rebranded as Vacation Wonderland, complete with a seven-story hotel downtown, and parts of the 1942 Oscar-winning film Holiday Inn were shot at a resort there.\n\nBy the 1930s the trains had stopped and Duncans Mills faded away. It was rescued in 1976 by a Bicentennial restoration project. There's still an original depot here, with some of the old railroad cars parked outside.",
    "sources": [
     "https://en.wikipedia.org/wiki/Duncans_Mills,_California",
     "https://en.wikipedia.org/wiki/Monte_Rio,_California"
@@ -41,18 +41,17 @@
   {
    "id": "jenner",
    "priority": 4,
-   "category": "history",
-   "title": "Jenner: the river meets the sea, and a pump made of gold",
+   "category": "geography",
+   "title": "Jenner: the river meets the sea",
    "lat": 38.4497,
    "lon": -123.1157,
    "roads": [
     "sr116_coast",
     "sr1_coast"
    ],
-   "text": "There it is! The Russian River meets the Pacific Ocean, right here at Jenner. Population: about a hundred and twenty.\n\nQuick reminder of why it's called the Russian River. Russians from the Russian-American Company explored it in the early 1800s, when they set up Fort Ross, about ten miles up the coast. They called it the Slavyanka. The Pomo had much older names for it, including Bidapte, big river.\n\nThe town is named after Dr. Elijah Jenner, a dentist and inventor from Vermont who came west for the Gold Rush in 1850. While he was mining, he designed a pump that could lift water a hundred feet. Quiz: when he applied for the patent, he sent a model of the pump. What was so special about it? [[pause 5]] It was made of pure gold! It's the only golden model the Patent Office has ever received. A true Gold Rush flex. By 1854 the family had settled here at the mouth of the river.\n\nAnd watch the river mouth. In summer, the waves build a sandbar right across it, and the river turns into a lagoon until the water gets high enough to break through. In late fall and winter, when the sandbar's breached, the sheltered beach on the north side is a favourite spot for harbor seals to have their pups.",
+   "text": "There it is! The Russian River meets the Pacific, right here at Jenner. Population: about a hundred and twenty.\n\nThe town is named after Dr. Elijah Jenner, a dentist and inventor from Vermont who came west for the Gold Rush in 1850. While mining, he designed a pump that could lift water a hundred feet. Quiz: when he applied for the patent, he sent in a model of the pump. What was so special about it? [[pause 5]] It was made of pure gold! It's the only golden model the Patent Office has ever received. A proper Gold Rush flex.\n\nNow watch the river mouth. In summer, the waves build a sandbar right across it, and the river backs up into a lagoon until the water gets high enough, somewhere between four and a half and seven feet at the Jenner visitor center, and then it breaks through. In winter, the sheltered beach on the north side is where harbor seals have their pups.",
    "sources": [
     "https://en.wikipedia.org/wiki/Jenner,_California",
-    "https://en.wikipedia.org/wiki/Russian_River_(California)",
     "https://en.wikipedia.org/wiki/Goat_Rock_Beach"
    ]
   },
@@ -66,7 +65,7 @@
    "roads": [
     "sr1_coast"
    ],
-   "text": "Okay, movie quiz! Down on the left is Goat Rock Beach, with that huge flat-topped rock barely hanging on to the land. In 1985, a very famous adventure movie, about a group of kids hunting for pirate treasure, filmed its ending on this beach. Which movie? [[pause 5]] The Goonies! Goonies never say die.\n\nNow look at all those rocks sticking out of the sea. They're called sea stacks, and here's how they got there. For about 170 million years, an ocean plate was diving under North America. It scraped off pillow lava, chert and sandstone, and crushed it all into mélange, which is a jumble of hard blocks floating in a softer, ground-up rock. When the waves hit it, the soft stuff washes away and the hard blocks are left standing in the sea. Goat Rock is one big hard block of greywacke sandstone.\n\nAnd here's a cool one. About a mile south of the river there's a rock of blueschist with rubbing marks two to four meters up. That's too high for cows. Scientists think mammoths made them, using it as a back-scratcher! Mammoths are believed to have roamed here as recently as 40,000 years ago.\n\nCareful if you stop, though: the beach drops off steeply and there's a nasty rip current.",
+   "text": "Movie quiz! Down on the right is Goat Rock Beach, with that huge flat-topped rock barely hanging on to the land. In 1985, a very famous adventure movie about a group of kids hunting for pirate treasure filmed its ending on this beach. Which one? [[pause 5]] The Goonies! Goonies never say die.\n\nThose rocks out in the sea are called sea stacks. For about 170 million years, an ocean plate was diving under North America, scraping off pillow lava, chert and sandstone and crushing it all into a jumble called mélange: hard blocks floating in softer, ground-up rock. The waves wash away the soft stuff and leave the hard blocks standing. Goat Rock is one big block of greywacke sandstone.\n\nAnd my favourite fact on this coast: about a mile south of the river there's a blue rock with rubbing marks two to four meters up. Far too high for cows. Scientists think mammoths used it as a back-scratcher, as recently as 40,000 years ago.",
    "sources": [
     "https://en.wikipedia.org/wiki/Goat_Rock_Beach",
     "https://en.wikipedia.org/wiki/Sonoma_Coast_State_Park",
@@ -77,16 +76,31 @@
    "id": "sonoma_coast",
    "priority": 3,
    "category": "geography",
-   "title": "Seventeen miles of wild coast",
+   "title": "The coast that is falling into the sea",
    "lat": 38.389,
    "lon": -123.087,
    "roads": [
     "sr1_coast"
    ],
-   "text": "This is the Sonoma Coast, seventeen miles of state beaches running all the way down to Bodega Head. Little coves, big rocks, cliffs, and fog that can roll in fast.\n\nQuiz: those bluffs are made of soft soil, and the ocean's chewing away at them. How much land do you think this coast loses in an average year? [[pause 5]] One to three feet a year! More in a stormy winter. It's also rising. Over the ages this land has been pushed up, which is why you're driving on a flat shelf above the beach. It's called a marine terrace: old sea floor, lifted up. Some of those sea stacks are even standing up on the terrace, away from the water, because they started life on the sea floor before it rose.\n\nLook out to sea for gray whales, harbor seals and California sea lions. The Coast Miwok and Pomo lived along here for a very long time, and dozens of their old shell middens, basically ancient kitchen garbage heaps, have been found on this coast. The Russians cut down the old-growth forest above the coastal prairie in the early 1800s, and later it became part of a Mexican ranch called Rancho Bodega.",
+   "text": "Quick-fire facts on the Sonoma Coast.\n\nOne: it's seventeen miles of state beaches from just north of Jenner down to Bodega Head.\n\nTwo: it's disappearing. Those soft bluffs lose one to three feet a year on average, more in a stormy winter.\n\nThree: it's also rising. You're driving on a flat shelf above the beach called a marine terrace. It's old sea floor, lifted up over the ages. Some sea stacks are even stranded up on the terrace, away from the water, because they started life on the sea floor before it rose.\n\nFour: people have lived here a very long time. Dozens of Coast Miwok and Pomo shell middens, basically ancient kitchen rubbish heaps, have been found along here.\n\nFive: keep an eye out to sea for gray whales, harbor seals and sea lions.",
    "sources": [
     "https://en.wikipedia.org/wiki/Sonoma_Coast_State_Park",
     "https://en.wikipedia.org/wiki/Goat_Rock_Beach"
+   ]
+  },
+  {
+   "id": "coastal_act",
+   "priority": 3,
+   "category": "politics",
+   "title": "Why Highway 1 will never be a motorway",
+   "lat": 38.362,
+   "lon": -123.066,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Here's a bit of infrastructure politics, Mike, since you're the one stuck behind the camper vans. Ever wondered why Highway 1 is just one lane each way, even on busy summer weekends?\n\nIt's the law. The 1976 California Coastal Act specifically bans widening Highway 1 beyond one lane in each direction in the rural parts of the coastal zone. It's enforced by the California Coastal Commission, which has quasi-judicial control over development and public access along 1,100 miles of coastline. Its zone runs inland from about a thousand yards up to five miles. Inside it, almost anything, from a new house to splitting a plot of land or changing how people get to the beach, needs a coastal permit.\n\nIt's one of the most powerful land-use bodies in America, and it's in constant fights. In 2019, for example, it allowed a seawall to protect apartments built in 1972, but refused one for townhomes built in 1984, because the Act only protects buildings that existed when it was passed. The townhome owners sued.\n\nDebate for the car: is this brilliant protection of the coast, or a planning system gone too far? You've got until Bodega Bay.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/California_Coastal_Commission"
    ]
   },
   {
@@ -99,23 +113,40 @@
    "roads": [
     "sr1_coast"
    ],
-   "text": "Welcome to Bodega Bay! Fishing boats, salty air, and a harbor tucked behind that long headland.\n\nThe bay is named after Juan Francisco de la Bodega y Quadra, a Spanish naval officer who sailed in here in 1775. In 1793 the Spanish sent a little garrison with four cannons, because they'd heard the English might show up. They didn't, so the guns went back to Monterey. And then guess who did show up? The Russians! In 1809, before they built Fort Ross, they put up the first Russian buildings in California here, and called it Port Rumyantsev, after their foreign minister.\n\nHollywood loves this town. Hitchcock filmed The Birds here, which I'll tell you about in a second. But there's also The Fog, I Know What You Did Last Summer, and The Russians Are Coming, the Russians Are Coming. Quiz: in 2021, a famous TV comedy needed to film a season in Ireland, but COVID made that impossible. So Bodega Bay played Ireland instead! Which show? [[pause 5]] It's Always Sunny in Philadelphia! A Northern California fishing village pretending to be Ireland. Honestly, with the fog, it works.",
+   "text": "Welcome to Bodega Bay! Fishing boats, salty air, and a harbor tucked behind that long headland.\n\nIt's named after Juan Francisco de la Bodega y Quadra, a Spanish naval officer who sailed in here in 1775. In 1793 the Spanish parked a little garrison here with four cannons, because they'd heard the English might turn up. They didn't, so the guns went home to Monterey. Then the Russians turned up instead! In 1809 they put up the first Russian buildings in California here, before building Fort Ross, and called the place Port Rumyantsev.\n\nHollywood loves it too: The Birds, The Fog, I Know What You Did Last Summer, The Russians Are Coming. Quiz: in 2021, a famous American TV comedy needed to film a season in Ireland, but COVID made that impossible, so Bodega Bay played Ireland. Which show? [[pause 5]] It's Always Sunny in Philadelphia! A Californian fishing village pretending to be Ireland. With this fog, it works.",
    "sources": [
     "https://en.wikipedia.org/wiki/Bodega_Bay,_California",
     "https://en.wikipedia.org/wiki/Bodega,_California"
    ]
   },
   {
+   "id": "seafood",
+   "priority": 4,
+   "category": "food",
+   "title": "Lunch briefing: crab and oysters",
+   "lat": 38.347,
+   "lon": -123.057,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Lunch briefing, since I hear seafood is today's top priority.\n\nCrab first. The working boats in Bodega Bay, coming up, go after Dungeness crab, one of the most important seafood catches on the whole West Coast, found from Alaska's Aleutian Islands down to near Santa Barbara. The fishery was started by San Francisco fishermen back in 1848, the year gold was found. By the early 1900s, rules said you could only keep hard-shelled male crabs at least six inches across, and those are still the rules today. Most are caught in baited wire pots on a buoy, and every pot must be tied on with a biodegradable rot cord, so if it's lost it eventually opens and stops trapping crabs.\n\nThen oysters, on Tomales Bay, about forty minutes further on if you take the coast route. The two big farms, Hog Island and Tomales Bay Oyster Company, both sell to the public with picnic tables by the water, on the east shore near Marshall, right on Highway 1.\n\nMike, as the operations man: oysters from bay to table in about fifty yards. Hard to beat that supply chain.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dungeness_crab",
+    "https://en.wikipedia.org/wiki/Tomales_Bay",
+    "https://en.wikipedia.org/wiki/Bodega_Bay,_California"
+   ]
+  },
+  {
    "id": "the_birds",
    "priority": 4,
    "category": "culture",
-   "title": "The Birds: Hitchcock terrorises Bodega Bay",
+   "title": "The Birds: the true story behind the film",
    "lat": 38.326,
    "lon": -123.04,
    "roads": [
     "sr1_coast"
    ],
-   "text": "Okay, The Birds! In 1963, Alfred Hitchcock made a horror film about birds suddenly, inexplicably attacking the people of Bodega Bay. Tippi Hedren, in her first film, plays a San Francisco socialite who drives up here with a pair of lovebirds, and things go very badly. Gulls at the dock, crows at the schoolhouse, sparrows pouring down the chimney.\n\nQuiz: Hitchcock was partly inspired by a real event in 1961, when thousands of seabirds dive-bombed a California seaside town called Capitola, crashing into cars and dropping half-eaten fish on people's lawns. Gross. What do you think really caused it? [[pause 5]] Toxic algae! It poisoned the birds. But nobody knew that in the 1960s.\n\nAnd most of the birds in the movie are real. The gulls were caught at the San Francisco garbage dump. Some of the crows were actually ravens. There were 370 special-effects shots, and the final shot was built out of 32 separate pieces.\n\nThe film was shot around two places, Bodega Bay and the inland village of Bodega, edited to look like one town. The church and the schoolhouse are just up the road in Bodega. A darker footnote: decades later, Tippi Hedren said Hitchcock harassed her during the filming. Today the film's considered one of the greatest horror movies ever made.",
+   "text": "Story time. In August 1961, the people of Capitola, a seaside town further down this coast, woke up to something out of a nightmare. Thousands of seabirds were dive-bombing their houses, crashing into cars and dropping half-eaten fish on people's lawns.\n\nAlfred Hitchcock read about it. He was already working on a film based on a Daphne du Maurier story about birds attacking people, and he used the Capitola event as research. The result was The Birds, released in 1963 and set right here in Bodega Bay. Tippi Hedren, in her first film, drives up from San Francisco with a pair of lovebirds, and it goes very, very badly: gulls at the dock, crows at the schoolhouse, sparrows pouring down the chimney.\n\nMost of the birds were real. The gulls were caught at the San Francisco rubbish dump, and some of the crows were actually ravens. It took 370 special-effects shots, and the final shot was stitched together from 32 separate pieces.\n\nAnd what really happened in Capitola? Toxic algae had poisoned the birds. Nobody knew that in the 1960s. A darker footnote: decades later, Tippi Hedren said Hitchcock harassed her during filming. Today it's rated one of the greatest horror films ever made.",
    "sources": [
     "https://en.wikipedia.org/wiki/The_Birds_(film)",
     "https://en.wikipedia.org/wiki/Bodega_Bay,_California"
@@ -125,18 +156,26 @@
    "id": "hole_in_the_head",
    "priority": 4,
    "category": "politics",
-   "title": "The Hole in the Head: the nuclear plant that never was",
+   "title": "The Hole in the Head: where the anti-nuclear movement was born",
    "lat": 38.3215,
    "lon": -123.035,
    "roads": [
     "sr1_coast"
    ],
-   "text": "Across the harbor is Bodega Head, and it has a hole in it. Literally. Here's the story.\n\nIn the late 1950s and early 60s, the utility company PG&E planned to build a nuclear power plant on Bodega Head. It was meant to be the first commercially viable nuclear plant in the United States. The fishermen were worried about their livelihoods. And a local woman, Rose Gaffney, who owned land on the headland, refused to sell, sued the company, and invited government officials to come and see the fault lines on the site for themselves.\n\nQuiz: in June 1963, the protesters released 1,500 of something into the air with a warning message attached. What? [[pause 4]] Helium balloons! The message said each one could represent a radioactive molecule of strontium 90 or iodine 131. In 1964, after a negative review by the Atomic Energy Commission, PG&E gave up. Historians call it the birth of the anti-nuclear movement.\n\nAnd the real clincher: the San Andreas Fault runs right between Bodega Head and the mainland. Bodega Head is on the Pacific Plate, the town's on the North American Plate. In the 1906 earthquake, the headland jumped about fifteen feet. Its rock is granite, related to the Sierra Nevada, carried north hundreds of miles along the fault. By then they'd already dug the pit for the reactor. It filled with water, and locals call it the Hole in the Head.",
+   "text": "Julia, this one's for you. Across the harbor is Bodega Head, and it has a hole in it, literally. It's where America's anti-nuclear movement is said to have been born.\n\nIn the late 1950s, the utility company PG&E planned to build a nuclear power plant on the headland, meant to be the first commercially viable one in the country. The fishermen worried about their livelihoods. A local landowner, Rose Gaffney, refused to sell, sued the company, and invited government officials to come and look at the fault lines on the site. In June 1963, protesters released 1,500 helium balloons, each carrying the message that it could represent a radioactive molecule of strontium 90 or iodine 131.\n\nThe real clincher was geology. The San Andreas Fault runs right between Bodega Head and the mainland. The headland is on the Pacific Plate, the town's on the North American Plate, and in the 1906 earthquake the headland moved about fifteen feet. In 1964, after a negative review by the Atomic Energy Commission, PG&E gave up. By then they'd already dug the pit for the reactor. It filled with water, and the locals call it the Hole in the Head.",
    "sources": [
     "https://en.wikipedia.org/wiki/Bodega_Bay_Nuclear_Power_Plant",
     "https://en.wikipedia.org/wiki/Bodega_Head",
     "https://en.wikipedia.org/wiki/Bodega_Bay,_California"
-   ]
+   ],
+   "more": {
+    "title": "From Bodega Head to Diablo Canyon and Livermore",
+    "text": "So where did California's nuclear story go next? Today it has exactly one working nuclear plant: Diablo Canyon, on the central coast, also run by PG&E. It makes about 8.6 percent of the state's electricity, and nearly a quarter of its carbon-free power. It was built less than a mile from a fault line nobody knew about at the time, and in 1981 nearly two thousand protesters were arrested there in just two weeks.\n\nIn 2016, PG&E said it would close it in 2024 and 2025, partly because California's rules give renewables priority. Then the grid operators warned of blackouts, 79 scientists wrote an open letter, and in 2022 a new state law extended it to 2030.\n\nAnd Julia's world: fusion. At Livermore, on the other side of the Bay, the National Ignition Facility fires the world's most energetic laser at a tiny fuel capsule. On the 5th of December 2022 it got more energy out of the fuel than the laser put in: 3.15 megajoules out, from 2.05 in. The catch: making that laser pulse took about 300 megajoules from the grid. By 2025, shots had reached 8.6 megajoules. Julia, over to you: how far away is a fusion power plant?",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Diablo_Canyon_Power_Plant",
+     "https://en.wikipedia.org/wiki/National_Ignition_Facility"
+    ]
+   }
   },
   {
    "id": "bodega",
@@ -148,12 +187,28 @@
    "roads": [
     "sr1_coast"
    ],
-   "text": "This little village is Bodega, once called Bodega Corners, to tell it apart from the port down by the water. There used to be two Coast Miwok villages in the area. Then the Russians settled in the Salmon Creek valley here in 1809.\n\nQuiz: around 1843, John Sutter bought land from the departing Russians, including this area. What did the deal include? Guess one thing. [[pause 5]] Some hunting rights, a small boat, several rusty cannons and some old muskets! What a bargain.\n\nIn 1843 a Captain Stephen Smith also built the first lumber mill on the West Coast near here. Then the town proper began in 1853 with a saloon, a blacksmith and a hotel. Naturally. In 1859, shipbuilders built the Saint Teresa of Avila Church. And if both church and schoolhouse look familiar, that's because the church and schoolhouse in The Birds are right here on the Bodega Highway. That's the school where the crows gather on the jungle gym.\n\nGeology note: the geology maps show the rock around here is the Wilson Grove Formation, from the late Miocene and Pliocene, very roughly ten to three million years ago. It's the same sea-floor sandstone we met back in Sebastopol.",
+   "text": "This little village is Bodega, once called Bodega Corners, to tell it apart from the port down by the water. There were two Coast Miwok villages around here, and then in 1809 the Russians settled in the Salmon Creek valley.\n\nWhen the Russians left, around 1843, John Sutter bought their land, including this area. The sale included some hunting rights, a small boat, several rusty cannons and some old muskets. Bargain. The same year, a Captain Stephen Smith built the first lumber mill on the West Coast near here. The town proper began in 1853 with a saloon, a blacksmith and a hotel, which is the correct order of priorities.\n\nIf the church and the schoolhouse look familiar, that's because they starred in The Birds. They're right here on the Bodega Highway, and the schoolhouse is where the crows gather on the climbing frame.\n\nAnd underfoot, the geology maps show the Wilson Grove Formation, sea-floor sandstone from the late Miocene and Pliocene, very roughly ten to three million years ago. The same sandstone we met back in Sebastopol.",
    "sources": [
     "https://en.wikipedia.org/wiki/Bodega,_California",
     "https://en.wikipedia.org/wiki/Bodega_Bay,_California",
     "https://en.wikipedia.org/wiki/The_Birds_(film)",
     "https://macrostrat.org/api/v2/geologic_units/map?lat=38.33041&lng=-122.99587&scale=large"
+   ]
+  },
+  {
+   "id": "offshore_wind",
+   "priority": 3,
+   "category": "economics",
+   "title": "Why there are no wind turbines out there (yet)",
+   "lat": 38.125,
+   "lon": -122.862,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Adam, this one's yours. Out past Point Reyes is open Pacific, with some of the strongest offshore wind in the country. So where are all the turbines?\n\nThe problem is depth. The seabed off California drops away fast, so instead of fixed turbines on the seabed like in the North Sea, it needs floating ones. In 2021 the Biden administration approved large areas off the coast for floating wind farms, and in 2022 California set a target of 25 gigawatts of offshore wind by 2045. Then, this year, in 2026, the second Trump administration negotiated a series of deals that stopped three of the state's five offshore wind projects.\n\nMeanwhile, on land, solar has boomed. By the end of 2023, solar was making 28 percent of California's electricity, the most of any state. And the law says 60 percent of the state's power must be renewable by 2030, and 100 percent by 2045. The headache is the duck curve. Solar floods the grid at midday, then disappears at sunset, just as everyone gets home, so other plants have to ramp up by about five gigawatts an hour. That's why solar with batteries is now worth so much more than solar without.\n\nOver to the analyst: would you rather back floating wind off this coast right now, or batteries?",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wind_power_in_California",
+    "https://en.wikipedia.org/wiki/Solar_power_in_California"
    ]
   },
   {
@@ -167,7 +222,7 @@
     "sr1_coast",
     "valley_ford_101"
    ],
-   "text": "Tiny Valley Ford, population about a hundred and fifty. Dairy country: rolling green hills and cows.\n\nThe Coast Miwok had a village here called Ewapalt. In the 1850s there was a grain mill, and from 1876 the North Pacific Coast Railroad stopped here, so ranchers and fishers could ship their produce down to San Francisco.\n\nQuiz: in 1976, a famous pair of artists, Christo and Jeanne-Claude, built a giant artwork that passed right through Valley Ford, running from Cotati all the way to Bodega Bay. What do you think it was? [[pause 5]] A fence! Running Fence: a long white fabric fence across the hills, all the way to the ocean.\n\nTwo more fun facts. If anyone in the car plays guitar: Shubb, the company that makes capos, has its headquarters right here. And a less fun fact: the dairies have put so much nitrate into the groundwater that in 2017 the state warned pregnant women and babies not to drink the town's well water, and some restaurants truck their water in from Petaluma.",
+   "text": "Tiny Valley Ford, population about a hundred and fifty, in rolling dairy country. The Coast Miwok had a village here called Ewapalt. There was a grain mill in the 1850s, and from 1876 the railway stopped here, so ranchers and fishers could ship their produce to San Francisco.\n\nQuiz: in 1976, the artists Christo and Jeanne-Claude built a giant artwork that passed right through Valley Ford, running from Cotati all the way to Bodega Bay. What was it? [[pause 5]] A fence! Running Fence: a long white fabric fence over the hills and down into the ocean.\n\nTwo more. Guitarists, take note: Shubb, the company that makes guitar capos, has its headquarters right here. And a grimmer one: run-off from the dairies has put so much nitrate in the groundwater that in 2017 the state warned pregnant women and babies not to drink the town's well water. Some restaurants truck their water in from Petaluma.",
    "sources": [
     "https://en.wikipedia.org/wiki/Valley_Ford,_California"
    ]

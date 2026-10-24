@@ -112,7 +112,9 @@ function setSession(type) {
 async function unlockAudio() {
   S.prime();
   if (settings.mode === 'E') return;   // speech-only mode never touches the audio element
-  // Unlock the element with a *muted* play so it doesn't grab the audio session from Spotify.
+  // Unlock the element with a *muted* play in a mixable session, so opening the app or tapping
+  // Start can never take the audio session away from Spotify.
+  if (SESSION[settings.mode]) setSession('ambient');
   el.muted = true; el.src = 'audio/silence.m4a';
   try { await el.play(); el.pause(); } catch (e) {}
   el.removeAttribute('src'); try { el.load(); } catch (e) {}
@@ -129,7 +131,9 @@ function release() {
   el.removeAttribute('src');
   try { el.load(); } catch (e) {}
   if (currentUrl) { URL.revokeObjectURL(currentUrl); currentUrl = null; }
-  if (settings.mode !== 'A') setSession(null);
+  // Between clips, rest in the mixable "ambient" session: the page holds no claim on audio, so iOS
+  // tells Spotify the interruption is over and it can resume.
+  if (SESSION[settings.mode]) setSession('ambient');
   S.stopDuck();
   try { if ('mediaSession' in navigator) { navigator.mediaSession.metadata = null; navigator.mediaSession.playbackState = 'none'; } } catch (e) {}
 }
@@ -185,6 +189,7 @@ async function playClip(clip, reason) {
 el.addEventListener('ended', () => clipFinished());
 function clipFinished() {
   if (!currentClip) return;
+  if (currentClip.id === 'cartest') { speechHandle = null; release(); currentClip = null; $('nowTitle').textContent = 'Car test finished. Did Spotify come back by itself?'; return; }
   speechHandle = null; release();
   currentClip = null; $('nowBar').style.width = '100%';
   engine.ended(clock());
@@ -354,8 +359,8 @@ function renderSettings() {
     C: 'transient-solo: meant to pause other audio while speaking, which may let Spotify resume afterwards.',
     D: 'playback: behaves like a media app — pauses Spotify.',
     E: 'speechSynthesis: the phone’s own voice instead of the recordings. Robotic unless you install an Apple “Premium” voice (see below).',
-    G: 'Recommended (your test, 23 Oct): the natural recorded voice; the music ducks while it talks and comes back afterwards. Keep the ring/silent switch OFF in this mode.',
-    H: 'Like G (also ducked and restored in your test), with the “transient” session.',
+    G: 'Recorded voice; the music ducks and comes back (your phone test, 23 Oct). In the car on 23 Oct it played through the phone speaker instead of CarPlay. Keep the ring/silent switch OFF.',
+    H: 'Recorded voice with the “transient” session; ducked and restored in your phone test. Try this one first in the car with the Car test button.',
     F: 'ambient: meant to mix with music without ducking; may be silenced by the silent switch.',
   };
   let res = {}; try { res = JSON.parse(localStorage.getItem('audioTestResults') || '{}'); } catch (e) {}
@@ -370,6 +375,18 @@ function renderVoices() {
   $('voiceHint').textContent = S.isGood(cur) ? `Using ${cur.name}: a high-quality Apple voice.`
     : 'No Premium/Enhanced voice found. On the iPhone: Settings → Accessibility → Spoken Content → Voices → English → pick e.g. “Ava (Premium)”, “Zoe (Premium)” or “Evan (Enhanced)” (British: “Serena (Premium)”, “Jamie (Premium)”) and download it (free, ~200–400 MB). Then reopen this app and choose it here.';
 }
+// In-car check of the chosen mode: same path as a real clip, started 5 s after the tap so you can
+// switch to Spotify (or just listen) and hear whether the voice comes through the car and the music returns.
+$('btnCarTest').onclick = async () => {
+  await unlockAudio();
+  if (currentClip) { stopSpeech(); release(); currentClip = null; }
+  $('carTestHint').textContent = `Mode ${settings.mode}: test clip starts in 5 seconds…`;
+  setTimeout(() => {
+    $('carTestHint').textContent = `Mode ${settings.mode}: playing. Through the car speakers? Did Spotify keep going (quieter) or pause, and did it come back afterwards?`;
+    playClip({ id: 'cartest', title: 'Car speaker test', areaName: 'Test', audio: 'audio/cartest.m4a', dur: 14,
+      text: 'Hi Mike, Adam and Julia! This is your tour guide, testing the car speakers. If you can hear me through the car, and your music comes back by itself when I stop, this is the mode to use today. Enjoy the oysters!', tts: 'Hi Mike, Adam and Julia! This is your tour guide, testing the car speakers. If you can hear me through the car, and your music comes back by itself when I stop, this is the mode to use today. Enjoy the oysters!' }, 'test');
+  }, 5000);
+};
 $('voiceSel').onchange = () => { settings.voice = $('voiceSel').value; saveSettings(); renderVoices(); };
 $('btnVoicePreview').onclick = () => {
   S.speak('Welcome to the Napa Valley. On your left, the Mayacamas Mountains; on your right, the Vaca range. Guerneville is still about two hours away.',

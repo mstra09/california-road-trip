@@ -49,7 +49,8 @@ if todo:
         dur = len(audio) / 24000 + 0.4
         os.makedirs(os.path.dirname(j["out"]), exist_ok=True)
         # -13 LUFS: louder than podcast norm so the voice cuts through road noise and ducked music
-        af = (f"adelay=150,apad=pad_dur=0.25,loudnorm=I=-12:TP=-1.0:LRA=8,alimiter=limit=0.89:level=false,"
+        af = (f"adelay=150,apad=pad_dur=0.25,loudnorm=I=-18:TP=-2:LRA=11,"   # even level first, then dense and loud (~-9 LUFS)
+              f"acompressor=threshold=-24dB:ratio=6:attack=3:release=120:makeup=14,alimiter=limit=0.94:level=false,"
               f"afade=t=in:d=0.12,afade=t=out:st={max(0, dur - 0.35):.2f}:d=0.35")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp.name, "-af", af, "-ar", "44100", "-ac", "1",
                         "-c:a", "aac", "-b:a", "64k", "-movflags", "+faststart", j["out"]], check=True)

@@ -1,94 +1,108 @@
 #EXTM3U
 #PLAYLIST:Day 2 coast: Guerneville → Jenner → Bodega Bay → Tomales Bay → Point Reyes Station → Stinson Beach → Muir Woods → Golden Gate → SFO
 #EXTINF:55,01 Korbel: Bohemian brothers and California champagne
-../../audio/korbel-c800bf37.m4a
+../../audio/korbel-33c26d92.m4a
 #EXTINF:45,02 Rio Nido: there is no Canyon Five
-../../audio/rio_nido-4846cef0.m4a
+../../audio/rio_nido-9f7d8e0f.m4a
 #EXTINF:84,03 Guerneville: from Stumptown to resort town
-../../audio/guerneville-6e40402a.m4a
+../../audio/guerneville-db30b0d4.m4a
 #EXTINF:51,04 Armstrong Redwoods: the trees the loggers missed
-../../audio/guerneville_more-1cb4bc3e.m4a
+../../audio/guerneville_more-b3f449ed.m4a
 #EXTINF:69,05 The Pomo: the people of the Russian River
-../../audio/pomo_story-41a3470a.m4a
-#EXTINF:54,06 Day two: river, ocean, redwoods, bridge
-../../audio/day2_start-0d9420b9.m4a
+../../audio/pomo_story-f56e4810.m4a
+#EXTINF:77,06 Day two: river, ocean, redwoods, bridge
+../../audio/day2_start-61d2b4d1.m4a
 #EXTINF:89,07 Bohemian Grove: the most exclusive campsite in America
-../../audio/bohemian_grove-8642559d.m4a
+../../audio/bohemian_grove-2bd72a8e.m4a
 #EXTINF:73,08 The Russians in California
-../../audio/russians_story-032de263.m4a
+../../audio/russians_story-7d2cf430.m4a
 #EXTINF:59,09 Cannabis: California's other crop
-../../audio/cannabis_story-8ab9940f.m4a
-#EXTINF:80,10 Monte Rio and Duncans Mills: the railroad to the redwoods
-../../audio/duncans_mills-b92c05d4.m4a
-#EXTINF:73,11 Goat Rock: sea stacks, mammoths and the Goonies
-../../audio/goat_rock-bf185663.m4a
-#EXTINF:76,12 Jenner: the river meets the sea, and a pump made of gold
-../../audio/jenner-b7fc3aef.m4a
-#EXTINF:70,13 Seventeen miles of wild coast
-../../audio/sonoma_coast-3f686d72.m4a
-#EXTINF:71,14 Bodega Bay: Russians, Spaniards and a lot of movies
-../../audio/bodega_bay-7872bcb3.m4a
-#EXTINF:85,15 The Birds: Hitchcock terrorises Bodega Bay
-../../audio/the_birds-7f6abeca.m4a
-#EXTINF:92,16 The Hole in the Head: the nuclear plant that never was
-../../audio/hole_in_the_head-c6335ec0.m4a
-#EXTINF:76,17 Bodega: rusty cannons and a famous schoolhouse
-../../audio/bodega-209413e8.m4a
-#EXTINF:67,18 Valley Ford and the Running Fence
-../../audio/valley_ford-410b10a5.m4a
-#EXTINF:66,19 The Coast Miwok
-../../audio/coast_miwok_story-37ee9d0b.m4a
-#EXTINF:53,20 Tomales: into Marin County
-../../audio/tomales-37e2935d.m4a
-#EXTINF:61,21 Tomales Bay: the fault you can sail on
-../../audio/tomales_bay-5d202344.m4a
-#EXTINF:59,22 Marshall: oysters and a creamery
-../../audio/marshall-2bf3ded6.m4a
-#EXTINF:89,23 Francis Drake, New Albion and the porcelain clue
-../../audio/drake_story-a7e5eab4.m4a
-#EXTINF:56,24 Point Reyes Station: the town that changed its name three times in a year
-../../audio/point_reyes_station-92c6b0c9.m4a
-#EXTINF:62,25 Olema: coyote valley and the hippie song
-../../audio/olema-2b61e987.m4a
-#EXTINF:95,26 Point Reyes: elk, elephant seals and the foggiest lighthouse
-../../audio/point_reyes_wild_story-d291f9a9.m4a
-#EXTINF:71,27 Riding the San Andreas Fault
-../../audio/san_andreas_story-d985d22d.m4a
-#EXTINF:66,28 Bolinas: the town that doesn't want to be found
-../../audio/bolinas-20ebfdc5.m4a
-#EXTINF:76,29 Stinson Beach and the craziest race in America
-../../audio/stinson_beach-abce99e5.m4a
-#EXTINF:79,30 Mount Tam: the crookedest railroad and the first mountain bikes
-../../audio/mount_tam-f39c34fa.m4a
-#EXTINF:64,31 Coast redwoods: the tallest living things on Earth
-../../audio/redwoods_story-2752b437.m4a
-#EXTINF:104,32 Muir Woods: the man who gave away a forest
-../../audio/muir_woods-5868bb85.m4a
-#EXTINF:39,33 Muir Woods and the founding of the United Nations
-../../audio/muir_woods_more-9498053d.m4a
-#EXTINF:62,34 Mill Valley, Chief Marin and the Blind Pig
-../../audio/mill_valley-e3bf39d6.m4a
-#EXTINF:59,35 Sausalito: streets under the bay
-../../audio/sausalito-3ea47896.m4a
-#EXTINF:65,36 The Marin Headlands: the city that never got built
-../../audio/marin_headlands-f7ad01f6.m4a
-#EXTINF:72,37 The Golden Gate Bridge
-../../audio/golden_gate_bridge-c997b104.m4a
-#EXTINF:58,38 Roller skates, bankers and a flattened bridge
-../../audio/golden_gate_bridge_more-4ded04a9.m4a
-#EXTINF:73,39 The Presidio: from Spanish fort to Lucasfilm
-../../audio/presidio-d042c2c2.m4a
-#EXTINF:56,40 Golden Gate Park: a park built on sand dunes
-../../audio/golden_gate_park-b11fd96d.m4a
-#EXTINF:93,41 Yerba Buena, the Gold Rush, and a city built on ships
-../../audio/sf_story-06f6e020.m4a
-#EXTINF:68,42 5:12 a.m., April 18, 1906
-../../audio/sf_1906_story-9cbde272.m4a
-#EXTINF:55,43 Daly City: little boxes on the hillside
-../../audio/daly_city-18cd5655.m4a
-#EXTINF:43,44 Colma: where the dead outnumber the living
-../../audio/colma-fe7d600b.m4a
-#EXTINF:54,45 Discovering San Francisco Bay
-../../audio/sweeney_ridge-b3f5eea3.m4a
-#EXTINF:62,46 SFO: from cow pasture to the world
-../../audio/sfo-aaae46d6.m4a
+../../audio/cannabis_story-474b64e0.m4a
+#EXTINF:74,10 Monte Rio and Duncans Mills: the railroad to the redwoods
+../../audio/duncans_mills-5b314d5a.m4a
+#EXTINF:62,11 Goat Rock: sea stacks, mammoths and the Goonies
+../../audio/goat_rock-a6b07446.m4a
+#EXTINF:55,12 Jenner: the river meets the sea
+../../audio/jenner-2fdfcec6.m4a
+#EXTINF:46,13 The coast that is falling into the sea
+../../audio/sonoma_coast-d375a3ec.m4a
+#EXTINF:72,14 Why Highway 1 will never be a motorway
+../../audio/coastal_act-fc4319a6.m4a
+#EXTINF:67,15 Lunch briefing: crab and oysters
+../../audio/seafood-7735b322.m4a
+#EXTINF:64,16 Bodega Bay: Russians, Spaniards and a lot of movies
+../../audio/bodega_bay-1cb5e2c3.m4a
+#EXTINF:74,17 The Birds: the true story behind the film
+../../audio/the_birds-017c32ef.m4a
+#EXTINF:73,18 The Hole in the Head: where the anti-nuclear movement was born
+../../audio/hole_in_the_head-6f752958.m4a
+#EXTINF:77,19 From Bodega Head to Diablo Canyon and Livermore
+../../audio/hole_in_the_head_more-f2da6d61.m4a
+#EXTINF:64,20 Bodega: rusty cannons and a famous schoolhouse
+../../audio/bodega-49eb7e8b.m4a
+#EXTINF:59,21 Valley Ford and the Running Fence
+../../audio/valley_ford-96c70cd9.m4a
+#EXTINF:66,22 The Coast Miwok
+../../audio/coast_miwok_story-c9e3a820.m4a
+#EXTINF:36,23 Tomales: into Marin County
+../../audio/tomales-69269fda.m4a
+#EXTINF:43,24 Tomales Bay: the fault you can sail on
+../../audio/tomales_bay-1d6f804a.m4a
+#EXTINF:52,25 Marshall: oysters and a creamery
+../../audio/marshall-42e9ae7d.m4a
+#EXTINF:80,26 Why there are no wind turbines out there (yet)
+../../audio/offshore_wind-eb8f12e2.m4a
+#EXTINF:73,27 Francis Drake, New Albion and the porcelain clue
+../../audio/drake_story-da3e02cf.m4a
+#EXTINF:37,28 Point Reyes Station: the town that could not pick a name
+../../audio/point_reyes_station-f42035b7.m4a
+#EXTINF:55,29 Olema: coyote valley, and the ranches coming out
+../../audio/olema-6486149d.m4a
+#EXTINF:72,30 Point Reyes: elk, elephant seals and the foggiest lighthouse
+../../audio/point_reyes_wild_story-44ca0be5.m4a
+#EXTINF:63,31 Riding the San Andreas Fault
+../../audio/san_andreas_story-3cf57945.m4a
+#EXTINF:61,32 Bolinas: the town that doesn't want to be found
+../../audio/bolinas-ae321880.m4a
+#EXTINF:69,33 Stinson Beach and the craziest race in America
+../../audio/stinson_beach-399cfa50.m4a
+#EXTINF:66,34 Mount Tam: the crookedest railroad and the first mountain bikes
+../../audio/mount_tam-44eb1bba.m4a
+#EXTINF:43,35 Coast redwoods: the tallest living things on Earth
+../../audio/redwoods_story-c01f0af1.m4a
+#EXTINF:81,36 Muir Woods: the man who gave away a forest
+../../audio/muir_woods-885de001.m4a
+#EXTINF:37,37 Muir Woods and the founding of the United Nations
+../../audio/muir_woods_more-54fe2c07.m4a
+#EXTINF:68,38 The Olympics that came out of nowhere
+../../audio/palisades_story-b439731f.m4a
+#EXTINF:43,39 Mill Valley, Chief Marin and the Blind Pig
+../../audio/mill_valley-57405c44.m4a
+#EXTINF:57,40 Sausalito: streets under the bay
+../../audio/sausalito-86fcfb9c.m4a
+#EXTINF:48,41 The Marin Headlands: the city that never got built
+../../audio/marin_headlands-508e44e4.m4a
+#EXTINF:67,42 The Golden Gate Bridge
+../../audio/golden_gate_bridge-81fe9486.m4a
+#EXTINF:60,43 How the bridge was paid for, and why Marin has no BART
+../../audio/golden_gate_bridge_more-b1582b42.m4a
+#EXTINF:65,44 The Presidio, and the greatest comeback in sailing
+../../audio/presidio-05469726.m4a
+#EXTINF:58,45 Golden Gate Park and the world’s weirdest race
+../../audio/golden_gate_park-775e3137.m4a
+#EXTINF:69,46 San Francisco: Gold Rush ships to the richest city in America
+../../audio/sf_story-f671fb22.m4a
+#EXTINF:67,47 Mike’s corner: the delivery wars
+../../audio/delivery_wars-37b5d403.m4a
+#EXTINF:53,48 5:12 a.m., April 18, 1906
+../../audio/sf_1906_story-b29fe8e7.m4a
+#EXTINF:46,49 Daly City: little boxes on the hillside
+../../audio/daly_city-cca1f1ed.m4a
+#EXTINF:43,50 Colma: where the dead outnumber the living
+../../audio/colma-58812d8e.m4a
+#EXTINF:46,51 Discovering San Francisco Bay
+../../audio/sweeney_ridge-e7b7cf97.m4a
+#EXTINF:64,52 San Andreas Lake: Yosemite in your tap
+../../audio/san_andreas_lake-d44137f0.m4a
+#EXTINF:54,53 SFO: from cow pasture to the world
+../../audio/sfo-633cec43.m4a

@@ -1,76 +1,88 @@
 #EXTM3U
 #PLAYLIST:Day 2 quicker: Guerneville → Jenner → Bodega Bay → Valley Ford → Petaluma → US 101 → Muir Woods → Golden Gate → SFO
 #EXTINF:55,01 Korbel: Bohemian brothers and California champagne
-../../audio/korbel-c800bf37.m4a
+../../audio/korbel-33c26d92.m4a
 #EXTINF:45,02 Rio Nido: there is no Canyon Five
-../../audio/rio_nido-4846cef0.m4a
+../../audio/rio_nido-9f7d8e0f.m4a
 #EXTINF:84,03 Guerneville: from Stumptown to resort town
-../../audio/guerneville-6e40402a.m4a
+../../audio/guerneville-db30b0d4.m4a
 #EXTINF:51,04 Armstrong Redwoods: the trees the loggers missed
-../../audio/guerneville_more-1cb4bc3e.m4a
+../../audio/guerneville_more-b3f449ed.m4a
 #EXTINF:69,05 The Pomo: the people of the Russian River
-../../audio/pomo_story-41a3470a.m4a
-#EXTINF:54,06 Day two: river, ocean, redwoods, bridge
-../../audio/day2_start-0d9420b9.m4a
+../../audio/pomo_story-f56e4810.m4a
+#EXTINF:77,06 Day two: river, ocean, redwoods, bridge
+../../audio/day2_start-61d2b4d1.m4a
 #EXTINF:89,07 Bohemian Grove: the most exclusive campsite in America
-../../audio/bohemian_grove-8642559d.m4a
+../../audio/bohemian_grove-2bd72a8e.m4a
 #EXTINF:73,08 The Russians in California
-../../audio/russians_story-032de263.m4a
+../../audio/russians_story-7d2cf430.m4a
 #EXTINF:59,09 Cannabis: California's other crop
-../../audio/cannabis_story-8ab9940f.m4a
-#EXTINF:80,10 Monte Rio and Duncans Mills: the railroad to the redwoods
-../../audio/duncans_mills-b92c05d4.m4a
-#EXTINF:73,11 Goat Rock: sea stacks, mammoths and the Goonies
-../../audio/goat_rock-bf185663.m4a
-#EXTINF:76,12 Jenner: the river meets the sea, and a pump made of gold
-../../audio/jenner-b7fc3aef.m4a
-#EXTINF:70,13 Seventeen miles of wild coast
-../../audio/sonoma_coast-3f686d72.m4a
-#EXTINF:71,14 Bodega Bay: Russians, Spaniards and a lot of movies
-../../audio/bodega_bay-7872bcb3.m4a
-#EXTINF:85,15 The Birds: Hitchcock terrorises Bodega Bay
-../../audio/the_birds-7f6abeca.m4a
-#EXTINF:92,16 The Hole in the Head: the nuclear plant that never was
-../../audio/hole_in_the_head-c6335ec0.m4a
-#EXTINF:76,17 Bodega: rusty cannons and a famous schoolhouse
-../../audio/bodega-209413e8.m4a
-#EXTINF:67,18 Valley Ford and the Running Fence
-../../audio/valley_ford-410b10a5.m4a
-#EXTINF:66,19 The Coast Miwok
-../../audio/coast_miwok_story-37ee9d0b.m4a
-#EXTINF:73,20 Petaluma: the Egg Capital of the World
-../../audio/petaluma-d44da177.m4a
-#EXTINF:71,21 Chief Marin and the naming of Marin County
-../../audio/chief_marin-96e25581.m4a
-#EXTINF:104,22 Muir Woods: the man who gave away a forest
-../../audio/muir_woods-5868bb85.m4a
-#EXTINF:39,23 Muir Woods and the founding of the United Nations
-../../audio/muir_woods_more-9498053d.m4a
-#EXTINF:64,24 Coast redwoods: the tallest living things on Earth
-../../audio/redwoods_story-2752b437.m4a
-#EXTINF:62,25 Mill Valley, Chief Marin and the Blind Pig
-../../audio/mill_valley-e3bf39d6.m4a
-#EXTINF:59,26 Sausalito: streets under the bay
-../../audio/sausalito-3ea47896.m4a
-#EXTINF:65,27 The Marin Headlands: the city that never got built
-../../audio/marin_headlands-f7ad01f6.m4a
-#EXTINF:72,28 The Golden Gate Bridge
-../../audio/golden_gate_bridge-c997b104.m4a
-#EXTINF:58,29 Roller skates, bankers and a flattened bridge
-../../audio/golden_gate_bridge_more-4ded04a9.m4a
-#EXTINF:73,30 The Presidio: from Spanish fort to Lucasfilm
-../../audio/presidio-d042c2c2.m4a
-#EXTINF:56,31 Golden Gate Park: a park built on sand dunes
-../../audio/golden_gate_park-b11fd96d.m4a
-#EXTINF:93,32 Yerba Buena, the Gold Rush, and a city built on ships
-../../audio/sf_story-06f6e020.m4a
-#EXTINF:68,33 5:12 a.m., April 18, 1906
-../../audio/sf_1906_story-9cbde272.m4a
-#EXTINF:55,34 Daly City: little boxes on the hillside
-../../audio/daly_city-18cd5655.m4a
-#EXTINF:43,35 Colma: where the dead outnumber the living
-../../audio/colma-fe7d600b.m4a
-#EXTINF:54,36 Discovering San Francisco Bay
-../../audio/sweeney_ridge-b3f5eea3.m4a
-#EXTINF:62,37 SFO: from cow pasture to the world
-../../audio/sfo-aaae46d6.m4a
+../../audio/cannabis_story-474b64e0.m4a
+#EXTINF:74,10 Monte Rio and Duncans Mills: the railroad to the redwoods
+../../audio/duncans_mills-5b314d5a.m4a
+#EXTINF:62,11 Goat Rock: sea stacks, mammoths and the Goonies
+../../audio/goat_rock-a6b07446.m4a
+#EXTINF:55,12 Jenner: the river meets the sea
+../../audio/jenner-2fdfcec6.m4a
+#EXTINF:46,13 The coast that is falling into the sea
+../../audio/sonoma_coast-d375a3ec.m4a
+#EXTINF:72,14 Why Highway 1 will never be a motorway
+../../audio/coastal_act-fc4319a6.m4a
+#EXTINF:67,15 Lunch briefing: crab and oysters
+../../audio/seafood-7735b322.m4a
+#EXTINF:64,16 Bodega Bay: Russians, Spaniards and a lot of movies
+../../audio/bodega_bay-1cb5e2c3.m4a
+#EXTINF:74,17 The Birds: the true story behind the film
+../../audio/the_birds-017c32ef.m4a
+#EXTINF:73,18 The Hole in the Head: where the anti-nuclear movement was born
+../../audio/hole_in_the_head-6f752958.m4a
+#EXTINF:77,19 From Bodega Head to Diablo Canyon and Livermore
+../../audio/hole_in_the_head_more-f2da6d61.m4a
+#EXTINF:64,20 Bodega: rusty cannons and a famous schoolhouse
+../../audio/bodega-49eb7e8b.m4a
+#EXTINF:59,21 Valley Ford and the Running Fence
+../../audio/valley_ford-96c70cd9.m4a
+#EXTINF:66,22 The Coast Miwok
+../../audio/coast_miwok_story-c9e3a820.m4a
+#EXTINF:60,23 Petaluma: the Egg Capital of the World
+../../audio/petaluma-e6a9c5c3.m4a
+#EXTINF:57,24 Chief Marin and the naming of Marin County
+../../audio/chief_marin-bca6e4f9.m4a
+#EXTINF:68,25 The Olympics that came out of nowhere
+../../audio/palisades_story-b439731f.m4a
+#EXTINF:81,26 Muir Woods: the man who gave away a forest
+../../audio/muir_woods-885de001.m4a
+#EXTINF:37,27 Muir Woods and the founding of the United Nations
+../../audio/muir_woods_more-54fe2c07.m4a
+#EXTINF:43,28 Coast redwoods: the tallest living things on Earth
+../../audio/redwoods_story-c01f0af1.m4a
+#EXTINF:43,29 Mill Valley, Chief Marin and the Blind Pig
+../../audio/mill_valley-57405c44.m4a
+#EXTINF:57,30 Sausalito: streets under the bay
+../../audio/sausalito-86fcfb9c.m4a
+#EXTINF:48,31 The Marin Headlands: the city that never got built
+../../audio/marin_headlands-508e44e4.m4a
+#EXTINF:67,32 The Golden Gate Bridge
+../../audio/golden_gate_bridge-81fe9486.m4a
+#EXTINF:60,33 How the bridge was paid for, and why Marin has no BART
+../../audio/golden_gate_bridge_more-b1582b42.m4a
+#EXTINF:65,34 The Presidio, and the greatest comeback in sailing
+../../audio/presidio-05469726.m4a
+#EXTINF:58,35 Golden Gate Park and the world’s weirdest race
+../../audio/golden_gate_park-775e3137.m4a
+#EXTINF:69,36 San Francisco: Gold Rush ships to the richest city in America
+../../audio/sf_story-f671fb22.m4a
+#EXTINF:67,37 Mike’s corner: the delivery wars
+../../audio/delivery_wars-37b5d403.m4a
+#EXTINF:53,38 5:12 a.m., April 18, 1906
+../../audio/sf_1906_story-b29fe8e7.m4a
+#EXTINF:46,39 Daly City: little boxes on the hillside
+../../audio/daly_city-cca1f1ed.m4a
+#EXTINF:43,40 Colma: where the dead outnumber the living
+../../audio/colma-58812d8e.m4a
+#EXTINF:46,41 Discovering San Francisco Bay
+../../audio/sweeney_ridge-e7b7cf97.m4a
+#EXTINF:64,42 San Andreas Lake: Yosemite in your tap
+../../audio/san_andreas_lake-d44137f0.m4a
+#EXTINF:54,43 SFO: from cow pasture to the world
+../../audio/sfo-633cec43.m4a

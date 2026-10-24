@@ -8,7 +8,7 @@ import { Network, anchorsFor } from '../site/js/engine.js';
 
 const MODE = process.argv[2] || 'final';
 const VOICE = process.env.VOICE || 'af_heart';
-const AUDIO_VER = 'lufs13-s105';   // bump to force every clip to re-render
+const AUDIO_VER = 'lufs9-s105';   // bump to force every clip to re-render
 const roads = JSON.parse(fs.readFileSync('data/roads.json', 'utf8'));
 fs.mkdirSync('build', { recursive: true });
 fs.mkdirSync('site/data', { recursive: true });
@@ -103,7 +103,7 @@ fs.writeFileSync('site/data/network.json', JSON.stringify({ segments }));
 fs.writeFileSync('site/data/routes.json', JSON.stringify({ routes }));
 
 // --- remove stale audio files no longer referenced
-const used = new Set(clips.map(c => path.basename(c.audio)));
+const used = new Set([...clips.map(c => path.basename(c.audio)), 'cartest.m4a']);   // cartest: Settings → Car test
 for (const f of fs.readdirSync('site/audio')) if (f.endsWith('.m4a') && f !== 'silence.m4a' && !used.has(f)) fs.unlinkSync(path.join('site/audio', f));
 
 // --- precache manifest: every file in site/ except the test page's own assets and exports zips
