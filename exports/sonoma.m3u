@@ -111,7 +111,7 @@
 #EXTINF:57,55 Believe It or Not: Robert Ripley of Santa Rosa
 ../../audio/ripley-fe228e16.m4a
 #EXTINF:66,56 The Coast Miwok
-../../audio/coast_miwok_story-253faab4.m4a
+../../audio/coast_miwok_story-37ee9d0b.m4a
 #EXTINF:69,57 Sebastopol: a bar fight and the Gravenstein apple
 ../../audio/sebastopol-ba7a7c3b.m4a
 #EXTINF:54,58 Burbank's Gold Ridge farm and the electric railway
@@ -123,7 +123,7 @@
 #EXTINF:59,61 Cannabis: California's other crop
 ../../audio/cannabis_story-8ab9940f.m4a
 #EXTINF:67,62 Meeting the Russian River
-../../audio/russian_river_intro-ed139feb.m4a
+../../audio/russian_river_intro-f54a439e.m4a
 #EXTINF:51,63 California's first commercial sawmill
 ../../audio/el_molino-8a0db072.m4a
 #EXTINF:69,64 The Pomo: the people of the Russian River
@@ -134,7 +134,9 @@
 ../../audio/korbel-c800bf37.m4a
 #EXTINF:45,67 Rio Nido: there is no Canyon Five
 ../../audio/rio_nido-4846cef0.m4a
-#EXTINF:84,68 Guerneville: from Stumptown to resort town
+#EXTINF:54,68 Day two: river, ocean, redwoods, bridge
+../../audio/day2_start-0d9420b9.m4a
+#EXTINF:84,69 Guerneville: from Stumptown to resort town
 ../../audio/guerneville-6e40402a.m4a
-#EXTINF:51,69 Armstrong Redwoods: the trees the loggers missed
+#EXTINF:51,70 Armstrong Redwoods: the trees the loggers missed
 ../../audio/guerneville_more-1cb4bc3e.m4a
