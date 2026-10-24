@@ -36,23 +36,32 @@ export function chunks(text) {
   return out;
 }
 
-// Speak text as a queue of utterances. Returns a handle; onend fires once, after the last chunk.
+// Speak text as a queue of utterances. [[pause N]] markers wait N seconds (quiz guesses).
+// Returns a handle; onend fires once, after the last chunk.
 export function speak(text, { voiceURI, rate = 1, volume = 1, onstart, onend } = {}) {
   const voice = pickVoice(voiceURI);
-  const parts = chunks(text);
-  let done = false, started = false;
+  const segs = String(text).split(/\[\[pause (\d+)\]\]/);
+  let done = false, started = false, timer = null;
   const finish = () => { if (!done) { done = true; onend && onend(); } };
   try { synth.cancel(); } catch (e) {}
-  parts.forEach((p, i) => {
-    const u = new SpeechSynthesisUtterance(p);
-    if (voice) { u.voice = voice; u.lang = voice.lang; } else u.lang = 'en-US';
-    u.rate = rate; u.volume = volume;
-    u.onstart = () => { if (!started) { started = true; onstart && onstart(); } };
-    if (i === parts.length - 1) { u.onend = finish; }
-    u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') finish(); };
-    synth.speak(u);
-  });
-  return { cancel() { done = true; try { synth.cancel(); } catch (e) {} } };
+  const run = k => {
+    if (done) return;
+    if (k >= segs.length) return finish();
+    if (k % 2) { timer = setTimeout(() => run(k + 1), (+segs[k]) * 1000); return; }
+    const parts = chunks(segs[k]).filter(p => p.trim());
+    if (!parts.length) return run(k + 1);
+    parts.forEach((p, i) => {
+      const u = new SpeechSynthesisUtterance(p);
+      if (voice) { u.voice = voice; u.lang = voice.lang; } else u.lang = 'en-US';
+      u.rate = rate; u.volume = volume;
+      u.onstart = () => { if (!started) { started = true; onstart && onstart(); } };
+      if (i === parts.length - 1) u.onend = () => run(k + 1);
+      u.onerror = e => { if (e.error !== 'interrupted' && e.error !== 'canceled') finish(); };
+      synth.speak(u);
+    });
+  };
+  run(0);
+  return { cancel() { done = true; clearTimeout(timer); try { synth.cancel(); } catch (e) {} } };
 }
 
 // Experimental "ducker": while a recorded clip plays in a mixable audio session, keep a silent
@@ -62,7 +71,7 @@ export function startDuck(text) {
   duckOn = true;
   const loop = () => {
     if (!duckOn) return;
-    const u = new SpeechSynthesisUtterance(chunks(text).slice(0, 3).join(' ') || 'pause');
+    const u = new SpeechSynthesisUtterance(chunks(String(text).replace(/\[\[pause \d+\]\]/g, ' ')).slice(0, 3).join(' ') || 'pause');
     u.volume = 0; u.rate = 0.7;
     u.onend = () => setTimeout(loop, 0);
     try { synth.speak(u); } catch (e) {}

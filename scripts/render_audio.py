@@ -4,7 +4,7 @@ Each clip: Kokoro 24 kHz -> loudness-normalised (EBU R128, -13 LUFS, limited) wi
 fades -> mono AAC 64 kbps .m4a. Existing files are skipped (filenames carry a content hash).
 Writes build/durations.json. Usage: .venv/bin/python scripts/render_audio.py [--voice af_heart]
 """
-import json, os, subprocess, sys, tempfile, time
+import json, os, re, subprocess, sys, tempfile, time
 import numpy as np, soundfile as sf
 
 jobs_path = sys.argv[sys.argv.index("--jobs") + 1] if "--jobs" in sys.argv else "build/tts-jobs.json"
@@ -13,6 +13,7 @@ voice = jobs["voice"]
 if "--voice" in sys.argv:
     voice = sys.argv[sys.argv.index("--voice") + 1]
 
+SPEED = float(os.environ.get("SPEED", "1.05"))   # a touch brisker reads as more enthusiastic
 durs_path = "build/durations.json"
 durs = json.load(open(durs_path)) if os.path.exists(durs_path) else {}
 
@@ -33,10 +34,16 @@ if todo:
     vpath = f"models/kokoro/voices/{voice}.pt"
     t0 = time.time()
     for n, j in enumerate(todo, 1):
-        chunks = [a.numpy() if hasattr(a, "numpy") else a for _, _, a in pipe(j["tts"], voice=vpath, speed=1.0)]
-        # small pause between Kokoro's sentence chunks for natural pacing
+        # [[pause N]] markers become N seconds of silence (quiz "have a guess" moments)
         gap = np.zeros(int(24000 * 0.12), dtype=np.float32)
-        audio = np.concatenate([x for c in chunks for x in (c, gap)]) if chunks else np.zeros(2400, dtype=np.float32)
+        pieces = []
+        for k, part in enumerate(re.split(r"\[\[pause (\d+)\]\]", j["tts"])):
+            if k % 2:
+                pieces.append(np.zeros(int(24000 * float(part)), dtype=np.float32)); continue
+            if not part.strip(): continue
+            for _, _, a in pipe(part.strip(), voice=vpath, speed=SPEED):
+                pieces += [a.numpy() if hasattr(a, "numpy") else a, gap]
+        audio = np.concatenate(pieces) if pieces else np.zeros(2400, dtype=np.float32)
         with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
             sf.write(tmp.name, audio, 24000)
         dur = len(audio) / 24000 + 0.4

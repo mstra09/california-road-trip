@@ -8,7 +8,7 @@ import { Network, anchorsFor } from '../site/js/engine.js';
 
 const MODE = process.argv[2] || 'final';
 const VOICE = process.env.VOICE || 'af_heart';
-const AUDIO_VER = 'lufs13';   // bump to force every clip to re-render
+const AUDIO_VER = 'lufs13-s105';   // bump to force every clip to re-render
 const roads = JSON.parse(fs.readFileSync('data/roads.json', 'utf8'));
 fs.mkdirSync('build', { recursive: true });
 fs.mkdirSync('site/data', { recursive: true });
@@ -39,7 +39,7 @@ const pronKeys = Object.keys(pron).sort((a, b) => b.length - a.length);
 function toTTS(text) {
   let t = text;
   for (const k of pronKeys) t = t.replace(new RegExp(`\\b${k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'g'), pron[k]);
-  return t.replace(/—/g, ', ').replace(/–/g, ' to ').replace(/\s+/g, ' ').trim();
+  return t.replace(/—/g, ', ').replace(/–/g, ' to ').replace(/[ \t]+/g, ' ').replace(/\n+/g, ' ').trim();
 }
 
 // --- radius / reach by road type
@@ -63,6 +63,7 @@ for (const c of clips) { if (ids.has(c.id)) throw new Error('duplicate id ' + c.
 
 for (const c of clips) {
   c.tts = toTTS(c.tts || c.text);
+  c.text = c.text.replace(/\s*\[\[pause (\d+)\]\]\s*/g, ' … ');   // quiz pauses: silence in audio, ellipsis on screen
   c.words = c.text.split(/\s+/).length;
   if (c.lat != null && c.kind !== 'more') {
     const reach = c.reach || (c.kind === 'story' ? 0 : 2500);

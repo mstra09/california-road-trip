@@ -46,7 +46,7 @@ def mode_numbers():
     for c in clips:
         src = ' '.join(source_text(u) for u in c.get('sources', []))
         srcn = set(x.replace(',', '') for x in re.findall(r'\d[\d,]*(?:\.\d+)?', src))
-        missing = [n for n in nums(c['text']) if n not in srcn and n.rstrip('0').rstrip('.') not in srcn]
+        missing = [n for n in nums(re.sub(r'\[\[pause \d+\]\]', '', c['text'])) if n not in srcn and n.rstrip('0').rstrip('.') not in srcn]
         if missing:
             bad += 1
             print(f"{c['id']:24s} not found in sources: {', '.join(sorted(missing))}")

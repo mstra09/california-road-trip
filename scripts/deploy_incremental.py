@@ -40,6 +40,9 @@ local = local_files()
 
 changed = [rel for rel, (_, sha) in local.items() if live.get(rel) != sha]
 deleted = [rel for rel in live if rel not in local]
+if os.environ.get('SKIP_ZIPS'):   # big backup zips can go in a second pass on slow links
+    changed = [r for r in changed if not r.endswith('.zip')]
+    deleted = [r for r in deleted if not r.endswith('.zip')]
 mb = sum(os.path.getsize(local[r][0]) for r in changed) / 1e6
 print(f'{len(changed)} changed/new files ({mb:.1f} MB), {len(deleted)} to delete')
 if not changed and not deleted:
