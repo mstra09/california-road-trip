@@ -7,7 +7,7 @@ const store = {
   get(k, d) { try { const v = localStorage.getItem('rt.' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem('rt.' + k, JSON.stringify(v)); } catch (e) {} },
 };
-const settings = Object.assign({ talk: 'normal', rate: '1', mode: 'G', simSpeed: '30', voice: '', awake: 'both' }, store.get('settings', {}));
+const settings = Object.assign({ talk: 'normal', rate: '1', mode: 'G', simSpeed: '30', voice: '', awakeVideo: 'off' }, store.get('settings', {}));
 const saveSettings = () => store.set('settings', settings);
 
 let net, clips, byId, routes, engine, manifest;
@@ -112,12 +112,15 @@ function setSession(type) {
 async function unlockAudio() {
   S.prime();
   if (settings.mode === 'E') return;   // speech-only mode never touches the audio element
-  setSession(SESSION[settings.mode]);
-  el.src = 'audio/silence.m4a';
-  try { await el.play(); } catch (e) {}
+  // Unlock the element with a *muted* play so it doesn't grab the audio session from Spotify.
+  el.muted = true; el.src = 'audio/silence.m4a';
+  try { await el.play(); el.pause(); } catch (e) {}
+  el.removeAttribute('src'); try { el.load(); } catch (e) {}
+  el.muted = false;
 }
 // Any tap re-primes speech if it is idle, so speech keeps working after mode changes, sim starts, etc.
-document.addEventListener('click', () => { if (settings.mode === 'E' || DUCK[settings.mode]) S.prime(); }, true);
+let lastPrime = 0;
+document.addEventListener('click', () => { if ((settings.mode === 'E' || DUCK[settings.mode]) && Date.now() - lastPrime > 60000) { lastPrime = Date.now(); S.prime(); } }, true);
 let speechHandle = null;
 function stopSpeech() { speechHandle?.cancel(); speechHandle = null; S.stopDuck(); }
 function release() {
@@ -299,7 +302,8 @@ async function keepAwake() {
     }
   } catch (e) { wakeLock = null; }
   const lockOk = !!wakeLock && !wakeLock.released;
-  if (settings.awake === 'both' || !lockOk) {
+  // The looping video can stop Spotify on iOS, so it is opt-in only, and only used if the wake lock fails.
+  if (settings.awakeVideo === 'on' && !lockOk) {
     try {
       if (!noSleepVideo) {
         noSleepVideo = document.createElement('video');
@@ -310,7 +314,7 @@ async function keepAwake() {
       }
       if (noSleepVideo.paused) await noSleepVideo.play();
     } catch (e) {}
-  } else if (noSleepVideo && !noSleepVideo.paused) noSleepVideo.pause();
+  } else if (noSleepVideo) { noSleepVideo.pause(); noSleepVideo.remove(); noSleepVideo = null; }
   renderWake();
 }
 function renderWake() {
@@ -380,7 +384,7 @@ document.querySelectorAll('.seg').forEach(s => s.onclick = e => {
   if (s.dataset.setting === 'talk') engine.setTalk(v);
   if (s.dataset.setting === 'rate' && el.src) el.playbackRate = +v;
   if (s.dataset.setting === 'simSpeed') sim.mult = +v;
-  if (s.dataset.setting === 'awake') keepAwake();
+  if (s.dataset.setting === 'awakeVideo') keepAwake();
 });
 $('btnReset').onclick = () => { if (!confirm('Forget which clips have played?')) return; played.clear(); savePlayed(); renderSettings(); renderClips(); };
 $('btnRecache').onclick = () => precacheAll();
