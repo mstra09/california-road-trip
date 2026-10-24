@@ -9,8 +9,10 @@ import json, os, subprocess, sys, base64, tempfile
 REPO = 'repos/mstra09/california-road-trip'
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'site')
 
-def gh(path, method='GET', data=None, retries=4):
+import time
+def gh(path, method='GET', data=None, retries=8, quiet=False):
     for attempt in range(retries):
+        if attempt: time.sleep(min(30, 3 * attempt))
         cmd = ['gh', 'api', path, '-X', method]
         inp = None
         if data is not None:
@@ -18,8 +20,13 @@ def gh(path, method='GET', data=None, retries=4):
         r = subprocess.run(cmd, input=inp, capture_output=True)
         if r.returncode == 0:
             return json.loads(r.stdout or b'null')
+        if quiet: return None
         print('  retry', path, r.stderr.decode()[:120], file=sys.stderr)
     raise SystemExit(f'gh api failed: {path}')
+
+# Blobs are content-addressed, so anything uploaded by an earlier, interrupted run can be reused.
+CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'build', 'uploaded_blobs.txt')
+uploaded = set(open(CACHE).read().split()) if os.path.exists(CACHE) else set()
 
 def local_files():
     out = {}
@@ -50,9 +57,13 @@ if not changed and not deleted:
 
 entries = []
 for i, rel in enumerate(sorted(changed), 1):
-    with open(local[rel][0], 'rb') as fh:
-        blob = gh(f'{REPO}/git/blobs', 'POST', {'encoding': 'base64', 'content': base64.b64encode(fh.read()).decode()})
-    entries.append({'path': rel, 'mode': '100644', 'type': 'blob', 'sha': blob['sha']})
+    sha = local[rel][1]
+    if sha not in uploaded:
+        with open(local[rel][0], 'rb') as fh:
+            blob = gh(f'{REPO}/git/blobs', 'POST', {'encoding': 'base64', 'content': base64.b64encode(fh.read()).decode()})
+        assert blob['sha'] == sha, (rel, blob['sha'], sha)
+        uploaded.add(sha); open(CACHE, 'a').write(sha + '\n')
+    entries.append({'path': rel, 'mode': '100644', 'type': 'blob', 'sha': sha})
     if i % 10 == 0 or i == len(changed): print(f'  uploaded {i}/{len(changed)}')
 entries += [{'path': rel, 'mode': '100644', 'type': 'blob', 'sha': None} for rel in deleted]
 tree = gh(f'{REPO}/git/trees', 'POST', {'base_tree': base_tree, 'tree': entries})['sha']

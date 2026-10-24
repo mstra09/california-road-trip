@@ -1,0 +1,303 @@
+{
+ "area": {
+  "id": "goldengate",
+  "name": "Mount Tam, Muir Woods, Golden Gate & San Francisco"
+ },
+ "clips": [
+  {
+   "id": "mount_tam",
+   "priority": 3,
+   "category": "culture",
+   "title": "Mount Tam: the crookedest railroad and the first mountain bikes",
+   "lat": 37.8867,
+   "lon": -122.6236,
+   "roads": [
+    "sr1_coast",
+    "valley_ford_101",
+    "muir_sfo"
+   ],
+   "text": "The big mountain above us is Mount Tamalpais, Mount Tam to the locals, 2,571 feet at the East Peak.\n\nQuiz: you might hear that Tamalpais means Sleeping Maiden, after a Miwok legend about the mountain's profile looking like a sleeping girl. True or false? [[pause 4]] False! That legend was made up in Victorian times, by a playwright for a play at the mountain's outdoor theatre. The name actually comes from the Coast Miwok támal pájis, meaning west hill.\n\nFrom 1896 to 1930 a railroad wound up from Mill Valley to the summit, with so many bends it was nicknamed the Crookedest Railroad in the World. And in the 1970s, this mountain gave the world something new: the mountain bike. Riders bolted fat tires and better brakes onto old 1930s and 40s Schwinn bikes and bombed down the fire roads. Quiz: they held downhill races near Fairfax called the Repack races. Why Repack? [[pause 5]] Because the coaster brakes got so hot on the way down that the grease burned, and riders had to repack their wheel bearings after every race! Gary Fisher, Charlie Kelly and Joe Breeze were among the pioneers riding here.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mount_Tamalpais",
+    "https://en.wikipedia.org/wiki/Mountain_biking"
+   ]
+  },
+  {
+   "id": "muir_woods",
+   "priority": 5,
+   "category": "nature",
+   "title": "Muir Woods: the man who gave away a forest",
+   "lat": 37.8935,
+   "lon": -122.5774,
+   "roads": [
+    "sr1_coast",
+    "valley_ford_101",
+    "muir_sfo"
+   ],
+   "text": "Welcome to Muir Woods, one of the last old-growth redwood forests in the Bay Area. It's a narrow canyon on the slope of Mount Tam, wrapped in summer fog, which these trees drink up during the dry season.\n\nHere's how it survived. Mount Tam's redwoods were logged heavily to build San Francisco, and again to rebuild it after 1906. But the trees in this canyon, then called Redwood Canyon, were too hard to reach. In 1905, William Kent and his wife Elizabeth bought 611 acres of it for 45,000 dollars, with money borrowed from a banker friend, to save it. Then a water company tried to take part of it to build a dam and a reservoir. So Kent used a brand-new law, the Antiquities Act, and offered to donate the land to the nation. President Theodore Roosevelt accepted, and in January 1908 it became a national monument.\n\nQuiz: the name first suggested was the Kent Monument. What did Kent want instead? [[pause 4]] He insisted it be named after John Muir, the great naturalist! And the twist: Kent and Muir later fell out over damming the Hetch Hetchy valley, which Kent supported. Kent went on to Congress and sponsored the law creating the National Park Service in 1916. He was also, honestly, a loud supporter of anti-Asian immigration laws, so he's a complicated hero.\n\nThe tallest tree here is 258 feet, most are 500 to 800 years old, and the oldest is at least 1,200. Quiz: how big is the seed a redwood grows from? [[pause 4]] About the size of a tomato seed! Tiny seed, giant tree.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Muir_Woods_National_Monument",
+    "https://en.wikipedia.org/wiki/William_Kent_(American_politician)"
+   ],
+   "more": {
+    "title": "Muir Woods and the founding of the United Nations",
+    "text": "One more Muir Woods story. In April 1945, delegates from 50 countries gathered in San Francisco to write the Charter of the United Nations. President Franklin Roosevelt was supposed to open the conference, but he died on the 12th of April, just before it started. So on the 19th of May, the delegates came out here to Cathedral Grove and held a ceremony in his memory, among the redwoods, and placed a plaque in his honor. It's still there.\n\nAnd a practical note: Muir Woods gets up to six thousand visitors a day at busy times, and parking is so limited that since 2018 you need a reservation to park or take the shuttle.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Muir_Woods_National_Monument"
+    ]
+   }
+  },
+  {
+   "id": "redwoods_story",
+   "priority": 3,
+   "category": "nature",
+   "title": "Coast redwoods: the tallest living things on Earth",
+   "lat": 37.89,
+   "lon": -122.6,
+   "roads": [
+    "sr1_coast",
+    "valley_ford_101",
+    "muir_sfo",
+    "sr116_coast"
+   ],
+   "text": "Let's talk about the coast redwood, Sequoia sempervirens. Quiz: how tall do you think the tallest living redwood is? [[pause 5]] About 381 feet! That's the tallest living tree on Earth, way up in Humboldt County. They can live about 2,000 years, and the trunks can be 29 feet across.\n\nRedwoods have been around a very long time. Their relatives' fossils go back to the age of the dinosaurs. They only grow in a narrow strip along the coast, from Big Sur up to the corner of Oregon, because they need that fog. In the dry summers, they drink moisture straight out of the fog.\n\nBefore the Gold Rush, they covered about two million acres. Then the logging started, to build San Francisco and the towns all around it, including the Russian River towns we left this morning. Today only about 5 percent of the old-growth forest is left. The tallest and oldest trees survived in deep, steep canyons, partly because loggers simply couldn't get to them. That's exactly how Muir Woods made it.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sequoia_sempervirens",
+    "https://en.wikipedia.org/wiki/Muir_Woods_National_Monument"
+   ],
+   "kind": "story",
+   "radius": 15000
+  },
+  {
+   "id": "petaluma",
+   "priority": 4,
+   "category": "history",
+   "title": "Petaluma: the Egg Capital of the World",
+   "lat": 38.233,
+   "lon": -122.64,
+   "roads": [
+    "valley_ford_101"
+   ],
+   "text": "Welcome to Petaluma! Quiz: Petaluma's old nickname was the Egg Capital of the World. And it had another nickname, a pun on the name. Can you guess it? [[pause 5]] Chickaluma! This town was all about chickens. It had the only known poultry drugstore, a pharmacy for chickens. And in 1879, Lyman Byce invented the coal-lamp egg incubator here. They still celebrate with a Butter and Eggs Day parade.\n\nThe land was part of Rancho Petaluma, given in 1834 to our old friend General Vallejo from Sonoma. In 1836 he built a huge adobe ranch house just east of town, the largest privately owned adobe ever built in California. It's a state historic park now.\n\nAnd here's a lucky break. In the 1906 earthquake, Petaluma was hardly damaged, thanks to stable bedrock underneath. So it became the base for rescue and relief across the county. That's also why downtown still has old iron-front buildings and Victorian houses. During the Depression nobody had the money to knock them down, and later people moving out from San Francisco restored them.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Petaluma,_California",
+    "https://en.wikipedia.org/wiki/Rancho_Petaluma_Adobe"
+   ]
+  },
+  {
+   "id": "chief_marin",
+   "priority": 3,
+   "category": "history",
+   "title": "Chief Marin and the naming of Marin County",
+   "lat": 38.0,
+   "lon": -122.535,
+   "roads": [
+    "valley_ford_101"
+   ],
+   "text": "We're coming through San Rafael, the county seat of Marin. So who was Marin?\n\nThe Coast Miwok have lived in Marin for about 6,500 years, and more than 600 of their village sites have been found. According to General Vallejo, who chaired the committee that named California's counties in 1850, this county was named after Marin, a great Coast Miwok chief. His birth name was Huicmuse. He was baptized Marino at about the age of twenty, in 1801, and lived at Mission Dolores in San Francisco for years, often serving as godfather at baptisms. Vallejo believed he'd fought fierce battles against the Spanish.\n\nQuiz: there's a rival theory for the county's name, involving the bay. What do you think? [[pause 5]] In 1775 the Spanish named the bay here Bahía de Nuestra Señora del Rosario la Marinera, and Marin might just be short for that! Personally I'm going with the chief.\n\nAnd a movie fact: before moving to the Presidio in San Francisco, George Lucas's company Lucasfilm had its headquarters here in San Rafael.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marin_County,_California",
+    "https://en.wikipedia.org/wiki/Mill_Valley,_California",
+    "https://en.wikipedia.org/wiki/Presidio_of_San_Francisco"
+   ]
+  },
+  {
+   "id": "mill_valley",
+   "priority": 3,
+   "category": "history",
+   "title": "Mill Valley, Chief Marin and the Blind Pig",
+   "lat": 37.88,
+   "lon": -122.52,
+   "roads": [
+    "muir_sfo",
+    "valley_ford_101"
+   ],
+   "text": "This junction, where Highway 1 meets 101, is at the edge of Mill Valley, the town tucked into the redwood canyons on the side of Mount Tam.\n\nPeople have lived here a very long time. Fourteen Coast Miwok village sites have been found in the Mill Valley area, with huge shell mounds along Richardson Bay. One mound, excavated in 1907, was twenty feet high. And a plaque in a Mill Valley sidewalk marks the spot believed to be the birthplace of Chief Marin, in 1781.\n\nQuiz: right around this intersection, in 1916, a roadhouse was built that became famous during Prohibition. It was called the Blind Pig. Why do you think it was built here, outside the town? [[pause 5]] Because it was outside the dry laws, which were enforced more strictly inside the city itself. The roadhouses around here were known as gin joints, and worse.\n\nMill Valley's also where the Dipsea Race starts, and where the Crookedest Railroad began its climb up Mount Tam.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mill_Valley,_California",
+    "https://en.wikipedia.org/wiki/Dipsea_Race",
+    "https://en.wikipedia.org/wiki/Mount_Tamalpais"
+   ]
+  },
+  {
+   "id": "sausalito",
+   "priority": 3,
+   "category": "history",
+   "title": "Sausalito: streets under the bay",
+   "lat": 37.858,
+   "lon": -122.5,
+   "roads": [
+    "muir_sfo"
+   ],
+   "text": "Down to the left is Sausalito, on Richardson Bay. The name is Spanish for small willow grove, and it's been spelled about a dozen different ways over the years.\n\nBefore the bridge, Sausalito was the end of the line: trains from up north, including that North Pacific Coast Railroad from the Russian River, met the ferries here. The car ferry to San Francisco took about twenty minutes and cost a dollar per car. In World War Two it became a shipbuilding center, and afterwards it turned arty and wealthy, famous for its houseboats.\n\nQuiz: when Sausalito was laid out, planners assumed the town would one day expand by filling in the bay, like San Francisco did. So what's strange about some of Sausalito's streets? [[pause 5]] They're underwater! Streets with names like Pescadero, Eureka and Teutonia were mapped out but are still under Richardson Bay. More than a fifth of the city is water.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sausalito,_California",
+    "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
+   ]
+  },
+  {
+   "id": "marin_headlands",
+   "priority": 3,
+   "category": "nature",
+   "title": "The Marin Headlands: the city that never got built",
+   "lat": 37.84,
+   "lon": -122.486,
+   "roads": [
+    "muir_sfo"
+   ],
+   "text": "Those wild green hills on your right, at the very tip of Marin, are the Marin Headlands. They look untouched, but they came close to being a city.\n\nQuiz: in the 1960s, the government sold more than 2,000 acres here to a developer who planned a whole new city called Marincello. How many people do you think it was meant for? [[pause 5]] 30,000! In 50 apartment towers, with houses, a shopping center and a hotel. In 1970 the developer lost a lawsuit, and the land was sold to the Golden Gate National Recreation Area instead. Phew.\n\nThe headlands are dotted with old forts and gun batteries from the 1890s through World War Two, all built to keep enemy ships out of the bay, plus a Nike missile site from the Cold War.\n\nAnd Hawk Hill, 920 feet up, is the best place in the Pacific states to watch birds of prey. Every fall, tens of thousands of hawks, falcons, eagles and vultures funnel down the peninsula here, because they hate flying over water.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marin_Headlands"
+   ]
+  },
+  {
+   "id": "golden_gate_bridge",
+   "priority": 5,
+   "category": "history",
+   "title": "The Golden Gate Bridge",
+   "lat": 37.8199,
+   "lon": -122.4783,
+   "roads": [
+    "muir_sfo"
+   ],
+   "text": "Here it is, everybody! The Golden Gate Bridge! Cameras up, passengers!\n\nIt opened in 1937, and at that point it was the longest and tallest suspension bridge in the world. The towers are 746 feet tall, and the main span is 4,200 feet. Lots of experts said it couldn't be built, because of the wind, the fog, and the swirling tides.\n\nQuiz: the colour is called International Orange, chosen by the architect Irving Morrow. But the U.S. Navy had a different suggestion, to make it more visible to ships. What do you think the Navy wanted? [[pause 5]] Black and yellow stripes! Like a giant bumblebee. Thank goodness for Morrow.\n\nThe chief engineer, Joseph Strauss, insisted on movable safety nets under the workers. Nineteen men were saved by those nets, and they formed a club, called the Half Way to Hell Club. Sadly eleven men did die, ten of them in a single accident in February 1937.\n\nAnd the numbers are wild. The two main cables contain about 80,000 miles of steel wire, enough to go around the Earth three times. Each tower has about 600,000 rivets. And 38 painters work on it all year round.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
+   ],
+   "more": {
+    "title": "Roller skates, bankers and a flattened bridge",
+    "text": "A few more bridge stories. During the Depression, the bridge district couldn't sell its bonds to pay for construction. Then in 1932, Amadeo Giannini, the founder of Bank of America, bought the whole lot himself, to help the local economy.\n\nThe day before cars were allowed on it, in May 1937, 200,000 people walked across. Some on roller skates! And for the fiftieth birthday in 1987, they closed it to cars again. Up to a million people showed up, around 300,000 crammed onto the bridge at once, and the curve in the middle of the deck actually flattened out under their weight. Engineers say it was designed to flex like that, but they haven't tried it again since.\n\nAnd the name of the strait came first. In 1846, John Frémont named it Chrysopylae, Golden Gate, after the Golden Horn harbor of Byzantium, as a golden gate to trade with Asia. The first Europeans known to sail through it were Juan de Ayala's crew, in 1775.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
+     "https://en.wikipedia.org/wiki/Golden_Gate"
+    ]
+   }
+  },
+  {
+   "id": "presidio",
+   "priority": 4,
+   "category": "history",
+   "title": "The Presidio: from Spanish fort to Lucasfilm",
+   "lat": 37.8,
+   "lon": -122.468,
+   "roads": [
+    "muir_sfo"
+   ],
+   "text": "Off the end of the bridge we're driving through the Presidio, a big wooded park that was a military base for 219 years.\n\nThe Spanish founded it on the 17th of September, 1776. That's the same year as the American Declaration of Independence, on the other side of the continent. Then it passed to Mexico, then in 1848 to the U.S. Army, and in 1994 the Army handed it to the National Park Service. Congress told the Presidio to pay for itself, and it did, eight years early.\n\nQuiz: one of the Presidio's tenants makes some of the most famous movies in the world. George Lucas built his company's headquarters here, on the site of an old army hospital. Which company? [[pause 4]] Lucasfilm! Star Wars, from the Presidio.\n\nAnd the road we're on is the Presidio Parkway. The old Doyle Drive viaduct here was judged unsafe in an earthquake, so it was replaced with tunnels through the bluffs, for 1.1 billion dollars, finished in 2015. On top of the tunnels they built a 14-acre park called Presidio Tunnel Tops. So right now, people may be having a picnic on the roof of your road.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Presidio_of_San_Francisco"
+   ]
+  },
+  {
+   "id": "golden_gate_park",
+   "priority": 3,
+   "category": "history",
+   "title": "Golden Gate Park: a park built on sand dunes",
+   "lat": 37.7695,
+   "lon": -122.4769,
+   "roads": [
+    "muir_sfo"
+   ],
+   "text": "Nineteenth Avenue cuts right through Golden Gate Park. It's 1,017 acres, and gets about 24 million visitors a year.\n\nQuiz: before the park was built in the 1870s, what do you think covered three-quarters of this land? [[pause 4]] Sand dunes! This whole western side of the city was called the Outside Lands. Engineer William Hammond Hall and gardener John McLaren spent years planting grasses and trees to hold the sand in place. Hall later became California's first state engineer, and designed flood control for the Sacramento Valley, where this whole trip began.\n\nAt the ocean end there are two Dutch-style windmills from 1903, which used to pump water around the park. Inside there's the de Young Museum, the California Academy of Sciences and the Japanese Tea Garden. And the Outside Lands music festival borrows that old name.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Golden_Gate_Park"
+   ]
+  },
+  {
+   "id": "sf_story",
+   "priority": 4,
+   "category": "history",
+   "title": "Yerba Buena, the Gold Rush, and a city built on ships",
+   "lat": 37.775,
+   "lon": -122.472,
+   "roads": [],
+   "text": "Welcome to San Francisco! Quick question: was this city always called San Francisco? [[pause 4]] Nope! It was a little trading settlement called Yerba Buena, Spanish for good herb. In January 1847, the American mayor renamed it San Francisco, after the mission founded here in 1776. And here's a callback for you: one reason was that General Vallejo was planning a town called Francisca, after his wife. San Francisco grabbed the name first, so Vallejo's town became Benicia instead, after his wife's middle name.\n\nIn 1847 the town had about 459 people. Then gold was found, and it went from about 1,000 people in 1848 to 25,000 by December 1849. Ships arrived, and their crews deserted to go dig for gold, leaving a forest of empty masts in the harbor. Quiz: what happened to those roughly 500 abandoned ships? [[pause 5]] Some became warehouses, saloons and hotels. Many just rotted. And some were deliberately sunk, to claim the underwater land! Then the cove was filled in, so parts of downtown are literally built on top of Gold Rush ships.\n\nThe cable cars started climbing Clay Street in 1873. The Beats took over North Beach in the 1950s, hippies flocked to Haight-Ashbury for the 1967 Summer of Love, and the city's been a magnet for misfits and dreamers ever since.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/San_Francisco"
+   ],
+   "kind": "story",
+   "radius": 6000
+  },
+  {
+   "id": "sf_1906_story",
+   "priority": 4,
+   "category": "history",
+   "title": "5:12 a.m., April 18, 1906",
+   "lat": 37.725,
+   "lon": -122.472,
+   "roads": [],
+   "text": "Okay, let's talk about the morning San Francisco fell down. At 5:12 a.m. on the 18th of April, 1906, the San Andreas Fault ruptured along about 280 miles of the coast. That's the same fault we followed past Tomales Bay and Bolinas this morning. A foreshock hit first, and then the main shaking lasted about 42 seconds. Magnitude about 7.9.\n\nThen came the fires, which burned for days. More than 3,000 people died, the deadliest earthquake in American history, and over 80 percent of the city was destroyed. At the time, San Francisco was the biggest city on the West Coast.\n\nQuiz: for years people thought the epicenter was up at Olema. Where do scientists now think it was? [[pause 5]] Offshore, near Mussel Rock by Daly City, the next town we drive through! And remember all the places we heard about today: refugees who started Stinson Beach businesses, Petaluma's relief efforts, the redwoods logged to rebuild the city. That earthquake shaped this whole region.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake",
+    "https://en.wikipedia.org/wiki/San_Andreas_Fault",
+    "https://en.wikipedia.org/wiki/Daly_City,_California",
+    "https://en.wikipedia.org/wiki/Stinson_Beach,_California"
+   ],
+   "kind": "story",
+   "radius": 6000
+  },
+  {
+   "id": "daly_city",
+   "priority": 3,
+   "category": "culture",
+   "title": "Daly City: little boxes on the hillside",
+   "lat": 37.706,
+   "lon": -122.469,
+   "roads": [
+    "muir_sfo"
+   ],
+   "text": "We're crossing into Daly City. After the 1906 earthquake, thousands of homeless San Franciscans headed south to the ranches here, including a big one belonging to John Daly, a dairyman who'd married his boss's daughter. The town grew from those refugees and took his name.\n\nThen, from the late 1940s, a developer called Henry Doelger built Westlake, one of the first big planned suburbs, with rows and rows of similar houses up the hillsides. Quiz: Westlake inspired a famous 1962 folk song by Malvina Reynolds, poking fun at rows of identical suburban houses. What's it called? [[pause 4]] Little Boxes!\n\nA sad note too: Filipino American families who wanted to buy here in the 1950s were barred from Westlake by racial covenants, so they bought homes east of Junipero Serra Boulevard instead.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Daly_City,_California"
+   ]
+  },
+  {
+   "id": "colma",
+   "priority": 3,
+   "category": "culture",
+   "title": "Colma: where the dead outnumber the living",
+   "lat": 37.68,
+   "lon": -122.455,
+   "roads": [
+    "muir_sfo"
+   ],
+   "text": "Here's the weirdest town on our whole trip: Colma. Most of its land is cemeteries.\n\nIn 1900, San Francisco banned new burials inside the city, and in 1912 it evicted most of its existing cemeteries. So about 150,000 bodies were dug up and moved down here, at ten dollars per grave. Nearly everyone famous who died in San Francisco ended up here.\n\nQuiz: the dead here outnumber the living. By roughly how much? [[pause 5]] About a thousand to one! Somewhere around one and a half million people are buried here. It's been called the City of the Silent, and its unofficial motto is: It's great to be alive in Colma.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Colma,_California"
+   ]
+  },
+  {
+   "id": "sweeney_ridge",
+   "priority": 3,
+   "category": "history",
+   "title": "Discovering San Francisco Bay",
+   "lat": 37.64,
+   "lon": -122.43,
+   "roads": [
+    "muir_sfo"
+   ],
+   "text": "On the hills to the west is Sweeney Ridge. And something big happened up there.\n\nIn 1769, the Spanish explorer Gaspar de Portolá was leading an expedition up the coast. He sent a scouting party, led by Sergeant José Ortega, north to find the Point Reyes headlands, which we drove past this morning. Ortega came back and reported he couldn't get there. Quiz: why not? [[pause 4]] Because the Golden Gate was in the way! He'd found the strait. And from Sweeney Ridge, on the 4th of November 1769, the expedition became the first Europeans known to see San Francisco Bay. Well, the scouts had actually spotted it a few days earlier.\n\nAmazing to think that all those sailors, Drake in 1579, Vizcaíno in 1603, sailed right past one of the greatest harbors on Earth and never noticed it, hidden in the fog.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sweeney_Ridge",
+    "https://en.wikipedia.org/wiki/Golden_Gate",
+    "https://en.wikipedia.org/wiki/New_Albion",
+    "https://en.wikipedia.org/wiki/Point_Reyes_National_Seashore"
+   ]
+  },
+  {
+   "id": "sfo",
+   "priority": 5,
+   "category": "history",
+   "title": "SFO: from cow pasture to the world",
+   "lat": 37.6213,
+   "lon": -122.379,
+   "roads": [
+    "muir_sfo"
+   ],
+   "text": "And here we are: San Francisco International Airport. Quiz, one last time: when the city opened its airport here in May 1927, what was the land being used for? [[pause 4]] It was a cow pasture! 150 acres, leased from the Mills family estate, as a temporary, experimental airport called Mills Field. In 1931 the city bought the land and named it San Francisco Airport, and international was added after World War Two. Pan Am moved its flying boats here in 1944. Funny detail: it's owned by San Francisco, but it's actually in San Mateo County.\n\nSo, Julia, Adam, our heroic driver: that's a wrap! From Sacramento's Gold Rush to Napa's vineyards, the Russian River's redwoods, the Sonoma Coast, Point Reyes, Muir Woods and the Golden Gate. Volcanoes, earthquakes, Russians, Hitchcock and an egg capital. It's been an honour being your tour guide. Safe travels, come back soon, and remember: Goonies never say die!",
+   "sources": [
+    "https://en.wikipedia.org/wiki/San_Francisco_International_Airport"
+   ]
+  }
+ ]
+}

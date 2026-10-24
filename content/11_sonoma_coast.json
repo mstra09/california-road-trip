@@ -1,0 +1,176 @@
+{
+ "area": {
+  "id": "sonomacoast",
+  "name": "Russian River mouth & Sonoma Coast"
+ },
+ "clips": [
+  {
+   "id": "day2_start",
+   "priority": 5,
+   "category": "geography",
+   "title": "Day two: river, ocean, redwoods, bridge",
+   "lat": 38.488,
+   "lon": -123.012,
+   "roads": [
+    "sr116_coast"
+   ],
+   "text": "Good morning, road-trippers! Julia, Adam, our heroic driver: welcome to day two. And what a day. We're following the Russian River all the way to the ocean. Then it's down the wild Sonoma Coast to Bodega Bay, where Alfred Hitchcock made birds terrifying. After that, either along Tomales Bay and the Point Reyes coast, or inland through Petaluma, to the giant redwoods of Muir Woods. Then over the Golden Gate Bridge and through San Francisco to the airport.\n\nQuick warm-up quiz while you finish your coffee. Today we're going to cross the biggest, most famous fault line in America, more than once. What's it called? [[pause 4]] The San Andreas Fault! And here's the wild bit: by this afternoon we'll have driven on a different tectonic plate. Some of the land we're passing is moving north at about an inch a year. More on that later. Let's go find the ocean!",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Russian_River_(California)",
+    "https://en.wikipedia.org/wiki/San_Andreas_Fault",
+    "https://en.wikipedia.org/wiki/Bolinas,_California"
+   ],
+   "kind": "intro"
+  },
+  {
+   "id": "duncans_mills",
+   "priority": 3,
+   "category": "history",
+   "title": "Monte Rio and Duncans Mills: the railroad to the redwoods",
+   "lat": 38.4539,
+   "lon": -123.0544,
+   "roads": [
+    "sr116_coast"
+   ],
+   "text": "Picture this road with a little narrow-gauge train chugging along beside the river. From the 1870s, the North Pacific Coast Railroad ran from Cazadero, through Monte Rio and Duncans Mills, all the way down to the Sausalito ferry. And you'll hear its name again and again today, because it also stopped at Valley Ford, Tomales, Marshall and Point Reyes Station.\n\nAt first it hauled redwood lumber to build San Francisco. In 1877 Alexander Duncan set up a sawmill right here, and the town grew up around it, with two hotels, a saloon, a blacksmith and a livery stable. When the mills moved on, the trains started carrying San Franciscans up to summer cabins instead. Monte Rio, back there, branded itself Vacation Wonderland, and even had a seven-story hotel downtown. Parts of the 1942 Oscar-winning film Holiday Inn were shot at a resort in Monte Rio.\n\nQuiz: the railroad shut down in the 1930s, and Duncans Mills slowly faded. Then, in 1976, something brought it back to life. What do you think? [[pause 5]] America's two-hundredth birthday! A Bicentennial restoration project fixed up the old buildings. And there's still an original depot here, with some of the old railroad cars.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Duncans_Mills,_California",
+    "https://en.wikipedia.org/wiki/Monte_Rio,_California"
+   ]
+  },
+  {
+   "id": "jenner",
+   "priority": 4,
+   "category": "history",
+   "title": "Jenner: the river meets the sea, and a pump made of gold",
+   "lat": 38.4497,
+   "lon": -123.1157,
+   "roads": [
+    "sr116_coast",
+    "sr1_coast"
+   ],
+   "text": "There it is! The Russian River meets the Pacific Ocean, right here at Jenner. Population: about a hundred and twenty.\n\nQuick reminder of why it's called the Russian River. Russians from the Russian-American Company explored it in the early 1800s, when they set up Fort Ross, about ten miles up the coast. They called it the Slavyanka. The Pomo had much older names for it, including Bidapte, big river.\n\nThe town is named after Dr. Elijah Jenner, a dentist and inventor from Vermont who came west for the Gold Rush in 1850. While he was mining, he designed a pump that could lift water a hundred feet. Quiz: when he applied for the patent, he sent a model of the pump. What was so special about it? [[pause 5]] It was made of pure gold! It's the only golden model the Patent Office has ever received. A true Gold Rush flex. By 1854 the family had settled here at the mouth of the river.\n\nAnd watch the river mouth. In summer, the waves build a sandbar right across it, and the river turns into a lagoon until the water gets high enough to break through. In late fall and winter, when the sandbar's breached, the sheltered beach on the north side is a favourite spot for harbor seals to have their pups.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jenner,_California",
+    "https://en.wikipedia.org/wiki/Russian_River_(California)",
+    "https://en.wikipedia.org/wiki/Goat_Rock_Beach"
+   ]
+  },
+  {
+   "id": "goat_rock",
+   "priority": 4,
+   "category": "geology",
+   "title": "Goat Rock: sea stacks, mammoths and the Goonies",
+   "lat": 38.4405,
+   "lon": -123.118,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Okay, movie quiz! Down on the left is Goat Rock Beach, with that huge flat-topped rock barely hanging on to the land. In 1985, a very famous adventure movie, about a group of kids hunting for pirate treasure, filmed its ending on this beach. Which movie? [[pause 5]] The Goonies! Goonies never say die.\n\nNow look at all those rocks sticking out of the sea. They're called sea stacks, and here's how they got there. For about 170 million years, an ocean plate was diving under North America. It scraped off pillow lava, chert and sandstone, and crushed it all into mélange, which is a jumble of hard blocks floating in a softer, ground-up rock. When the waves hit it, the soft stuff washes away and the hard blocks are left standing in the sea. Goat Rock is one big hard block of greywacke sandstone.\n\nAnd here's a cool one. About a mile south of the river there's a rock of blueschist with rubbing marks two to four meters up. That's too high for cows. Scientists think mammoths made them, using it as a back-scratcher! Mammoths are believed to have roamed here as recently as 40,000 years ago.\n\nCareful if you stop, though: the beach drops off steeply and there's a nasty rip current.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goat_Rock_Beach",
+    "https://en.wikipedia.org/wiki/Sonoma_Coast_State_Park",
+    "https://en.wikipedia.org/wiki/Bodega_Bay,_California"
+   ]
+  },
+  {
+   "id": "sonoma_coast",
+   "priority": 3,
+   "category": "geography",
+   "title": "Seventeen miles of wild coast",
+   "lat": 38.389,
+   "lon": -123.087,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "This is the Sonoma Coast, seventeen miles of state beaches running all the way down to Bodega Head. Little coves, big rocks, cliffs, and fog that can roll in fast.\n\nQuiz: those bluffs are made of soft soil, and the ocean's chewing away at them. How much land do you think this coast loses in an average year? [[pause 5]] One to three feet a year! More in a stormy winter. It's also rising. Over the ages this land has been pushed up, which is why you're driving on a flat shelf above the beach. It's called a marine terrace: old sea floor, lifted up. Some of those sea stacks are even standing up on the terrace, away from the water, because they started life on the sea floor before it rose.\n\nLook out to sea for gray whales, harbor seals and California sea lions. The Coast Miwok and Pomo lived along here for a very long time, and dozens of their old shell middens, basically ancient kitchen garbage heaps, have been found on this coast. The Russians cut down the old-growth forest above the coastal prairie in the early 1800s, and later it became part of a Mexican ranch called Rancho Bodega.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sonoma_Coast_State_Park",
+    "https://en.wikipedia.org/wiki/Goat_Rock_Beach"
+   ]
+  },
+  {
+   "id": "bodega_bay",
+   "priority": 4,
+   "category": "history",
+   "title": "Bodega Bay: Russians, Spaniards and a lot of movies",
+   "lat": 38.3333,
+   "lon": -123.0481,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Welcome to Bodega Bay! Fishing boats, salty air, and a harbor tucked behind that long headland.\n\nThe bay is named after Juan Francisco de la Bodega y Quadra, a Spanish naval officer who sailed in here in 1775. In 1793 the Spanish sent a little garrison with four cannons, because they'd heard the English might show up. They didn't, so the guns went back to Monterey. And then guess who did show up? The Russians! In 1809, before they built Fort Ross, they put up the first Russian buildings in California here, and called it Port Rumyantsev, after their foreign minister.\n\nHollywood loves this town. Hitchcock filmed The Birds here, which I'll tell you about in a second. But there's also The Fog, I Know What You Did Last Summer, and The Russians Are Coming, the Russians Are Coming. Quiz: in 2021, a famous TV comedy needed to film a season in Ireland, but COVID made that impossible. So Bodega Bay played Ireland instead! Which show? [[pause 5]] It's Always Sunny in Philadelphia! A Northern California fishing village pretending to be Ireland. Honestly, with the fog, it works.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bodega_Bay,_California",
+    "https://en.wikipedia.org/wiki/Bodega,_California"
+   ]
+  },
+  {
+   "id": "the_birds",
+   "priority": 4,
+   "category": "culture",
+   "title": "The Birds: Hitchcock terrorises Bodega Bay",
+   "lat": 38.326,
+   "lon": -123.04,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Okay, The Birds! In 1963, Alfred Hitchcock made a horror film about birds suddenly, inexplicably attacking the people of Bodega Bay. Tippi Hedren, in her first film, plays a San Francisco socialite who drives up here with a pair of lovebirds, and things go very badly. Gulls at the dock, crows at the schoolhouse, sparrows pouring down the chimney.\n\nQuiz: Hitchcock was partly inspired by a real event in 1961, when thousands of seabirds dive-bombed a California seaside town called Capitola, crashing into cars and dropping half-eaten fish on people's lawns. Gross. What do you think really caused it? [[pause 5]] Toxic algae! It poisoned the birds. But nobody knew that in the 1960s.\n\nAnd most of the birds in the movie are real. The gulls were caught at the San Francisco garbage dump. Some of the crows were actually ravens. There were 370 special-effects shots, and the final shot was built out of 32 separate pieces.\n\nThe film was shot around two places, Bodega Bay and the inland village of Bodega, edited to look like one town. The church and the schoolhouse are just up the road in Bodega. A darker footnote: decades later, Tippi Hedren said Hitchcock harassed her during the filming. Today the film's considered one of the greatest horror movies ever made.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/The_Birds_(film)",
+    "https://en.wikipedia.org/wiki/Bodega_Bay,_California"
+   ]
+  },
+  {
+   "id": "hole_in_the_head",
+   "priority": 4,
+   "category": "politics",
+   "title": "The Hole in the Head: the nuclear plant that never was",
+   "lat": 38.3215,
+   "lon": -123.035,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Across the harbor is Bodega Head, and it has a hole in it. Literally. Here's the story.\n\nIn the late 1950s and early 60s, the utility company PG&E planned to build a nuclear power plant on Bodega Head. It was meant to be the first commercially viable nuclear plant in the United States. The fishermen were worried about their livelihoods. And a local woman, Rose Gaffney, who owned land on the headland, refused to sell, sued the company, and invited government officials to come and see the fault lines on the site for themselves.\n\nQuiz: in June 1963, the protesters released 1,500 of something into the air with a warning message attached. What? [[pause 4]] Helium balloons! The message said each one could represent a radioactive molecule of strontium 90 or iodine 131. In 1964, after a negative review by the Atomic Energy Commission, PG&E gave up. Historians call it the birth of the anti-nuclear movement.\n\nAnd the real clincher: the San Andreas Fault runs right between Bodega Head and the mainland. Bodega Head is on the Pacific Plate, the town's on the North American Plate. In the 1906 earthquake, the headland jumped about fifteen feet. Its rock is granite, related to the Sierra Nevada, carried north hundreds of miles along the fault. By then they'd already dug the pit for the reactor. It filled with water, and locals call it the Hole in the Head.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bodega_Bay_Nuclear_Power_Plant",
+    "https://en.wikipedia.org/wiki/Bodega_Head",
+    "https://en.wikipedia.org/wiki/Bodega_Bay,_California"
+   ]
+  },
+  {
+   "id": "bodega",
+   "priority": 3,
+   "category": "history",
+   "title": "Bodega: rusty cannons and a famous schoolhouse",
+   "lat": 38.3449,
+   "lon": -122.9719,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "This little village is Bodega, once called Bodega Corners, to tell it apart from the port down by the water. There used to be two Coast Miwok villages in the area. Then the Russians settled in the Salmon Creek valley here in 1809.\n\nQuiz: around 1843, John Sutter bought land from the departing Russians, including this area. What did the deal include? Guess one thing. [[pause 5]] Some hunting rights, a small boat, several rusty cannons and some old muskets! What a bargain.\n\nIn 1843 a Captain Stephen Smith also built the first lumber mill on the West Coast near here. Then the town proper began in 1853 with a saloon, a blacksmith and a hotel. Naturally. In 1859, shipbuilders built the Saint Teresa of Avila Church. And if both church and schoolhouse look familiar, that's because the church and schoolhouse in The Birds are right here on the Bodega Highway. That's the school where the crows gather on the jungle gym.\n\nGeology note: the geology maps show the rock around here is the Wilson Grove Formation, from the late Miocene and Pliocene, very roughly ten to three million years ago. It's the same sea-floor sandstone we met back in Sebastopol.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bodega,_California",
+    "https://en.wikipedia.org/wiki/Bodega_Bay,_California",
+    "https://en.wikipedia.org/wiki/The_Birds_(film)",
+    "https://macrostrat.org/api/v2/geologic_units/map?lat=38.33041&lng=-122.99587&scale=large"
+   ]
+  },
+  {
+   "id": "valley_ford",
+   "priority": 3,
+   "category": "culture",
+   "title": "Valley Ford and the Running Fence",
+   "lat": 38.3178,
+   "lon": -122.9236,
+   "roads": [
+    "sr1_coast",
+    "valley_ford_101"
+   ],
+   "text": "Tiny Valley Ford, population about a hundred and fifty. Dairy country: rolling green hills and cows.\n\nThe Coast Miwok had a village here called Ewapalt. In the 1850s there was a grain mill, and from 1876 the North Pacific Coast Railroad stopped here, so ranchers and fishers could ship their produce down to San Francisco.\n\nQuiz: in 1976, a famous pair of artists, Christo and Jeanne-Claude, built a giant artwork that passed right through Valley Ford, running from Cotati all the way to Bodega Bay. What do you think it was? [[pause 5]] A fence! Running Fence: a long white fabric fence across the hills, all the way to the ocean.\n\nTwo more fun facts. If anyone in the car plays guitar: Shubb, the company that makes capos, has its headquarters right here. And a less fun fact: the dairies have put so much nitrate into the groundwater that in 2017 the state warned pregnant women and babies not to drink the town's well water, and some restaurants truck their water in from Petaluma.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Valley_Ford,_California"
+   ]
+  }
+ ]
+}

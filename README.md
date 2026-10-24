@@ -1,9 +1,11 @@
 # Wine Country Road Guide
 
-A GPS-triggered audio tour from Sacramento to Guerneville, covering the whole road network between them
+A GPS-triggered audio tour from Sacramento to Guerneville, and on day 2 from Guerneville down the Sonoma and
+Marin coast (or inland via Petaluma) to Muir Woods, the Golden Gate Bridge and SFO, covering the whole road network between them
 (I-80, I-505/SR 128 via Lake Berryessa, Jameson Canyon, Carneros, SR 29, the Silverado Trail, the
 Mayacamas cross-roads, the Sonoma Valley, Alexander Valley, US 101, River Road, Westside Road, SR 116,
-Guerneville Road and the Bohemian Highway). It runs as a home-screen web app on an iPhone and works fully
+Guerneville Road, the Bohemian Highway, SR 116 to Jenner, SR 1 via Bodega Bay, Tomales Bay, Point Reyes Station
+and Stinson Beach, Valley Ford Rd → Petaluma → US 101, and Muir Woods → Golden Gate → 19th Ave → I-280 → SFO). It runs as a home-screen web app on an iPhone and works fully
 offline once cached.
 
 - **App:** https://mstra09.github.io/california-road-trip/
@@ -15,6 +17,9 @@ offline once cached.
   | Lake Berryessa: I-505 → SR 128 → Calistoga → Alexander Valley → Healdsburg → Westside Rd | [cues](https://mstra09.github.io/california-road-trip/exports/berryessa-cues.html) | [m3u](https://mstra09.github.io/california-road-trip/exports/berryessa.m3u) | [zip](https://mstra09.github.io/california-road-trip/exports/berryessa.zip) | `https://mstra09.github.io/california-road-trip/exports/berryessa.xml` |
   | Sonoma: Carneros → Sonoma → Kenwood → Santa Rosa → Sebastopol → SR 116 | [cues](https://mstra09.github.io/california-road-trip/exports/sonoma-cues.html) | [m3u](https://mstra09.github.io/california-road-trip/exports/sonoma.m3u) | [zip](https://mstra09.github.io/california-road-trip/exports/sonoma.zip) | `https://mstra09.github.io/california-road-trip/exports/sonoma.xml` |
   | Silverado Trail → Calistoga Rd → Santa Rosa → Bohemian Hwy | [cues](https://mstra09.github.io/california-road-trip/exports/silverado_bohemian-cues.html) | [m3u](https://mstra09.github.io/california-road-trip/exports/silverado_bohemian.m3u) | [zip](https://mstra09.github.io/california-road-trip/exports/silverado_bohemian.zip) | `https://mstra09.github.io/california-road-trip/exports/silverado_bohemian.xml` |
+  | Tonight: St. Helena → Calistoga → Petrified Forest → River Rd → Guerneville | [cues](https://mstra09.github.io/california-road-trip/exports/tonight-cues.html) | [m3u](https://mstra09.github.io/california-road-trip/exports/tonight.m3u) | [zip](https://mstra09.github.io/california-road-trip/exports/tonight.zip) | `https://mstra09.github.io/california-road-trip/exports/tonight.xml` |
+  | Day 2 coast: Jenner → Bodega Bay → Tomales Bay → Point Reyes Stn → Stinson → Muir Woods → Golden Gate → SFO | [cues](https://mstra09.github.io/california-road-trip/exports/day2_coast-cues.html) | [m3u](https://mstra09.github.io/california-road-trip/exports/day2_coast.m3u) | [zip](https://mstra09.github.io/california-road-trip/exports/day2_coast.zip) | `https://mstra09.github.io/california-road-trip/exports/day2_coast.xml` |
+  | Day 2 quicker: Jenner → Bodega Bay → Valley Ford → Petaluma → US 101 → Muir Woods → Golden Gate → SFO | [cues](https://mstra09.github.io/california-road-trip/exports/day2_inland-cues.html) | [m3u](https://mstra09.github.io/california-road-trip/exports/day2_inland.m3u) | [zip](https://mstra09.github.io/california-road-trip/exports/day2_inland.zip) | `https://mstra09.github.io/california-road-trip/exports/day2_inland.xml` |
 
   Podcast: Apple Podcasts → Library → ⋯ → *Follow a Show by URL* → paste the feed URL. Episodes are numbered in
   driving order (serial show), so play them from #1.
@@ -43,7 +48,7 @@ offline once cached.
 
 ## How it works
 - **Road network** (`scripts/fetch-roads.mjs`): waypoints in `data/roads.src.json` (on-road points checked with
-  the OpenStreetMap Overpass API) routed through the public OSRM server → 19 road segments plus 4 full route
+  the OpenStreetMap Overpass API) routed through the public OSRM server → 23 road segments plus 7 full route
   variants with per-point travel time. Hardcoded waypoints are the fallback if OSRM is down.
 - **Sources** (`scripts/fetch-sources.mjs`, `scripts/fetch-articles.mjs`): every road sampled every ~1 km;
   Wikipedia GeoSearch (10 km radius) found 812 nearby articles; Macrostrat gave bedrock geology at 456 points;

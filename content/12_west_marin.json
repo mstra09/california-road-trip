@@ -1,0 +1,182 @@
+{
+ "area": {
+  "id": "westmarin",
+  "name": "Tomales Bay, Point Reyes & Stinson Beach"
+ },
+ "clips": [
+  {
+   "id": "tomales",
+   "priority": 3,
+   "category": "history",
+   "title": "Tomales: into Marin County",
+   "lat": 38.247,
+   "lon": -122.905,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Welcome to Marin County! And to Tomales, population just under two hundred, perched above Keys Creek.\n\nThe Coast Miwok had many villages around here, including one called Utumia, near the town. The post office opened in 1854, spelled Tomalles with two L's, and later it lost one. The North Pacific Coast Railroad came through in the 1870s.\n\nQuiz: Tomales sits close to the San Andreas Fault. How can you still see the damage from the 1906 earthquake here? [[pause 5]] In the cemetery! One of the town's two cemeteries is older than the earthquake, and the old graves are still damaged. It shows how far the shaking reached.\n\nSpeaking of Marin: Vallejo, the general from yesterday in Sonoma, said the county was named after Marin, a Coast Miwok leader. More on him later.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tomales,_California",
+    "https://en.wikipedia.org/wiki/Marin_County,_California"
+   ]
+  },
+  {
+   "id": "tomales_bay",
+   "priority": 4,
+   "category": "geology",
+   "title": "Tomales Bay: the fault you can sail on",
+   "lat": 38.205,
+   "lon": -122.925,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "That long, skinny bay is Tomales Bay: about fifteen miles long, only a mile wide, and shallow, about eighteen feet deep on average. Quiz: in 1603, Spanish explorers from the Vizcaíno expedition found this bay. What did they think it was? [[pause 4]] A river! They called it the Rio Grande de San Sebastián. Easy mistake, look at it.\n\nBut it's not a river, it's a fault! Tomales Bay sits on a drowned stretch of the San Andreas Fault. Everything on the far side, the Point Reyes Peninsula, is on the Pacific Plate. You're on the North American Plate. The fault cuts through the peninsula, from Tomales Bay in the north to Bolinas Lagoon in the south, and we'll follow it nearly the whole way.\n\nThe Coast Miwok had villages all around the bay. Shells and clams from the bay's shore weren't just food: they were used as money. And just across the peninsula, the English captain Francis Drake is thought to have landed in 1579. That story's coming up.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tomales_Bay",
+    "https://en.wikipedia.org/wiki/Point_Reyes_National_Seashore"
+   ]
+  },
+  {
+   "id": "marshall",
+   "priority": 3,
+   "category": "food",
+   "title": "Marshall: oysters and a creamery",
+   "lat": 38.1617,
+   "lon": -122.893,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "This stretch of shoreline is Marshall, and if anyone's hungry, you're in luck: oysters!\n\nThe town is named after the Marshalls, four brothers who started dairy farming here in the 1850s. The railroad stopped here from the 1870s too. There's still some dairy, with the Straus Family Creamery based here. But these days the big business is oysters and clams.\n\nQuiz: oyster farming is a major industry on Tomales Bay. Can you name either of the two biggest producers? I'll give you a hint: one of them is named after an animal. [[pause 5]] Hog Island Oyster Company, and Tomales Bay Oyster Company! Both sell to the public, and both have picnic grounds on this east shore. If you stop, the classic move is a bag of oysters at a picnic table by the water.\n\nThe cows on the hills across the bay graze on ranches leased from Point Reyes National Seashore, and that's a whole controversy for another day.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Marshall,_California",
+    "https://en.wikipedia.org/wiki/Tomales_Bay"
+   ]
+  },
+  {
+   "id": "point_reyes_station",
+   "priority": 3,
+   "category": "history",
+   "title": "Point Reyes Station: the town that changed its name three times in a year",
+   "lat": 38.0693,
+   "lon": -122.8068,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Welcome to Point Reyes Station, the little hub town for the Point Reyes peninsula.\n\nIt started as the railroad's terminus stop. When the trains arrived in 1875 it was called Olema Station. Quiz: in 1891 alone, how many times did the town's name change? [[pause 4]] Three times! First to Marin, then back to Point Reyes, then finally to Point Reyes Station. Make up your mind!\n\nFun fact: it used to be a real port on Tomales Bay. But cattle and European grasses caused erosion, and silt, little dams and landfill for farming raised up the old salt marshes. Now the town is nearly a mile from the nearest tidal flats.\n\nAnd it sits just east of the San Andreas Fault. Over at the Bear Valley Visitor Center, near Olema, there's the Earthquake Trail, where you can see a rift left by the 1906 earthquake.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Point_Reyes_Station,_California",
+    "https://en.wikipedia.org/wiki/Tomales_Bay"
+   ]
+  },
+  {
+   "id": "olema",
+   "priority": 3,
+   "category": "culture",
+   "title": "Olema: coyote valley and the hippie song",
+   "lat": 38.041,
+   "lon": -122.7886,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "This crossroads is Olema. Quiz: the name comes from a Coast Miwok place name. It's an animal, plus valley. Which animal? [[pause 4]] Coyote! Olema means coyote valley.\n\nFor years people believed Olema was the epicenter of the great 1906 earthquake, because the ground nearby moved so much. The rifts are still visible on a hiking path. Modern research points to an epicenter offshore, near Daly City, which we'll drive through this afternoon.\n\nA bit of music history: Olema got its own song in the late 1960s, Hippie from Olema, by The Youngbloods, a cheeky reply to Merle Haggard's Okie from Muskogee.\n\nAnd just up Bear Valley Road, a quarter mile from town, is the visitor center for Point Reyes National Seashore, with Kule Loklo, a reconstructed Coast Miwok village. The Coast Miwok's descendants formed the Federated Indians of Graton Rancheria, which won federal recognition in 2000, and they hold ceremonies at Kule Loklo.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Olema,_California",
+    "https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake",
+    "https://en.wikipedia.org/wiki/Point_Reyes"
+   ]
+  },
+  {
+   "id": "drake_story",
+   "priority": 4,
+   "category": "history",
+   "title": "Francis Drake, New Albion and the porcelain clue",
+   "lat": 38.1,
+   "lon": -122.87,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Okay, story time. On the 17th of June, 1579, the English sea captain Francis Drake sailed into a sheltered cove just over those hills. His ship, the Golden Hind, needed repairs. He'd spent months raiding Spanish towns and treasure ships along the Pacific coast, and he was about to sail home the long way, right round the world.\n\nHe stayed about five weeks, and got on well with the Coast Miwok who lived here. He named the land New Albion, partly because the white cliffs reminded him of England, and claimed it for Queen Elizabeth the First. He nailed up a brass plate with a sixpence showing the Queen's face. Then on the 23rd of July he sailed away, without leaving a colony, and got back to England in September 1580.\n\nPeople argued about exactly where he landed for centuries. Quiz: one of the best clues came from archaeologists. Nearly a hundred pieces of something were found near the cove, which had to have come from Drake. What do you think? [[pause 6]] Chinese porcelain! Broken dishes that Drake had taken from a Spanish treasure ship and dumped here while lightening his ship for repairs. In 2021 California officially named Drake's Cove, inside Point Reyes National Seashore, as the site of New Albion.\n\nAnd the name Point Reyes? On the 6th of January 1603, Sebastián Vizcaíno sighted the headland on Three Kings' Day, so he called it la Punta de los Reyes, the Point of the Kings.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_Albion",
+    "https://en.wikipedia.org/wiki/Point_Reyes_National_Seashore",
+    "https://en.wikipedia.org/wiki/Point_Reyes"
+   ],
+   "kind": "story",
+   "radius": 20000
+  },
+  {
+   "id": "point_reyes_wild_story",
+   "priority": 3,
+   "category": "nature",
+   "title": "Point Reyes: elk, elephant seals and the foggiest lighthouse",
+   "lat": 38.03,
+   "lon": -122.82,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Out there on the Point Reyes peninsula is one of the wildest corners of California. A congressman named Clem Miller wrote the bill in 1962 to protect it, because developers wanted to build on the slopes above Drakes Bay. Now about half of it is wilderness.\n\nQuiz: when Europeans arrived, there were maybe half a million tule elk in California. By the 1870s, people thought they were extinct. How many do you think were found, hiding in a marsh in the Central Valley? [[pause 5]] One breeding pair! Just two! Genetic studies fit the idea that today's tule elk all descend from that tiny group. In 1978, ten were brought to Tomales Point here, and after a rough start, from 1981 they were breeding at full speed.\n\nThen the elephant seals came back too. They started a breeding colony in 1981. And here's my favourite: in January 2019, during a government shutdown, with no rangers working, the elephant seals moved onto Drakes Beach and had their pups. In the parking lot!\n\nAnd at the very end of the point is the Point Reyes Lighthouse, first lit in 1870. Official records call it the windiest and foggiest spot on the Pacific Coast, with gales up to a hundred miles an hour. Quiz: most lighthouses are built up high so ships can see them from far away. This one is built low, down a cliff, at the bottom of about three hundred steps. Why? [[pause 5]] To get the light below the fog! Up top it would just disappear into the clouds.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Point_Reyes_National_Seashore",
+    "https://en.wikipedia.org/wiki/Tule_elk",
+    "https://en.wikipedia.org/wiki/Point_Reyes_Lighthouse"
+   ],
+   "kind": "story",
+   "radius": 20000
+  },
+  {
+   "id": "san_andreas_story",
+   "priority": 4,
+   "category": "geology",
+   "title": "Riding the San Andreas Fault",
+   "lat": 38.0,
+   "lon": -122.76,
+   "roads": [
+    "sr1_coast",
+    "muir_sfo"
+   ],
+   "text": "Right now we're driving almost exactly along the San Andreas Fault. This straight valley, with Olema Creek, is the fault zone. To the north it sinks under Tomales Bay; to the south it runs under Bolinas Lagoon. Then it heads out to sea and comes back on land near Daly City.\n\nThe fault runs about 750 miles through California. It's where two plates slide past each other. Quiz: the Pacific Plate, on your right, is moving north compared to the North American Plate. Roughly how fast? [[pause 5]] About an inch a year. But it doesn't slide smoothly. It sticks, builds up strain for decades, and then lets go all at once. In 1906, the ground along the fault shifted by up to twenty feet.\n\nAfter the 1906 earthquake, a Berkeley professor, Andrew Lawson, mapped all the fences and roads that had been sliced in half and shifted. They made an almost perfect line, right along a fault he'd found in 1895. He named it after the San Andreas Valley, down the peninsula. And that rock on the far side, the granite of Point Reyes and Bodega Head, is related to the Sierra Nevada. It's been carried hundreds of miles north along this fault.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/San_Andreas_Fault",
+    "https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake",
+    "https://en.wikipedia.org/wiki/Point_Reyes_National_Seashore",
+    "https://en.wikipedia.org/wiki/Bodega_Head",
+    "https://en.wikipedia.org/wiki/Bolinas,_California"
+   ],
+   "kind": "story",
+   "radius": 25000
+  },
+  {
+   "id": "bolinas",
+   "priority": 3,
+   "category": "culture",
+   "title": "Bolinas: the town that doesn't want to be found",
+   "lat": 37.935,
+   "lon": -122.695,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Somewhere off to the right, across the lagoon, is Bolinas. You probably won't see a sign for it. Quiz: why not? [[pause 4]] Because the locals keep tearing them down! Every sign on Highway 1 pointing the way to Bolinas has been removed by residents. The county even put it to a vote, and the voters said, no more signs, thank you.\n\nIt's a famously reclusive little town, about fourteen hundred people. And it has a fun real-estate story. In 1927 an old dairy farm on the mesa was divided into more than five thousand tiny lots, and a San Francisco newspaper sold a lot of them for 69 dollars and fifty cents each, as a promotion for subscriptions. Buy the paper, get some land! Some of those streets have since fallen into the sea.\n\nThis is Bolinas Lagoon, a tidal estuary on the official list of wetlands of international importance. And yes, the San Andreas Fault runs right down the middle of it. Bolinas, over there, is on the Pacific Plate, sliding north from Stinson Beach at about an inch a year.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bolinas,_California",
+    "https://en.wikipedia.org/wiki/Bolinas_Lagoon"
+   ]
+  },
+  {
+   "id": "stinson_beach",
+   "priority": 4,
+   "category": "culture",
+   "title": "Stinson Beach and the craziest race in America",
+   "lat": 37.9007,
+   "lon": -122.6443,
+   "roads": [
+    "sr1_coast"
+   ],
+   "text": "Stinson Beach! A long, sandy beach that San Franciscans have been escaping to for about 150 years.\n\nIt started as Willow Camp, a tent settlement among the willows after the first coast road was built in 1870. After the 1906 earthquake, refugees from San Francisco came out and opened some of the first businesses, and in 1916 it was renamed after the biggest landowners, Rose and Nathan Stinson.\n\nNow: the Dipsea. Since 1905, runners have raced from Mill Valley, over the shoulder of Mount Tam, down to Stinson Beach. It's seven and a half miles with about 2,200 feet of climbing, and it's the oldest trail race in America. Runners can take shortcuts with names like Suicide and the Swoop. And older and younger runners get a head start of up to 25 minutes. Quiz: because of that handicap system, how young do you think the youngest winner was? [[pause 5]] Eight years old! And winners have been as old as seventy-two. Jack Kirk, the Dipsea Demon, ran 67 Dipseas in a row, and started his last one at 96.\n\nOne word of warning: the water off here is in the Red Triangle, an area with unusually many great white shark attacks.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Stinson_Beach,_California",
+    "https://en.wikipedia.org/wiki/Dipsea_Race",
+    "https://en.wikipedia.org/wiki/Bodega_Head"
+   ]
+  }
+ ]
+}

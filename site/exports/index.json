@@ -3,8 +3,8 @@
   {
    "id": "main",
    "name": "Main: I-80 → Jameson Canyon → SR 29 Napa Valley → Calistoga → Mark West Springs → River Rd → Guerneville",
-   "count": 73,
-   "minutes": 81.91666666666667,
+   "count": 74,
+   "minutes": 82.81833333333333,
    "m3u": "exports/main.m3u",
    "zip": "exports/main.zip",
    "cues": "exports/main-cues.html",
@@ -13,8 +13,8 @@
   {
    "id": "berryessa",
    "name": "Lake Berryessa: I-80 → I-505 → Winters → SR 128 → Rutherford → Calistoga → Alexander Valley → Healdsburg → Westside Rd",
-   "count": 67,
-   "minutes": 74.72666666666669,
+   "count": 68,
+   "minutes": 75.62833333333336,
    "m3u": "exports/berryessa.m3u",
    "zip": "exports/berryessa.zip",
    "cues": "exports/berryessa-cues.html",
@@ -23,8 +23,8 @@
   {
    "id": "sonoma",
    "name": "Sonoma: I-80 → Jameson Canyon → Carneros → Sonoma → Glen Ellen → Kenwood → Santa Rosa → Sebastopol → SR 116",
-   "count": 69,
-   "minutes": 76.71000000000001,
+   "count": 70,
+   "minutes": 77.61333333333333,
    "m3u": "exports/sonoma.m3u",
    "zip": "exports/sonoma.zip",
    "cues": "exports/sonoma-cues.html",
@@ -33,12 +33,42 @@
   {
    "id": "silverado_bohemian",
    "name": "Silverado Trail → Petrified Forest → Calistoga Rd → Santa Rosa → Sebastopol → Bohemian Hwy",
-   "count": 76,
-   "minutes": 85.71333333333332,
+   "count": 77,
+   "minutes": 86.6083333333333,
    "m3u": "exports/silverado_bohemian.m3u",
    "zip": "exports/silverado_bohemian.zip",
    "cues": "exports/silverado_bohemian-cues.html",
    "rss": "exports/silverado_bohemian.xml"
+  },
+  {
+   "id": "tonight",
+   "name": "Tonight: St. Helena → Calistoga → Petrified Forest → River Rd → Guerneville",
+   "count": 35,
+   "minutes": 38.364999999999995,
+   "m3u": "exports/tonight.m3u",
+   "zip": "exports/tonight.zip",
+   "cues": "exports/tonight-cues.html",
+   "rss": "exports/tonight.xml"
+  },
+  {
+   "id": "day2_coast",
+   "name": "Day 2 coast: Guerneville → Jenner → Bodega Bay → Tomales Bay → Point Reyes Station → Stinson Beach → Muir Woods → Golden Gate → SFO",
+   "count": 46,
+   "minutes": 52.14166666666667,
+   "m3u": "exports/day2_coast.m3u",
+   "zip": "exports/day2_coast.zip",
+   "cues": "exports/day2_coast-cues.html",
+   "rss": "exports/day2_coast.xml"
+  },
+  {
+   "id": "day2_inland",
+   "name": "Day 2 quicker: Guerneville → Jenner → Bodega Bay → Valley Ford → Petaluma → US 101 → Muir Woods → Golden Gate → SFO",
+   "count": 37,
+   "minutes": 41.75,
+   "m3u": "exports/day2_inland.m3u",
+   "zip": "exports/day2_inland.zip",
+   "cues": "exports/day2_inland-cues.html",
+   "rss": "exports/day2_inland.xml"
   }
  ]
 }
