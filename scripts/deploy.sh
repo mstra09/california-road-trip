@@ -11,6 +11,6 @@ cd "$TMP"
 git init -q -b gh-pages
 git add -A
 git -c user.name="deploy" -c user.email="deploy@localhost" commit -q -m "Deploy $(date -u +%FT%TZ)"
-git push -q -f "$REMOTE" gh-pages
+git -c http.postBuffer=524288000 push -q -f "$REMOTE" gh-pages
 rm -rf "$TMP"
 echo "Deployed."

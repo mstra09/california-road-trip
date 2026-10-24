@@ -6,7 +6,7 @@
     "build": "scripts/build.sh",
     "simulate": "node scripts/simulate.mjs",
     "test": "node scripts/verify.mjs",
-    "deploy": "scripts/deploy.sh"
+    "deploy": "python3 scripts/deploy_incremental.py"
   },
   "devDependencies": {
     "playwright": "1.48.2"
